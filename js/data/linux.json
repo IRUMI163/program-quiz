@@ -1,0 +1,1201 @@
+[{
+    "difficulty": 1,
+    "text": {
+      "ja": "lsコマンドは、ディレクトリ内のファイルやディレクトリの一覧を表示する。",
+      "en": "The ls command displays a list of files and directories within a directory."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "現在のディレクトリや指定したディレクトリの中身を確認するための基本的なコマンドです。",
+      "en": "It is a basic command used to check the contents of the current or specified directory."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "cpコマンドは、ファイルを削除するために使用される。",
+      "en": "The cp command is used to delete files."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "cpコマンドはファイルをコピーするためのコマンドであり、削除にはrmコマンドを使用します。",
+      "en": "The cp command is used to copy files, whereas the rm command is used for deletion."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "pwdコマンドは、現在の作業ディレクトリの絶対パスを表示する。",
+      "en": "The pwd command displays the absolute path of the current working directory."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "print working directoryの略で、自分が今どのディレクトリにいるかを確認できます。",
+      "en": "It stands for print working directory and is used to check where you currently are in the file system."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "cd ..コマンドを実行すると、ルートディレクトリに移動する。",
+      "en": "Running the cd .. command moves you to the root directory."
+    },
+    "answer": false,
+    "exp": {
+      "ja": ".. は一つ上の親ディレクトリを意味するため、親ディレクトリに移動します。ルートディレクトリへの移動は cd / です。",
+      "en": ".. represents the parent directory, so it moves you one level up. To move to the root directory, use cd /."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "cdコマンドを実行する際、引数を省略するとホームディレクトリに移動する。",
+      "en": "When executing the cd command, omitting the arguments moves you to the home directory."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "引数なしでcdを実行するのは、現在のユーザーのホームディレクトリに戻るショートカットです。",
+      "en": "Running cd without arguments is a shortcut to return to the current user's home directory."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "pwdコマンドは、現在のユーザーのパスワードを変更する。",
+      "en": "The pwd command changes the current user's password."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "pwdは作業ディレクトリを表示するコマンドであり、パスワードの変更にはpasswdコマンドを使用します。",
+      "en": "pwd displays the working directory; the passwd command is used to change passwords."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "mkdirコマンドは、新しいディレクトリを作成するために使用される。",
+      "en": "The mkdir command is used to create new directories."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "make directoryの略で、指定した名前の空のディレクトリを作成します。",
+      "en": "Standing for make directory, it creates an empty directory with the specified name."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "rm -rコマンドは、読み取り専用のファイルを作成する。",
+      "en": "The rm -r command creates a read-only file."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "rm -rコマンドは、ディレクトリとその中身を再帰的に削除するためのコマンドです。",
+      "en": "The rm -r command is used to delete directories and their contents recursively."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "catコマンドは、ファイルの内容を標準出力に表示するために使用できる。",
+      "en": "The cat command can be used to display the contents of a file to the standard output."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "短いテキストファイルの中身を素早くターミナル画面で確認する際によく使われます。",
+      "en": "It is often used to quickly view the contents of short text files on the terminal screen."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "ls -aコマンドは、サイズが1MB以上のファイルのみを表示する。",
+      "en": "The ls -a command displays only files larger than 1MB in size."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ls -aの -a オプションは、ドット(.)で始まる隠しファイルを含めてすべてのファイルを表示するためのものです。",
+      "en": "The -a option in ls -a stands for all, displaying all files including hidden ones starting with a dot (.)."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "touchコマンドは、空の新しいファイルを作成したり、ファイルのタイムスタンプを更新したりする。",
+      "en": "The touch command creates a new empty file or updates the timestamps of a file."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "対象のファイルが存在しない場合は空のファイルを作り、存在する場合は最終更新日時を現在時刻にします。",
+      "en": "If the file does not exist, it creates an empty file; if it does, it updates the last modified time to the current time."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "mkdir -pコマンドは、ディレクトリをパスワードで保護する。",
+      "en": "The mkdir -p command protects a directory with a password."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "mkdir -pの -p オプションは、必要な親ディレクトリが存在しない場合にそれらも自動的に作成する機能です。",
+      "en": "The -p option in mkdir -p automatically creates any necessary parent directories if they do not exist."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "mvコマンドは、ファイルの移動やファイル名の変更を行う。",
+      "en": "The mv command moves files or renames them."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "moveの略で、同じディレクトリ内で実行するとファイル名の変更になります。",
+      "en": "Standing for move, using it within the same directory effectively renames the file."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "sudoコマンドは、現在のユーザーをログアウトさせる。",
+      "en": "The sudo command logs out the current user."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "sudoコマンドは、別のユーザー（通常はスーパーユーザーのroot）の権限でコマンドを実行するためのものです。",
+      "en": "The sudo command is used to execute commands with the privileges of another user, usually the superuser (root)."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "rmコマンドを使用して削除したファイルは、通常、Windowsのごみ箱のような場所に移動せず直接削除される。",
+      "en": "Files deleted using the rm command are typically deleted directly without moving to a location like the Windows Recycle Bin."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "Linuxのコマンドラインでの削除は復元が非常に難しいため、実行には注意が必要です。",
+      "en": "Deletion via the Linux command line is very difficult to undo, so it must be executed with caution."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "echoコマンドは、ネットワークの接続状況を確認する。",
+      "en": "The echo command checks the network connection status."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "echoコマンドは、指定された文字列や変数の値をターミナルに表示するためのコマンドです。",
+      "en": "The echo command is used to print specified strings or variable values to the terminal."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "manコマンドは、他のコマンドのマニュアルやヘルプページを表示するために使用される。",
+      "en": "The man command is used to display manuals and help pages for other commands."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "manualの略で、コマンドの詳しい使い方やオプションを調べる際に利用します。",
+      "en": "Standing for manual, it is used to look up detailed usage and options of commands."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "catコマンドは、ディレクトリを作成することができる。",
+      "en": "The cat command can create directories."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "catコマンドはファイルの内容を結合・表示するものであり、ディレクトリ作成はmkdirです。",
+      "en": "The cat command concatenates and displays file contents; mkdir is for creating directories."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "clearコマンドを実行すると、ターミナルの画面が消去される。",
+      "en": "Executing the clear command clears the terminal screen."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "画面上に表示されている過去のコマンド実行履歴などを上にスクロールさせ、画面をすっきりさせます。",
+      "en": "It scrolls previous command history upwards, providing a clean terminal screen."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "exitコマンドは、システムを強制的に再起動する。",
+      "en": "The exit command forcefully restarts the system."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "exitコマンドは、現在のシェルセッションを終了したり、ターミナルウィンドウを閉じたりするためのコマンドです。",
+      "en": "The exit command terminates the current shell session or closes the terminal window."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "grepコマンドは、ファイル内から特定の文字列パターンを検索するために使用される。",
+      "en": "The grep command is used to search for specific text patterns within files."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ログファイルからエラーメッセージを探すなど、実務で非常に頻繁に使用されるコマンドです。",
+      "en": "It is a highly frequently used command in practice, such as searching for error messages in log files."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "lessコマンドは、ファイルの内容をすべて一度にターミナルに出力して終了する。",
+      "en": "The less command outputs the entire contents of a file to the terminal at once and exits."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "lessコマンドはページャーと呼ばれ、ファイルの内容を1画面ずつスクロールして表示するためのコマンドです。",
+      "en": "The less command is a pager, allowing you to scroll and view file contents one screen at a time."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "chmodコマンドは、ファイルやディレクトリのアクセス権限を変更する。",
+      "en": "The chmod command changes the access permissions of files or directories."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "誰がそのファイルを読み、書き、実行できるかを設定するために使用されます。",
+      "en": "It is used to configure who can read, write, and execute the file."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "killコマンドは、システムをシャットダウンするために使用される。",
+      "en": "The kill command is used to shut down the system."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "killコマンドは、指定したプロセスID(PID)に対してシグナル（通常は終了シグナル）を送信するコマンドです。",
+      "en": "The kill command sends a signal (usually a termination signal) to a specified process ID (PID)."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "tarコマンドに -czvf オプションを付けると、ファイルをgzip形式で圧縮したアーカイブを作成できる。",
+      "en": "Adding the -czvf options to the tar command creates a gzip-compressed archive of files."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "複数のファイルを一つにまとめ(c)、gzipで圧縮(z)し、進行状況を表示(v)してファイルに出力(f)します。",
+      "en": "It bundles multiple files (c), compresses with gzip (z), shows progress (v), and outputs to a file (f)."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "grep -iオプションを指定すると、ディレクトリ内のファイルを再帰的に検索する。",
+      "en": "Specifying the grep -i option recursively searches files within directories."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "grepの -i オプションは大文字と小文字を区別せずに検索するもので、再帰的な検索には -r または -R オプションを使用します。",
+      "en": "The -i option ignores case distinctions. For recursive searches, the -r or -R option is used."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "findコマンドは、ファイル名やサイズ、更新日時などの条件を指定してファイルを検索できる。",
+      "en": "The find command can search for files by specifying conditions such as file name, size, or modification date."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ディレクトリツリーを巡回して、複雑な条件に合致するファイルを強力に探し出すコマンドです。",
+      "en": "It traverses directory trees to powerfully locate files matching complex conditions."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "chmod 777を実行すると、ファイルは所有者のみが読み書き可能になる。",
+      "en": "Executing chmod 777 makes the file readable and writable only by the owner."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "777は、すべてのユーザー（所有者、グループ、その他）に対して読み取り、書き込み、実行のフル権限を与えます。",
+      "en": "777 grants full read, write, and execute permissions to all users (owner, group, and others)."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "dfコマンドは、ファイルシステムのディスク使用量を表示する。",
+      "en": "The df command displays the disk space usage of file systems."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "disk freeの略で、システム全体でディスク容量がどれだけ残っているかを確認する際によく使われます。",
+      "en": "Standing for disk free, it is often used to check how much disk space is left across the system."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "dfコマンドは、指定したディレクトリ内のファイルの合計サイズを計算する。",
+      "en": "The df command calculates the total size of files within a specified directory."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "dfコマンドはファイルシステム全体の使用量を表示します。特定のディレクトリのサイズ計算にはduコマンドを使用します。",
+      "en": "df shows usage of entire file systems. To calculate the size of a specific directory, use the du command."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "tail -fコマンドは、ファイルの末尾をリアルタイムで監視しながら表示し続ける。",
+      "en": "The tail -f command continuously monitors and displays the end of a file in real-time."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "アプリケーションやシステムのログファイルが更新されていく様子をリアルタイムで追跡するのに適しています。",
+      "en": "It is perfect for tracking application or system log files in real-time as they are updated."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "wgetコマンドは、ローカルファイルを別のサーバーにアップロードするためのコマンドである。",
+      "en": "The wget command is used to upload a local file to another server."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "wgetコマンドは、Webサーバーなどからファイルをダウンロードするためのコマンドです。",
+      "en": "The wget command is used to download files from web servers or similar sources."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "chownコマンドは、ファイルやディレクトリの所有者やグループを変更するために使用される。",
+      "en": "The chown command is used to change the owner or group of a file or directory."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "change ownerの略で、適切なユーザーにファイル管理の権限を譲渡する際などに使用します。",
+      "en": "Standing for change owner, it is used when transferring file management permissions to the appropriate user."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "historyコマンドは、過去のCPU使用率の履歴を表示する。",
+      "en": "The history command displays a history of past CPU usage."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "historyコマンドは、そのユーザーが過去にターミナルで実行したコマンドの履歴を表示します。",
+      "en": "The history command displays the history of commands previously executed in the terminal by the user."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "topコマンドは、システム上で実行されているプロセスとリソースの使用状況をリアルタイムで表示する。",
+      "en": "The top command displays real-time process and resource usage on the system."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "CPUやメモリを多く消費しているプロセスを特定するためのタスクマネージャーのような役割を果たします。",
+      "en": "It acts like a task manager to identify processes consuming a lot of CPU or memory."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "ln -sコマンドは、ファイルのハードリンクを作成する。",
+      "en": "The ln -s command creates a hard link to a file."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ln -sコマンドの -s オプションは、ハードリンクではなくシンボリックリンク（ショートカットのようなもの）を作成します。",
+      "en": "The -s option in ln -s creates a symbolic link (similar to a shortcut) rather than a hard link."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "psコマンドは、現在実行中のプロセスのスナップショットを表示する。",
+      "en": "The ps command displays a snapshot of the currently running processes."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "特定のプロセスが裏で動いているかを確認する際などに、ps aux や ps -ef などのオプションと共に使われます。",
+      "en": "It is often used with options like ps aux or ps -ef to check if specific processes are running in the background."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "sshコマンドは、ローカルコンピュータの画面を録画する。",
+      "en": "The ssh command records the local computer's screen."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "sshコマンドはSecure Shellの略で、ネットワーク経由でリモートサーバーに安全にログインして操作するためのコマンドです。",
+      "en": "Standing for Secure Shell, ssh is a command used to securely log in and operate remote servers over a network."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "pingコマンドは、ICMPエコー要求を送信してネットワークの疎通を確認する。",
+      "en": "The ping command sends ICMP echo requests to verify network connectivity."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "相手先のサーバーやルーターと通信可能かどうかを調べるための最も基本的なネットワーク診断ツールです。",
+      "en": "It is the most basic network diagnostic tool to check if communication with a destination server or router is possible."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "unameコマンドは、現在のユーザー名を変更する。",
+      "en": "The uname command changes the current username."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "unameコマンドはOSの名前やカーネルバージョンなど、システムに関する情報を表示するコマンドです。",
+      "en": "The uname command prints system information, such as the OS name and kernel version."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ls -lコマンドの出力で先頭が d の場合、その項目はディレクトリであることを示す。",
+      "en": "If the output of the ls -l command starts with a d, it indicates that the item is a directory."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ファイルの場合は -(ハイフン)、シンボリックリンクの場合は l(小文字のエル)になります。",
+      "en": "It is a - (hyphen) for a regular file and an l (lowercase L) for a symbolic link."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "標準エラー出力をファイルにリダイレクトするには、1> を使用する。",
+      "en": "To redirect standard error output to a file, 1> is used."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "1は標準出力を表します。標準エラー出力をリダイレクトするには 2> を使用します。",
+      "en": "1 represents standard output. To redirect standard error output, 2> is used."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "awkは、空白や指定した文字で区切られたテキストデータの特定の列を抽出・処理するのに適している。",
+      "en": "awk is well-suited for extracting and processing specific columns of text data separated by whitespace or a designated character."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "複雑なテキスト整形やデータの集計を行うことができる強力なパターンマッチング言語です。",
+      "en": "It is a powerful pattern-matching language capable of complex text formatting and data aggregation."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "grep -vオプションは、検索パターンに一致する行のみを表示する。",
+      "en": "The grep -v option displays only the lines that match the search pattern."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "grep -vオプションはマッチ結果を反転させ、パターンに一致しない行のみを表示します。",
+      "en": "The grep -v option inverts the match, displaying only the lines that do not match the pattern."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "パイプ | を使用すると、左側のコマンドの標準出力を右側のコマンドの標準入力として渡すことができる。",
+      "en": "Using a pipe | allows you to pass the standard output of the command on the left as the standard input to the command on the right."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "複数の小さなコマンドを連結して、複雑な処理を1行で実行するためのLinuxの重要な概念です。",
+      "en": "It is a crucial Linux concept for chaining multiple small commands together to perform complex tasks in a single line."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "chmod u+xコマンドは、すべてのユーザーに実行権限を付与する。",
+      "en": "The chmod u+x command grants execute permission to all users."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "u は所有者(user)を意味するため、所有者にのみ実行権限を付与します。全ユーザーに付与する場合は a+x です。",
+      "en": "Since u stands for the owner (user), it only grants execute permission to the owner. Use a+x for all users."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "リダイレクト > を使用してファイルに出力する際、ファイルが存在している場合は内容が上書きされる。",
+      "en": "When redirecting output to a file using >, the file's contents will be overwritten if it already exists."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "既存の内容を消さずにファイルの末尾に追記したい場合は、>> を使用する必要があります。",
+      "en": "If you want to append to the end of the file without deleting existing content, you must use >>."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "find . -name *.txt を実行すると、サブディレクトリ内のすべての .txt ファイルが常に正しく検索される。",
+      "en": "Executing find . -name *.txt always searches correctly for all .txt files in subdirectories."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "カレントディレクトリに .txt ファイルが存在するとシェルが展開してしまうため、正しく検索するには *.txt のようにクォートで囲む必要があります。",
+      "en": "If a .txt file exists in the current directory, the shell expands it. To search correctly, you must quote it like '*.txt'."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "xargsコマンドは、標準入力から受け取ったデータを引数に変換して別のコマンドを実行する。",
+      "en": "The xargs command converts data received from standard input into arguments to execute another command."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "パイプ経由で渡された多数のファイルパスを、rmなどのコマンドの引数として渡す際によく使用されます。",
+      "en": "It is often used to pass numerous file paths received via a pipe as arguments to commands like rm."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "nohupコマンドを使用すると、コマンドの実行に必要なメモリ使用量が半分になる。",
+      "en": "Using the nohup command reduces the memory usage required to execute a command by half."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "nohupコマンドはハングアップシグナルを無視させるコマンドであり、ターミナルを閉じてもプロセスを終了させないために使われます。",
+      "en": "The nohup command makes a process ignore hangup signals, preventing it from terminating when the terminal is closed."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "sedコマンドは、ストリームエディタとしてテキストファイルの置換や削除などを非対話的に行うことができる。",
+      "en": "The sed command is a stream editor that can perform text replacement, deletion, etc. non-interactively."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "sed s/old/new/g file のように記述して、ファイル内の一括置換処理などを自動化できます。",
+      "en": "You can automate bulk replacements by writing something like sed s/old/new/g file."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "wc -lコマンドは、ファイル内の単語数をカウントする。",
+      "en": "The wc -l command counts the number of words in a file."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "wc -lの -l オプションは行数(lines)をカウントします。単語数をカウントする場合は -w オプションを使用します。",
+      "en": "The -l option in wc -l counts lines. To count words, the -w option is used."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "kill -9コマンドは、プロセスにSIGKILLシグナルを送信し、強制的に終了させる。",
+      "en": "The kill -9 command sends a SIGKILL signal to a process, terminating it forcefully."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "プロセス側でキャッチや無視ができない強力なシグナルであるため、安全な終了処理が行われないリスクがあります。",
+      "en": "Since it is a powerful signal that the process cannot catch or ignore, there is a risk that safe cleanup will not occur."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ls -aコマンドの出力に含まれる . と .. は、隠しファイルを作成するための特殊なコマンドである。",
+      "en": "The . and .. included in the output of the ls -a command are special commands for creating hidden files."
+    },
+    "answer": false,
+    "exp": {
+      "ja": ". は現在のディレクトリ自身を、.. は一つ上の親ディレクトリを指し示すディレクトリ参照です。",
+      "en": ". refers to the current directory itself, and .. refers to the parent directory one level up."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "curl -O コマンドを実行すると、URLの末尾のファイル名を使用してダウンロードしたファイルを保存する。",
+      "en": "Executing the curl -O command saves the downloaded file using the filename at the end of the URL."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "大文字の -O (オー) を使用することで、ファイル名を自分で指定する手間を省けます。",
+      "en": "Using the uppercase -O saves you the trouble of manually specifying the output filename."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "tail -n 10コマンドは、ファイルの先頭から10行を表示する。",
+      "en": "The tail -n 10 command displays the first 10 lines of a file."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "tailコマンドはファイルの末尾（最後）を表示します。先頭を表示するにはheadコマンドを使用します。",
+      "en": "The tail command displays the end of a file. To display the beginning, the head command is used."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "cronは、指定した日時に定期的にコマンドやスクリプトを自動実行するためのデーモンである。",
+      "en": "cron is a daemon used to automatically execute commands or scripts periodically at specified dates and times."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "システムのバックアップやログのローテーションなど、定期的なシステム管理タスクに不可欠な仕組みです。",
+      "en": "It is an essential mechanism for regular system administration tasks like system backups and log rotation."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "chown root:root コマンドは、現在のユーザーをrootユーザーに切り替える。",
+      "en": "The chown root:root command switches the current user to the root user."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "chownコマンドはファイルやディレクトリの所有者とグループをrootに変更します。ユーザーの切り替えにはsuやsudoを使用します。",
+      "en": "chown changes the owner and group of files/directories to root. To switch users, use su or sudo."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "du -shコマンドは、指定したディレクトリ全体のサイズを人間が読みやすい形式で1行で表示する。",
+      "en": "The du -sh command displays the total size of a specified directory on a single line in a human-readable format."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "-sオプションでサブディレクトリごとの表示を省略し合計のみを計算し、-hオプションでMBやGBなどの単位を付与します。",
+      "en": "The -s option summarizes the total without showing subdirectories, and -h adds units like MB or GB."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "teeコマンドは、標準入力を標準出力にのみ渡し、ファイルには書き込まない。",
+      "en": "The tee command passes standard input only to standard output and does not write to files."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "teeコマンドはT字管のように、標準入力を画面（標準出力）に表示しつつ、同時に指定されたファイルにも書き込みます。",
+      "en": "Like a T-pipe, the tee command reads from standard input and writes to both standard output and specified files simultaneously."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "ls -l で表示されるハードリンク数は、ディレクトリの場合、自身の . とサブディレクトリの .. の数を含んでいるため通常2以上になる。",
+      "en": "The hard link count shown by ls -l for a directory is usually 2 or more because it includes its own . and the .. of its subdirectories."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "空のディレクトリでも、親ディレクトリからの名前と自身の.の2つのリンクを持つため、ハードリンク数は2になります。",
+      "en": "Even an empty directory has a link count of 2: the name from its parent directory and its own . entry."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "symlink（シンボリックリンク）を削除すると、リンク先の元のファイルも同時に削除される。",
+      "en": "Deleting a symlink (symbolic link) simultaneously deletes the original target file."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "シンボリックリンクを削除してもリンク（ショートカット）自体が消えるだけで、元のファイルには一切影響しません。",
+      "en": "Deleting a symlink only removes the link (the shortcut) itself and does not affect the original file at all."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "chmod +tディレクトリに設定されたスティッキービットは、ファイルの所有者かroot権限を持つユーザーのみがそのファイルを削除できるようにする。",
+      "en": "The sticky bit set on a directory via chmod +t ensures that only the file's owner or a user with root privileges can delete it."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "/tmpディレクトリなどに使用され、全員が書き込める場所でも他人のファイルを勝手に消せないようにする仕組みです。",
+      "en": "Used in directories like /tmp, it prevents users from deleting others' files even in a globally writable location."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "/etc/shadowファイルは、システムのすべてのユーザーが読み取り可能なファイルである。",
+      "en": "The /etc/shadow file is readable by all users on the system."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "暗号化されたパスワードが保存されているため、セキュリティ上の理由からrootユーザーのみが読み取り可能です。",
+      "en": "Because it contains encrypted passwords, it is strictly readable only by the root user for security reasons."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "/dev/null にデータをリダイレクトすると、そのデータは破棄されどこにも保存されない。",
+      "en": "Redirecting data to /dev/null discards the data, and it is not saved anywhere."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "/dev/null は特殊なデバイスファイルであり、コマンドの不要な出力（エラーメッセージなど）を捨てる際によく使われます。",
+      "en": "/dev/null is a special device file commonly used to discard unwanted command output, such as error messages."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "setuidビットが設定された実行ファイルは、常にrootユーザーの権限で実行される。",
+      "en": "An executable file with the setuid bit set always executes with root user privileges."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "setuidビットは、そのファイルの「所有者」の権限で実行されることを意味し、所有者がrootでなければroot権限にはなりません。",
+      "en": "The setuid bit causes the file to execute with the privileges of its 'owner', which is not necessarily root."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "kill -0コマンドは、プロセスにシグナルを送信せず、プロセスが存在しシグナルを送信する権限があるかを確認するために使用される。",
+      "en": "The kill -0 command does not send a signal but is used to check if a process exists and if you have permission to signal it."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "スクリプト内で、特定のプロセスがまだ稼働しているかどうかを安全にポーリング確認するための定石です。",
+      "en": "It is a standard technique in scripts to safely poll whether a specific process is still running."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "find / -perm -4000コマンドは、サイズが4000バイトのファイルを検索する。",
+      "en": "The find / -perm -4000 command searches for files that are 4000 bytes in size."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "-perm オプションはパーミッションによる検索であり、-4000 はsetuidビットが設定されたファイルを探すための指定です。",
+      "en": "The -perm option searches by permissions; -4000 specifically looks for files with the setuid bit set."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "ps -ef コマンドの出力において、PPID は親プロセスのプロセスIDを示す。",
+      "en": "In the output of the ps -ef command, PPID indicates the Parent Process ID."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "Parent Process IDの略であり、どのプロセスからそのプロセスが生成されたかを追跡するのに役立ちます。",
+      "en": "Standing for Parent Process ID, it is useful for tracking which process spawned the current process."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "bashにおいて、$$ は直前にバックグラウンドで実行されたプロセスのプロセスIDを表す。",
+      "en": "In bash, $$ represents the process ID of the most recently executed background process."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "$$ は現在実行中のシェル自身のプロセスIDを表します。直前のバックグラウンドプロセスのPIDは $! で取得できます。",
+      "en": "$$ represents the PID of the currently running shell. The PID of the last background process is obtained with $!."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "lsofコマンドは、現在開かれているファイルと、それらを開いているプロセスのリストを表示する。",
+      "en": "The lsof command displays a list of currently open files and the processes that have opened them."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "Linuxではすべてがファイルとして扱われるため、ポートを使用しているプロセスを特定する際などにも非常に有用です。",
+      "en": "Since everything is a file in Linux, it is also highly useful for identifying which process is using a specific network port."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "umask 022 が設定されている場合、新しく作成されるファイルのデフォルトのパーミッションは 755 になる。",
+      "en": "If umask 022 is set, the default permissions for newly created files will be 755."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "022のumaskでは、ディレクトリは755になりますが、通常のファイルは実行権限を持たないため644になります。",
+      "en": "With a umask of 022, directories get 755, but regular files do not have execute permissions by default, so they get 644."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "trapコマンドを使用すると、シェルスクリプト実行中に特定のシグナルを受信した際の動作を定義できる。",
+      "en": "Using the trap command allows you to define the behavior when a specific signal is received during shell script execution."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "Ctrl+C(SIGINT)で中断された際に、一時ファイルを削除して綺麗に終了するなどのクリーンアップ処理を記述できます。",
+      "en": "It allows defining cleanup tasks, such as removing temporary files when interrupted by Ctrl+C (SIGINT)."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "dmesgコマンドは、現在ログインしているユーザーのセッション履歴を表示する。",
+      "en": "The dmesg command displays the session history of the currently logged-in users."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "dmesgコマンドは、カーネルのリングバッファのメッセージ（ハードウェアのエラーやドライバーのロード情報など）を表示します。",
+      "en": "The dmesg command prints messages from the kernel ring buffer, such as hardware errors and driver loading info."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "straceコマンドは、プロセスが発行するシステムコールや受信するシグナルを追跡・記録する。",
+      "en": "The strace command traces and records system calls made and signals received by a process."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "プログラムがどのファイルを開こうとして失敗したかなど、深いレベルでのトラブルシューティングに強力なツールです。",
+      "en": "It is a powerful tool for deep troubleshooting, such as finding which file a program failed to open."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "df -iコマンドは、ファイルシステムのブロック使用量をバイト単位で表示する。",
+      "en": "The df -i command displays the block usage of the file system in bytes."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "df -iの -i オプションは、ディスクの容量ではなく、作成可能なファイル数の上限であるiノード(inode)の使用量を表示します。",
+      "en": "The -i option in df displays inode usage (the limit on the number of files), not block capacity in bytes."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "niceコマンドを使用してマイナスのnice値を設定するには、スーパーユーザー権限が必要である。",
+      "en": "Setting a negative nice value using the nice command requires superuser privileges."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "マイナスのnice値はプロセスの実行優先度を高くするため、一般ユーザーが勝手に設定してシステムを独占できないよう制限されています。",
+      "en": "Since a negative nice value increases process priority, it is restricted so normal users cannot monopolize the system."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "watchコマンドは、指定したファイルの変更履歴をバージョン管理システムに記録する。",
+      "en": "The watch command records the change history of a specified file to a version control system."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "watchコマンドは、指定されたプログラムを定期的に（デフォルトで2秒ごと）実行し、その出力を全画面で更新表示するコマンドです。",
+      "en": "The watch command runs a specified program periodically (default every 2 seconds) and displays the output fullscreen."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "chattr +iコマンドを使用してイミュータブル属性を設定すると、rootユーザーであってもそのファイルを変更または削除できなくなる。",
+      "en": "Setting the immutable attribute using the chattr +i command prevents even the root user from modifying or deleting the file."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "変更するには、まずroot権限で chattr -i を実行して属性を解除する必要があります。システムの重要なファイルの保護に使われます。",
+      "en": "To modify it, root must first remove the attribute with chattr -i. It is used to protect critical system files."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "awk '{print $0}'コマンドは、入力行の最初のフィールドのみを出力する。",
+      "en": "The awk '{print $0}' command outputs only the first field of the input line."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "awkにおいて $0 は行全体を表します。最初のフィールドを出力する場合は $1 を使用します。",
+      "en": "In awk, $0 represents the entire line. To print the first field, you would use $1."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "bashにおいて、: (コロン)コマンドは、何もしないで終了ステータス0を返すシェル組み込みコマンドである。",
+      "en": "In bash, the : (colon) command is a shell builtin that does nothing and returns an exit status of 0."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "無限ループを作成する際の while : や、スクリプト内でのプレースホルダーとして利用されます。",
+      "en": "It is often used to create infinite loops like 'while :' or as a placeholder in shell scripts."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "xargs -0オプションは、入力の区切り文字として改行文字を使用するようにxargsに指示する。",
+      "en": "The xargs -0 option instructs xargs to use the newline character as the input delimiter."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "-0 (ゼロ)オプションは、空白や改行を含むファイル名を安全に処理するため、ヌル文字(\\0)を区切り文字として扱います。",
+      "en": "The -0 (zero) option treats the null character (\\0) as the delimiter to safely handle filenames containing spaces or newlines."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "echo {a..c}{1..2} コマンドを実行すると、a1 a2 b1 b2 c1 c2 のようにブレース展開が行われる。",
+      "en": "Executing the echo {a..c}{1..2} command performs brace expansion, resulting in a1 a2 b1 b2 c1 c2."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "bashのブレース展開機能は、パターンの順列や直積を自動的に生成するため、一括ファイル作成時などに非常に強力です。",
+      "en": "Bash's brace expansion feature automatically generates permutations/Cartesian products, which is very powerful for mass file creation."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "statコマンドの出力に含まれる Inode 番号は、ネットワークをまたぐ異なるシステム間でも一意であることが保証されている。",
+      "en": "The Inode number included in the output of the stat command is guaranteed to be unique across different systems over a network."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "iノード番号は単一のファイルシステム内でのみ一意であり、別のシステムや別パーティションでは重複する可能性があります。",
+      "en": "Inode numbers are unique only within a single filesystem and may overlap across different systems or partitions."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "exec 3<> /dev/tcp/example.com/80 のように記述すると、bashの組み込み機能を使用してTCPソケットを開くことができる。",
+      "en": "Writing something like exec 3<> /dev/tcp/example.com/80 uses bash's built-in feature to open a TCP socket."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "外部のncやcurlなどのコマンドを使用せずに、bash単体でネットワーク通信を行うためのマニアックな手法です。",
+      "en": "It is an advanced technique for performing network communication using only bash without external commands like nc or curl."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "bashスクリプトの先頭に #!/bin/bash -e を記述すると、スクリプト内のすべての変数が環境変数として自動的にエクスポートされる。",
+      "en": "Adding #!/bin/bash -e at the top of a bash script automatically exports all variables in the script as environment variables."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "set -e (または -e オプション) は、いずれかのコマンドが0以外のステータスで失敗した場合にスクリプトを即座に終了させる設定です。",
+      "en": "set -e (or the -e option) causes the script to exit immediately if any command fails with a non-zero exit status."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "chrootコマンドは、実行するコマンドに対してルートディレクトリの位置を仮想的に変更する。",
+      "en": "The chroot command virtually changes the apparent root directory for the running command."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "隔離された環境（牢獄・ジェイル）を作り出すためのコマンドで、コンテナ技術の基礎となる概念の一つです。",
+      "en": "It creates an isolated environment (jail) and is one of the foundational concepts of modern container technology."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "topコマンドの出力にある zombie プロセスは、システムの全メモリを消費するまで増殖し続ける悪意のあるプログラムである。",
+      "en": "A zombie process in the output of the top command is a malicious program that continuously multiplies until it consumes all system memory."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "zombie(ゾンビプロセス)は、すでに終了したものの親プロセスが終了ステータスを受け取っていないプロセスの残骸であり、メモリは消費しません。",
+      "en": "A zombie is a remnant of a terminated process waiting for its parent to read its exit status, and it does not consume memory."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "/proc/sys/vm/drop_caches に適切な値を書き込むことで、システムのページキャッシュやdentries、inodesを解放できる。",
+      "en": "Writing appropriate values to /proc/sys/vm/drop_caches frees up the system's pagecache, dentries, and inodes."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "カーネルがメモリ上に保持しているキャッシュを明示的にクリアし、パフォーマンステストなどを行う際に使用されます。",
+      "en": "It is used to explicitly clear caches held in memory by the kernel, often for performance testing purposes."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "/dev/urandom は、システムのエントロピープールが枯渇すると乱数の生成を停止してブロックする。",
+      "en": "/dev/urandom stops generating random numbers and blocks when the system's entropy pool is exhausted."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "エントロピーが枯渇してブロックするのは /dev/random です。/dev/urandom は擬似乱数を用いてブロックせずに生成を続けます。",
+      "en": "/dev/random blocks when entropy is exhausted. /dev/urandom uses a pseudo-random number generator to continue without blocking."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "mkfifoコマンドで作成された名前付きパイプは、プロセス間の通信に使用され、ls -lで確認するとパーミッションの先頭が p になる。",
+      "en": "A named pipe created by the mkfifo command is used for inter-process communication and shows a p at the beginning of its permissions in ls -l."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ファイルシステム上に実体を持つパイプであり、異なる端末間でリアルタイムにデータを受け渡すことができます。",
+      "en": "It is a pipe that exists on the file system, allowing real-time data transfer between different terminals."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "chattr +a コマンドで追記専用属性が設定されたファイルは、内容を空に（切り詰め）して上書きすることができる。",
+      "en": "A file set with the append-only attribute via the chattr +a command can be truncated (emptied) and overwritten."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "a (append)属性が付いたファイルは、データの追加書き込みのみが許可され、既存の内容の変更や削除、ファイルの切り詰めはできません。",
+      "en": "A file with the 'a' (append) attribute only allows data to be added; existing data cannot be modified, deleted, or truncated."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "shopt -s extglob コマンドを実行すると、bashで拡張パターンマッチング機能が有効になり、!(pattern) のような構文が使えるようになる。",
+      "en": "Executing the shopt -s extglob command enables extended pattern matching in bash, allowing syntax like !(pattern)."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "例えば rm !(file.txt) と実行することで、file.txt 以外のすべてのファイルを削除するといった高度な操作が可能になります。",
+      "en": "It allows advanced operations, for example, running 'rm !(file.txt)' to delete everything except file.txt."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "sysctlコマンドは、現在実行中のすべてのプロセスを強制終了させるためのコマンドである。",
+      "en": "The sysctl command is used to forcefully terminate all currently running processes."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "sysctlコマンドは、カーネルのパラメータを実行時に読み取ったり変更したりするためのシステム管理用コマンドです。",
+      "en": "The sysctl command is a system administration tool used to read and modify kernel parameters at runtime."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "lsattrコマンドは、Linuxの第二拡張ファイルシステム (ext2/ext3/ext4) におけるファイルの固有属性を表示する。",
+      "en": "The lsattr command lists the file attributes specific to the Second Extended File System (ext2/ext3/ext4) on Linux."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "chattrコマンドで設定されたイミュータブル属性(i)や追記専用属性(a)などを確認するために使用します。",
+      "en": "It is used to check attributes set by the chattr command, such as the immutable (i) or append-only (a) attributes."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "/proc/$$/environ ファイルには、システム全体のすべてのユーザーの環境変数が保存されている。",
+      "en": "The /proc/$$/environ file stores the environment variables for all users across the entire system."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "/procディレクトリ以下のプロセスIDのフォルダは、その特定のプロセス($$ は現在のシェル)が起動した時点での環境変数のみを保持しています。",
+      "en": "The process ID folders under /proc contain only the environment variables of that specific process ($$ being the current shell) at startup."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "dd if=/dev/urandom of=file bs=1M count=10 コマンドは、ランダムなデータで満たされた10MBのファイルを作成する。",
+      "en": "The dd if=/dev/urandom of=file bs=1M count=10 command creates a 10MB file filled with random data."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ddコマンドはブロック単位でデータをコピー・変換するツールであり、この構文はダミーファイルの作成に重宝します。",
+      "en": "The dd command copies and converts data in blocks; this syntax is highly useful for creating dummy files."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "tarコマンドで疎なファイル（スパースファイル）を効率的にアーカイブするには、-s オプションを使用する。",
+      "en": "To efficiently archive sparse files with the tar command, the -s option is used."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "スパースファイルを効率的に処理するには大文字の -S (または --sparse) オプションを使用します。",
+      "en": "To efficiently handle sparse files, the uppercase -S (or --sparse) option is used."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "bashにおいて、変数 ${VAR:-default} は、VARが未定義または空文字列の場合に default を返す。",
+      "en": "In bash, the variable expansion ${VAR:-default} returns 'default' if VAR is unset or null."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "シェルスクリプトで引数や環境変数が省略された際のデフォルト値を安全に設定するための一般的なイディオムです。",
+      "en": "It is a common idiom in shell scripts to safely set default values when arguments or environment variables are omitted."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "touch -m -t 202001010000 file コマンドは、ファイルの作成日時（Birth Time）を2020年1月1日に変更する。",
+      "en": "The touch -m -t 202001010000 file command changes the file's creation time (Birth Time) to January 1, 2020."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "-m オプションは変更日時（Modification time）を変更します。通常LinuxのAPIからファイルの作成日時を直接改ざんすることはできません。",
+      "en": "The -m option changes the Modification time. Standard Linux APIs generally do not allow arbitrarily changing the file birth time."
+    }
+  }
+]

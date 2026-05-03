@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Environment Variables (IMPORTANT: NEVER PUSH THESE TO GITHUB)
+.env
+api/.env
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+
+# User-specific configs
+.vscode/
+.idea/
+
+# Local database (if any)
+*.db
+*.sqlite

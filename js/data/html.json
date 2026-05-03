@@ -1,0 +1,1201 @@
+[{
+    "difficulty": 1,
+    "text": {
+      "ja": "HTMLの略称はHyperText Markup Languageである。",
+      "en": "The abbreviation HTML stands for HyperText Markup Language."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "HTMLはウェブページを作成するための標準的なマークアップ言語です。",
+      "en": "HTML is the standard markup language for creating web pages."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "pタグは、ウェブページに画像を表示するために使用される。",
+      "en": "The p tag is used to display images on a web page."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "pタグは段落（paragraph）を表します。画像を表示するにはimgタグを使用します。",
+      "en": "The p tag represents a paragraph. To display an image, the img tag is used."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "h1タグは、ページ内で最も重要な見出しを表すために使われる。",
+      "en": "The h1 tag is used to represent the most important heading on a page."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "見出しタグはh1からh6まであり、h1が最も高い階層を表します。",
+      "en": "Heading tags range from h1 to h6, with h1 representing the highest level of importance."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "HTML文書の基本的な構造は、head要素とbody要素の2つの主要なセクションに分かれている。",
+      "en": "The basic structure of an HTML document is divided into two main sections: the head element and the body element."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "headにはメタデータが入り、bodyにはブラウザに表示されるコンテンツが入ります。",
+      "en": "The head contains metadata, while the body contains the content displayed in the browser."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "brタグを使用すると、テキストの中で改行を挿入することができる。",
+      "en": "You can insert a line break within text by using the br tag."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "brタグは単独で改行を表す空要素です。",
+      "en": "The br tag is an empty element that represents a single line break."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "別のウェブページへのハイパーリンクを作成するためのタグはlinkタグである。",
+      "en": "The link tag is used to create a hyperlink to another web page."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ハイパーリンクの作成にはa要素を使用します。linkタグは外部リソースの読み込みに使われます。",
+      "en": "The a element is used for hyperlinks. The link tag is used for linking external resources."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "HTML要素に付与する属性(クラスやIDなど)は、必ず開始タグの中に記述する。",
+      "en": "Attributes assigned to HTML elements, such as classes or IDs, must always be written inside the opening tag."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "属性は要素に追加情報を提供するもので、開始タグに記述するルールがあります。",
+      "en": "Attributes provide additional information about an element and are always placed in the opening tag."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "imgタグは、終了タグを必要としない空要素(Void element)である。",
+      "en": "The img tag is a void element that does not require a closing tag."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "内部にテキストや他の要素を含まないため、終了タグは存在しません。",
+      "en": "It does not contain any text or other elements, so it does not have a closing tag."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "HTMLのコード内でコメントアウトを行う際は、<!-- と --> でテキストを囲む。",
+      "en": "To comment out text in HTML code, you enclose it between <!-- and -->."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "この記号で囲まれた部分はブラウザに表示されません。",
+      "en": "Text enclosed by these symbols will not be displayed by the browser."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "ページのタイトルを定義するtitleタグは、必ずbodyタグの中に配置する。",
+      "en": "The title tag, which defines the page title, must be placed inside the body tag."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "titleタグはページに表示されるコンテンツではなくメタデータであるため、headタグの中に配置します。",
+      "en": "Since the title tag represents metadata rather than visible content, it must be placed inside the head tag."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "ulタグは、項目の順序に意味がない順不同のリストを作成するために使用される。",
+      "en": "The ul tag is used to create an unordered list where the sequence of items does not matter."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "順不同のリストにはulを、順序付きのリストにはolを使用します。",
+      "en": "The ul tag is used for unordered lists, while the ol tag is used for ordered lists."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "strongタグは、囲んだテキストの重要性や深刻さを強調するために使われる。",
+      "en": "The strong tag is used to indicate that its contents have strong importance or seriousness."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ブラウザでは通常太字で表示され、意味的な重要性を持ちます。",
+      "en": "It is typically rendered in bold by browsers and carries semantic importance."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "HTMLはプログラミング言語の一種であり、条件分岐や複雑なデータ計算を行うことができる。",
+      "en": "HTML is a type of programming language capable of conditional branching and complex data calculations."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "HTMLは文書の構造を定義するマークアップ言語であり、計算などのプログラミングの機能は持ちません。",
+      "en": "HTML is a markup language for structuring documents, not a programming language with computational logic."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "HTML文書内で表(テーブル)を作成するためには、tableタグを使用する。",
+      "en": "To create a table within an HTML document, the table tag is used."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "tableタグの中にtr、th、tdタグを組み合わせて表を構築します。",
+      "en": "Tables are built by combining tr, th, and td tags inside a table tag."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "HTMLタグは、すべて小文字で記述しなければブラウザで全く機能しない。",
+      "en": "HTML tags will not function in browsers at all unless they are written entirely in lowercase."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "HTMLは大文字と小文字を区別しないため、大文字で書いても機能します（小文字が推奨されます）。",
+      "en": "HTML is not case-sensitive, so tags work even if capitalized, though lowercase is standard practice."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "aタグでリンク先のURLを指定するためには、href属性を使用する。",
+      "en": "To specify the destination URL of a link in an a tag, the href attribute is used."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "href属性に指定したURLが、ユーザーがクリックした際の遷移先になります。",
+      "en": "The URL specified in the href attribute becomes the destination when the user clicks the link."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "hrタグは、HTML5において水平線を引くための視覚的な装飾の意味しか持たない。",
+      "en": "In HTML5, the hr tag only has a visual, decorative meaning of drawing a horizontal line."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "HTML5では単なる線ではなく、段落レベルでのテーマの区切りというセマンティックな意味を持ちます。",
+      "en": "In HTML5, it represents a thematic break at the paragraph level rather than just a visual line."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "ユーザーからテキスト入力や選択を受け取るフォームを作成するには、formタグを使用する。",
+      "en": "To create a form that accepts text input or selections from the user, the form tag is used."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "formタグの中にinputやselectなどの要素を配置して入力フォームを作ります。",
+      "en": "Input forms are created by placing elements like input and select inside a form tag."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "すべてのHTML文書のルート(最も外側)は、必ずhtmlタグで囲まれていなければならない。",
+      "en": "The root (outermost part) of every HTML document must be enclosed in an html tag."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "html要素はドキュメントのルート要素であり、すべての他の要素を含みます。",
+      "en": "The html element is the root element of the document and contains all other elements."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "divタグは、テキストの一部を装飾するために使用されるインライン要素である。",
+      "en": "The div tag is an inline element used to decorate parts of text."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "divタグはブロックレベル要素であり、通常はレイアウトのまとまりを作るために使用されます。",
+      "en": "The div tag is a block-level element generally used to create layout groupings."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "HTML5における正しい文書型宣言(DOCTYPE)は <!DOCTYPE html> である。",
+      "en": "The correct document type declaration (DOCTYPE) in HTML5 is <!DOCTYPE html>."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "この短い宣言により、ブラウザはページを標準モードでレンダリングします。",
+      "en": "This short declaration triggers standard mode rendering in browsers."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "meta charset=\"UTF-8\" は、ウェブページの文字化けを防ぐための文字エンコーディングの指定である。",
+      "en": "meta charset=\"UTF-8\" specifies the character encoding to prevent garbled text on web pages."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "UTF-8は現在ウェブで最も広く使われている標準的なエンコーディングです。",
+      "en": "UTF-8 is currently the most widely used standard character encoding on the web."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "要素を一意に識別するためのid属性の値は、同じページ内で何度でも再利用することができる。",
+      "en": "The value of an id attribute, used to uniquely identify an element, can be reused multiple times on the same page."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "id属性の値は、1つのHTMLドキュメント内で完全に一意でなければなりません。",
+      "en": "The value of an id attribute must be strictly unique within a single HTML document."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "class属性の値は、ページ内の複数の要素に対して同じものを指定することができる。",
+      "en": "The value of a class attribute can be applied to multiple elements within the same page."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "クラスは共通のスタイルや動作を複数の要素に適用するために使われます。",
+      "en": "Classes are designed to apply shared styles or behaviors to multiple elements."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "src属性は、aタグにおいてハイパーリンクのジャンプ先を指定するために使用される。",
+      "en": "The src attribute is used in the a tag to specify the destination of a hyperlink."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "aタグのリンク先はhref属性で指定します。src属性は画像やスクリプトなどの読み込みに使われます。",
+      "en": "Hyperlink destinations use the href attribute. The src attribute is used for embedding media like images or scripts."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "imgタグにおいて、alt属性を省略してもHTMLの文法チェック(バリデーション)でエラーになることはない。",
+      "en": "In an img tag, omitting the alt attribute will not result in a validation error in HTML syntax checks."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "アクセシビリティ上の理由から、img要素においてalt属性は必須とされています。",
+      "en": "For accessibility reasons, the alt attribute is practically mandatory on img elements."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "aタグに target=\"_blank\" を指定すると、リンク先のページが新しいタブやウィンドウで開かれる。",
+      "en": "Specifying target=\"_blank\" on an a tag will open the linked page in a new tab or window."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ユーザーを現在のページに残したまま別のページを見せたい場合に使用されます。",
+      "en": "This is used when you want to show a user a different page while keeping them on the current one."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "iframeタグは、現在のページ内にYouTubeの動画や地図など、別のWebページを埋め込むために使用される。",
+      "en": "The iframe tag is used to embed another web page, such as a YouTube video or a map, within the current page."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "インラインフレームを作成し、外部のコンテンツを安全に表示することができます。",
+      "en": "It creates an inline frame allowing external content to be displayed securely."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "sectionタグを使用したブロックの中には、必ずh1〜h6の見出しタグを含めなければHTMLの文法エラーになる。",
+      "en": "Failing to include an h1-h6 heading tag inside a section block will result in an HTML syntax error."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "見出しを含めることは推奨されますが、必須ではなく文法エラーにはなりません。",
+      "en": "Including a heading is strongly recommended, but it is not strictly required and won't cause a syntax error."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "spanタグは、特定の意味を持たずテキストの一部をスタイル付けする際に便利なインライン要素である。",
+      "en": "The span tag is an inline element with no semantic meaning, useful for styling parts of text."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "CSSでの装飾やJavaScriptの操作対象とするための汎用的なコンテナとして機能します。",
+      "en": "It acts as a generic container for CSS styling or JavaScript manipulation."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "JavaScriptを読み込むためのscriptタグは、必ずheadタグの内部に記述しなければならない。",
+      "en": "The script tag used to load JavaScript must always be placed inside the head tag."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ページの読み込み速度を最適化するために、bodyタグ内の末尾に配置されることも一般的です。",
+      "en": "It is also commonly placed at the end of the body tag to optimize page loading speed."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "HTML5の仕様では、headerタグやfooterタグは1つのページ内にそれぞれ1つしか配置できない。",
+      "en": "According to the HTML5 specification, only one header tag and one footer tag can be placed on a single page."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ページ全体だけでなく、個々のarticleやsectionのヘッダーやフッターとしても複数回使用できます。",
+      "en": "They can be used multiple times, not just for the page, but also within individual articles or sections."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "labelタグのfor属性は、関連付けるinput要素のname属性の値と一致させる必要がある。",
+      "en": "The for attribute of a label tag must match the name attribute of its associated input element."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "label要素は、input要素のid属性の値と一致させることで関連付けられます。",
+      "en": "A label element is associated by matching its for attribute with the id attribute of an input element."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "フォームにおいて、ユーザーに複数の選択肢から複数を選ばせるには、input type=\"radio\" を使用する。",
+      "en": "In forms, input type=\"radio\" is used to allow users to select multiple options from a set."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "radioは単一選択用です。複数選択を可能にするにはcheckboxを使用します。",
+      "en": "Radio buttons are for single selections. Checkboxes are used to allow multiple selections."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "navタグは、ウェブサイト内の主要なナビゲーションメニューを囲むために使用される。",
+      "en": "The nav tag is used to enclose the primary navigation menus within a website."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "サイト内の主要なリンク群であることをスクリーンリーダーや検索エンジンに伝えます。",
+      "en": "It communicates to screen readers and search engines that the enclosed links are major navigation elements."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "audioタグやvideoタグにcontrols属性を指定すると、ブラウザ標準の再生・停止ボタンなどが表示される。",
+      "en": "Adding the controls attribute to audio or video tags displays the browser's standard play and pause buttons."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "これにより、カスタムUIを作らなくてもユーザーがメディアを操作できるようになります。",
+      "en": "This allows users to control the media without requiring a custom user interface."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "textarea要素の中に初期値を設定する場合、input要素と同様にvalue属性を使用する。",
+      "en": "To set an initial value in a textarea element, you use the value attribute just like in an input element."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "textareaの初期値は、開始タグと終了タグの間に直接テキストとして記述します。",
+      "en": "The initial value of a textarea is written directly as text between its opening and closing tags."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "placeholder属性は、入力フィールド内に薄い文字で短いヒントや入力例を表示するために使われる。",
+      "en": "The placeholder attribute is used to display a short hint or example in light text inside an input field."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ユーザーがテキストを入力し始めると、このヒント文字は自動的に消えます。",
+      "en": "This hint text disappears automatically once the user starts typing."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "mainタグは、ウェブページの中で中心となる独自のコンテンツを囲むために使用される。",
+      "en": "The main tag is used to enclose the unique, primary content of a web page."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "1つのドキュメントに表示できるmain要素は原則として1つだけです。",
+      "en": "As a general rule, there should only be one visible main element per document."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "画像などのコンテンツを囲むfigureタグを使う場合、キャプションを表すfigcaptionタグを必ずセットで含めなければならない。",
+      "en": "When using a figure tag to enclose content like images, you must always include a figcaption tag as a set."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "figcaptionはキャプションを追加するためのものであり、省略しても文法上問題ありません。",
+      "en": "The figcaption is for adding a caption and omitting it is completely valid syntactically."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "form要素内にあるbutton要素は、type属性を明記しない場合、自動的に type=\"submit\" として振る舞う。",
+      "en": "A button element inside a form element automatically behaves as type=\"submit\" if the type attribute is not explicitly specified."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "そのため、単なるボタンとして使う場合は意図せぬ送信を防ぐために type=\"button\" の指定が必要です。",
+      "en": "Therefore, to use it as a simple button, you must specify type=\"button\" to prevent unintended form submissions."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "scriptタグに async 属性を指定すると、HTMLの構文解析をブロックせずに非同期でスクリプトが読み込まれ実行される。",
+      "en": "Specifying the async attribute on a script tag loads and executes the script asynchronously without blocking HTML parsing."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ダウンロードが完了したスクリプトから順次実行されるため、実行順序は保証されません。",
+      "en": "Scripts are executed sequentially as soon as they finish downloading, meaning execution order is not guaranteed."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "HTML5の仕様では、a要素の中にさらに別のa要素を入れ子(ネスト)にして記述することが許可されている。",
+      "en": "The HTML5 specification allows an a element to be nested inside another a element."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "リンクなどのインタラクティブコンテンツの中に、別のインタラクティブコンテンツをネストすることは禁止されています。",
+      "en": "Nesting interactive content, such as a link inside another link, is strictly prohibited."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "html要素に適切な lang 属性を指定しないと、スクリーンリーダーが誤った言語のアクセントでページを読み上げる可能性がある。",
+      "en": "If an appropriate lang attribute is not specified on the html element, screen readers may read the page with an incorrect language accent."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "検索エンジンの言語判定やブラウザの自動翻訳機能にも悪影響を与えます。",
+      "en": "It also negatively impacts search engine language detection and browser auto-translation features."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "link rel=\"preload\" は、重要度の低いリソースの読み込みを後回し(遅延)にするために使用される。",
+      "en": "link rel=\"preload\" is used to delay the loading of low-priority resources."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "preloadは、現在のページで確実に必要となるリソースを優先的に早く読み込ませるための機能です。",
+      "en": "Preload is a feature used to prioritize and fetch resources that will definitively be needed for the current page."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "picture要素とsource要素を使用すると、ユーザーの画面サイズや解像度に応じて異なる画像ファイルをブラウザに選択させることができる。",
+      "en": "Using the picture and source elements allows the browser to select different image files based on the user's screen size or resolution."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "これにより、モバイル端末に不要に大きな画像を読み込ませることを防げます。",
+      "en": "This prevents loading unnecessarily large images on mobile devices."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ol要素に start 属性を使用すると、リストの番号を1以外の任意の数値から開始させることができる。",
+      "en": "Using the start attribute on an ol element allows the list numbering to begin at any number other than 1."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ページをまたいだランキングの続きを表示する場合などに便利です。",
+      "en": "This is useful when continuing a ranked list across multiple pages."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "time要素の datetime 属性は、人間が読むテキストとは別に、機械(検索エンジンなど)が正確に解釈できる形式で日時を提供するために使われる。",
+      "en": "The datetime attribute of the time element is used to provide dates and times in a machine-readable format, separate from the human-readable text."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "これにより、スケジュールの連携や検索結果のリッチスニペット表示がしやすくなります。",
+      "en": "This facilitates calendar integrations and rich snippet displays in search results."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "要素に付与した data- から始まるカスタムデータ属性は、JavaScriptの dataset プロパティを通じて簡単に値を取得・設定できる。",
+      "en": "Custom data attributes starting with data- assigned to elements can be easily accessed and modified via JavaScript's dataset property."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "HTML内にスクリプト用のデータを安全に保持するための標準的な方法です。",
+      "en": "It is the standard method for safely storing data for scripts directly within HTML."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "一つのform要素の中に、さらに別のform要素をネストすることは有効なHTMLの記述として認められている。",
+      "en": "Nesting another form element inside a single form element is recognized as valid HTML markup."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "form要素の中にform要素を配置することは仕様で禁止されており、予期せぬ動作を引き起こします。",
+      "en": "Placing a form element inside another form element is forbidden by the specification and causes unpredictable behavior."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "details要素とsummary要素を組み合わせると、JavaScriptを一切記述せずに、クリックで開閉できるアコーディオンUIを作成できる。",
+      "en": "Combining details and summary elements allows you to create a clickable accordion UI without writing any JavaScript."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "summaryが常に表示される見出しとなり、クリックするとdetailsの残りの内容が展開されます。",
+      "en": "The summary acts as a visible heading, and clicking it expands the rest of the details content."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "HTML5では、style要素をbody要素の中に記述することは仕様により完全に禁止されており、必ずhead内に書かなければならない。",
+      "en": "In HTML5, placing a style element inside the body element is completely forbidden by the specification and must strictly be inside the head."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "通常はhead内に配置しますが、フローコンテンツとしてbody内に記述することも仕様上許可されています。",
+      "en": "While typically placed in the head, it is actually permitted by the specification to be inside the body as flow content."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "baseタグを使用すると、ページ内の相対URLの基準となるパスを指定できるが、1つのページ内で複数回使用することができる。",
+      "en": "The base tag allows you to specify a base path for relative URLs, and it can be used multiple times within a single page."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "baseタグはドキュメント内に1つだけしか配置できません。",
+      "en": "Only one base tag is allowed per document."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "dl、dt、dd要素で作られる記述リスト(用語定義リスト)において、dt要素とdd要素は必ず1対1のペアで記述しなければならない。",
+      "en": "In a description list made of dl, dt, and dd elements, the dt and dd elements must always be written in strictly one-to-one pairs."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "1つの用語(dt)に複数の説明(dd)をつけたり、複数の用語(dt)に1つの説明(dd)をつけることも可能です。",
+      "en": "It is perfectly valid to associate one term (dt) with multiple descriptions (dd) or multiple terms with one description."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "tabindex属性に負の値(例: -1)を指定すると、その要素はスクリプトからはフォーカス可能だが、キーボードのTabキーでの順次フォーカス移動からは除外される。",
+      "en": "Setting a negative value (e.g., -1) to the tabindex attribute makes the element focusable via scripts, but excludes it from sequential keyboard Tab focus navigation."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "モーダルウィンドウなどを開いた際、JavaScriptで動的にフォーカスを当てる目的でよく使用されます。",
+      "en": "This is often used to dynamically set focus via JavaScript, such as when opening a modal window."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "img要素の loading=\"lazy\" 属性の遅延読み込み機能は、CSSの background-image で指定された背景画像にも同様に適用される。",
+      "en": "The lazy loading feature of the loading=\"lazy\" attribute on img elements applies equally to background images specified via CSS background-image."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "loading属性はimg要素やiframe要素専用であり、CSSの背景画像には影響しません。",
+      "en": "The loading attribute is exclusive to img and iframe elements and does not affect CSS background images."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "input type=\"number\" を指定すると、いかなるブラウザでもユーザーは絶対に数字以外の文字を入力できなくなる。",
+      "en": "Specifying input type=\"number\" guarantees that users will absolutely not be able to type any non-numeric characters in any browser."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "一部のブラウザでは指数表記の「e」や記号の入力が可能なため、完全な入力制限にはなりません。",
+      "en": "Some browsers allow characters like 'e' for exponential notation or symbols, so it is not a perfect restriction."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "tableタグ内のth要素における scope 属性は、スクリーンリーダーに対してその見出しがどのセルに適用されるかを明示する役割がある。",
+      "en": "The scope attribute on a th element within a table tag serves to explicitly indicate to screen readers which cells the heading applies to."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "colやrowを指定することで、表の構造が視覚障害者にも正確に伝わります。",
+      "en": "Specifying col or row ensures the table structure is accurately conveyed to visually impaired users."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ページロード時に自動的にフォーカスを当てる autofocus 属性は、1つのページ内で複数の要素に指定した場合、それらすべてが同時にフォーカス状態になる。",
+      "en": "If the autofocus attribute is applied to multiple elements on a page, all of them will be in a focused state simultaneously upon page load."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "フォーカスを持てる要素は常に1つだけであり、複数指定した場合は通常最初の要素にのみ適用されます。",
+      "en": "Only one element can hold focus at a time; if applied to multiple, typically only the first one gets focused."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "blockquote要素は、文中の短いテキストの一部をインラインで引用する場合に使用される。",
+      "en": "The blockquote element is used to quote a short snippet of text inline within a sentence."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "短いインラインの引用には q 要素を使用し、blockquote は段落ごとのまとまった引用に使われます。",
+      "en": "The q element is used for short inline quotes, whereas blockquote is used for block-level quotations."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "a要素の href 属性に空文字列 \"\" を指定した場合、現在のページのURLに対する相対リンクとして解釈され、クリックするとページがリロードされる。",
+      "en": "Specifying an empty string \"\" in the href attribute of an a element is interpreted as a relative link to the current page's URL, causing a reload when clicked."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ブラウザは空のパスを現在のURLへ解決するため、事実上の再読み込みとして機能します。",
+      "en": "The browser resolves the empty path to the current URL, effectively acting as a page reload."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "p要素の中にブロックレベル要素である div 要素を記述すると、ブラウザのパーサーは自動的に p 要素の終了タグを補完し、要素を分割して解釈する。",
+      "en": "If a block-level div element is written inside a p element, the browser parser automatically infers the closing p tag and splits the elements."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "p要素はフローコンテンツを含むことができないため、divが出現した時点で暗黙的に閉じられます。",
+      "en": "Since a p element cannot contain block-level flow content, it is implicitly closed the moment a div appears."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "セキュリティとユーザビリティの観点から、HTML5の仕様において meta http-equiv=\"refresh\" を用いたクライアントサイドのリダイレクトは完全に廃止された。",
+      "en": "From a security and usability perspective, client-side redirects using meta http-equiv=\"refresh\" have been completely deprecated and removed in the HTML5 specification."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "サーバーサイドでのリダイレクトが推奨されていますが、metaタグによるリフレッシュ自体は依然として仕様に存在し有効です。",
+      "en": "Server-side redirects are highly recommended, but meta refresh still exists in the specification and remains valid."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "template要素の内部に記述されたHTMLコンテンツは、ページの読み込み時にはレンダリングされず、JavaScriptでインスタンス化されるまでDOM上に表示されない。",
+      "en": "HTML content written inside a template element is not rendered during page load and remains hidden from the DOM until instantiated via JavaScript."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "不要なリソース読み込みも発生しないため、クライアントサイドでの動的なコンポーネント生成に最適です。",
+      "en": "It prevents unnecessary resource loading, making it ideal for dynamically generating client-side components."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "複数のscript要素に defer 属性を指定した場合、それらのスクリプトはHTMLドキュメント内に記述された順番通りに実行されることが仕様で保証されている。",
+      "en": "When multiple script elements are given the defer attribute, the specification guarantees they will be executed in the exact order they appear in the HTML document."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "async属性とは異なり、deferはDOM構築後に記述順で実行されるため、依存関係のあるスクリプトに安全です。",
+      "en": "Unlike async, deferred scripts run after DOM construction in their sequential order, making it safe for dependent scripts."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "iframe要素の sandbox 属性に空の文字列 (sandbox=\"\") を指定すると、iframe内のコンテンツに対するすべてのセキュリティ制限が解除される。",
+      "en": "Providing an empty string to the sandbox attribute of an iframe element (sandbox=\"\") removes all security restrictions on the iframe's content."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "逆に、空の文字列を指定するとスクリプト実行やフォーム送信など、利用可能なすべての制限が最も厳格に適用されます。",
+      "en": "Conversely, an empty string applies the strictest possible restrictions, disabling scripts, forms, and more."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "HTML5の仕様において、要素の id 属性の値は必ずアルファベットから開始しなければならず、数字から始めてはならない。",
+      "en": "According to the HTML5 specification, the value of an element's id attribute must start with a letter and cannot start with a number."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "HTML4ではアルファベットから始める必要がありましたが、HTML5からは少なくとも1文字あれば数字から開始しても有効です。",
+      "en": "While HTML4 required starting with a letter, HTML5 allows IDs to start with a number as long as it has at least one character."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "button要素の type 属性を省略した場合、form要素の外部に配置されていれば、クリック時に自動的にページをリロードする動作が仕様で定められている。",
+      "en": "If the type attribute of a button element is omitted and it is placed outside a form, the specification dictates it automatically reloads the page when clicked."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "form外のbuttonはデフォルトで何も動作を引き起こしません。リロードする仕様はありません。",
+      "en": "A button outside a form does not trigger any default action; there is no specification for it to reload the page."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "pre要素内では改行や空白文字がそのままレンダリングされるため、< や > などのHTMLエンティティをエスケープせずに記述してもHTMLタグとして解釈されない。",
+      "en": "Because whitespace and line breaks are rendered as-is within a pre element, unescaped HTML entities like < and > are not interpreted as HTML tags."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "pre要素は空白を保持するだけであり、内部のテキストは依然としてパースされるため、タグとして解釈されたくない場合はエスケープが必須です。",
+      "en": "The pre element only preserves whitespace; its contents are still parsed, so escaping is mandatory to prevent them from becoming tags."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "link rel=\"canonical\" は、類似または重複するコンテンツが存在する場合に、検索エンジンに対して正規のURLがどれであるかを示すために使用される。",
+      "en": "link rel=\"canonical\" is used to indicate to search engines which URL is the authoritative one when similar or duplicate content exists."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "これにより、検索順位の評価が分散するのを防ぐことができます。",
+      "en": "This helps consolidate search ranking signals and prevents SEO dilution."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "ウェブサイトのセキュリティを高める Content Security Policy (CSP) は、HTTPヘッダーだけでなく、HTMLの meta タグを使用しても指定することができる。",
+      "en": "Content Security Policy (CSP), which enhances website security, can be specified using an HTML meta tag in addition to HTTP headers."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "http-equiv=\"Content-Security-Policy\" を使用して、スクリプトの実行元などを制限できます。",
+      "en": "You can use http-equiv=\"Content-Security-Policy\" to restrict sources for scripts and other resources."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "1つのHTMLドキュメント内で複数の header 要素を使用する場合、仕様上、それらのうちの少なくとも1つは必ず body 要素の直接の子要素でなければならない。",
+      "en": "When using multiple header elements in a single HTML document, the specification mandates that at least one of them must be a direct child of the body element."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "header要素はarticleやsectionの中に複数配置可能であり、bodyの直接の子である必要性は全くありません。",
+      "en": "Header elements can be placed inside articles or sections; there is no requirement for one to be a direct child of the body."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "img 要素に crossorigin=\"anonymous\" を指定すると、サーバーからCORSヘッダーが返されなくても、強制的にCanvasの汚染(tainted)を防いで画像を描画できる。",
+      "en": "Specifying crossorigin=\"anonymous\" on an img element forcibly prevents Canvas tainting and draws the image even if the server does not return CORS headers."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "crossoriginを指定してCORSヘッダーがサーバーから提供されない場合、画像の読み込み自体がブラウザによってブロックされます。",
+      "en": "If crossorigin is specified and the server doesn't provide CORS headers, the browser will block the image from loading entirely."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "input type=\"file\" 要素は、デフォルトの状態でユーザーがディレクトリ(フォルダ)全体を選択し、中のファイルを一括でアップロードできるようになっている。",
+      "en": "An input type=\"file\" element allows users to select an entire directory (folder) and upload all its contents by default."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ディレクトリを選択可能にするには、非標準ですが広くサポートされている webkitdirectory 属性を追加する必要があります。",
+      "en": "To allow directory selection, you must add the widely-supported, non-standard webkitdirectory attribute."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "HTML5のドラッグ＆ドロップAPIにおいて、要素をユーザーがドラッグできるようにするには draggable=\"true\" 属性を指定する。",
+      "en": "In the HTML5 Drag and Drop API, setting the draggable=\"true\" attribute makes an element draggable by the user."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "img要素やa要素はデフォルトでドラッグ可能ですが、他の要素(divなど)にはこの属性が必要です。",
+      "en": "While images and links are draggable by default, other elements like div require this attribute."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "form要素に novalidate 属性を指定すると、ブラウザが標準で提供するフォーム入力値の検証(バリデーション)機能が無効になる。",
+      "en": "Adding the novalidate attribute to a form element disables the browser's default form validation features."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "これにより、JavaScriptを用いたカスタムのバリデーションUIを実装する際に、ブラウザの標準UIと競合するのを防げます。",
+      "en": "This prevents conflicts with the browser's default UI when implementing custom validation using JavaScript."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "スクリプトが無効な環境向けの代替コンテンツを提供する noscript 要素は、head要素内とbody要素内のどちらにも配置することが可能である。",
+      "en": "The noscript element, which provides fallback content for environments where scripts are disabled, can be placed in both the head and body elements."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ただし、head内に配置した場合は、link、style、meta要素のみを含めることができます。",
+      "en": "However, when placed inside the head, it can only contain link, style, and meta elements."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "label要素の内部に、input要素とbutton要素など複数のインタラクティブな要素を含めることは、アクセシビリティ向上のためHTML仕様で推奨されている。",
+      "en": "Including multiple interactive elements, such as an input and a button, inside a label element is recommended by the HTML specification to improve accessibility."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "label要素内にはインタラクティブな要素を1つしか含めることができず、複数含めることは仕様違反です。",
+      "en": "A label element can contain only one interactive element; including multiple is a violation of the specification."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "address要素は、企業の本社所在地や任意の郵送先住所など、あらゆる物理的住所をマークアップするための汎用的なタグである。",
+      "en": "The address element is a general-purpose tag used to markup any physical address, such as a company's headquarters or a random mailing address."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "address要素は、その親のarticleやbodyに対する「連絡先情報」を表すためだけに使用され、単なる住所の装飾には使いません。",
+      "en": "It is strictly used to provide contact information for its nearest article or body ancestor, not just for formatting any random postal address."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "fieldset要素の中でグループのキャプション(見出し)を定義する legend 要素は、必ずfieldsetの最初の子要素として配置しなければならない。",
+      "en": "The legend element, which defines a caption for a fieldset group, must be placed strictly as the first child of the fieldset element."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "途中に別の要素が挟まると、ブラウザはそれを正しく枠線の見出しとしてレンダリングしません。",
+      "en": "If other elements precede it, browsers will not correctly render it as the caption on the group's border."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "ブラウザのHTMLパーサーは、table要素の直下にscript要素が記述されている場合、それを不正とみなし、tableの直前にホイスティング（移動）する。",
+      "en": "When an HTML parser encounters a script element as a direct child of a table element, it deems it invalid and hoists (moves) it to immediately before the table."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "script要素やtemplate要素はtableの直下に配置することが仕様で許可されており、ホイスティング(foster parenting)は発生しません。",
+      "en": "The specification explicitly allows script and template elements directly inside a table, so foster parenting does not occur for them."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "最近の主要なブラウザでは、target=\"_blank\" を指定したリンクに rel=\"noopener\" を付与しなくても、デフォルトで window.opener が null として扱われる。",
+      "en": "In modern major browsers, links with target=\"_blank\" implicitly behave as if rel=\"noopener\" is set, treating window.opener as null by default."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "パフォーマンスとセキュリティ(Tabnabbing攻撃)の観点から、ブラウザのデフォルト挙動が変更されました。",
+      "en": "The default behavior was changed in browsers to improve performance and prevent security issues like Tabnabbing."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "HTMLの文法上、自己終了タグを書く際にスラッシュの前にスペースを入れること（例: <br />）は、仕様違反として扱われる。",
+      "en": "In HTML syntax, inserting a space before the slash in a self-closing tag (e.g., <br />) is treated as a specification violation."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "HTML5ではスペースを入れても入れなくても完全に合法であり、XHTML互換のためにスペースを入れるスタイルも許容されます。",
+      "en": "In HTML5, it is perfectly legal to either include or omit the space; inserting it for XHTML compatibility is completely acceptable."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "input type=\"password\" に maxlength 属性が指定されている場合、ユーザーが上限を超える文字列をペーストすると、ブラウザは自動的に上限文字数まで切り詰めて入力させる。",
+      "en": "If an input type=\"password\" has a maxlength attribute, and a user pastes a string exceeding the limit, the browser automatically truncates it to the maximum length."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "maxlength属性はユーザーの入力およびペースト操作をブラウザレベルで強制的に制限します。",
+      "en": "The maxlength attribute forces the browser to restrict both typing and pasting operations at the UI level."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "CSSにおいて、html要素に背景色が指定されず、body要素にのみ背景色が指定された場合、ブラウザはそのbodyの背景色をビューポート(キャンバス)全体に適用する特例を持つ。",
+      "en": "In CSS, if no background color is set on the html element but one is set on the body element, the browser has a special rule to apply the body's background color to the entire viewport (canvas)."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "これにより、bodyの高さが画面に満たない場合でも、画面全体がその色で塗りつぶされます。",
+      "en": "Because of this, the entire screen is filled with that color even if the body's height is less than the viewport."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "input type=\"email\" のフィールドは、multiple 属性を付与することで、カンマ区切りによる複数のメールアドレスの入力をネイティブでサポートする。",
+      "en": "An input type=\"email\" field natively supports entering multiple comma-separated email addresses by adding the multiple attribute."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "この属性により、ブラウザの標準バリデーションが複数のアドレスのリストとして検証を行うようになります。",
+      "en": "This attribute instructs the browser's built-in validation to verify the input as a list of multiple addresses."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "HTML5のパーサーアルゴリズムでは、title要素の内部に書かれた script タグは実行可能なスクリプトとして解釈されず、単なるテキストとして扱われる。",
+      "en": "According to the HTML5 parser algorithm, a script tag written inside a title element is not parsed as executable code, but simply treated as plain text."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "titleやtextareaなどの要素(RCDATA)内では、エスケープ文字以外のタグはパースされません。",
+      "en": "Inside elements like title and textarea (RCDATA), tags are ignored and treated as text, except for character references."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "meter要素は、ファイルのダウンロードやタスクの進行状況を示す「プログレスバー」として使用することがHTML仕様で推奨されている。",
+      "en": "The HTML specification recommends using the meter element as a progress bar to indicate task completion or file downloads."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "進行状況にはprogress要素を使用します。meterはディスク使用量のような「既知の範囲内のスカラー値」を表すためのものです。",
+      "en": "The progress element is for task completion. The meter element is meant for scalar measurements within a known range, like disk usage."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "a要素の ping 属性を使用すると、ユーザーがリンクをクリックした際に、指定したURLに対してブラウザが非同期でPOSTリクエストを背後で送信する。",
+      "en": "Using the ping attribute on an a element causes the browser to send an asynchronous POST request in the background to the specified URL when the user clicks the link."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "これは主にアクセス解析やトラッキングの目的で、リダイレクトを挟まないスムーズな遷移を実現するために用意されました。",
+      "en": "It was introduced primarily for analytics and tracking, allowing a smooth transition without intermediate redirects."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "style要素に scoped 属性を指定すると、そのスタイルが親要素とその子孫のみに適用されるという機能が、現在のすべてのモダンブラウザで標準としてサポートされている。",
+      "en": "The scoped attribute on a style element, which restricts styles strictly to its parent and descendants, is fully supported as a standard feature in all modern browsers today."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "scoped属性はHTML5.1で非推奨・廃止され、ブラウザも実装を削除したため現在では機能しません。",
+      "en": "The scoped attribute was deprecated and removed in HTML5.1, and browsers have dropped its implementation, so it no longer works."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "table要素内に直接 tr タグを記述し、tbodyタグを省略した場合でも、ブラウザのHTMLパーサーは自動的にtbody要素を補完してDOMツリーを構築する。",
+      "en": "Even if you write tr tags directly inside a table element and omit the tbody tag, the browser's HTML parser will automatically inject a tbody element when constructing the DOM tree."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "そのため、CSSセレクタやJavaScriptで childNodes を操作する際に階層がズレる原因となることがあります。",
+      "en": "This can cause unexpected hierarchy shifts when targeting elements with CSS child selectors or JavaScript's childNodes."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "アポストロフィを表すHTMLエンティティ &apos; は、HTML4.01の仕様から標準定義されており、すべての古いレガシーブラウザでも正しく表示される。",
+      "en": "The HTML entity &apos; for an apostrophe has been standard since HTML4.01 and renders correctly even in all ancient legacy browsers."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "&apos; はXML/XHTMLで定義されたものであり、HTML4には存在せず、IE8などの古いブラウザでは正しく表示されませんでした。",
+      "en": "&apos; was defined in XML/XHTML, not HTML4, and failed to render correctly in older browsers like IE8."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "autofocus 属性は、JavaScriptなどを用いてページロード後に動的にDOMへ挿入された要素に対しても自動的に機能し、フォーカスを当てる。",
+      "en": "The autofocus attribute automatically functions and sets focus even on elements that are dynamically inserted into the DOM via JavaScript after page load."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "autofocusはドキュメントの初期読み込み時にのみ評価されるため、動的挿入された要素には JavaScript の focus() メソッドを呼ぶ必要があります。",
+      "en": "Since autofocus is only evaluated during initial document load, dynamically inserted elements require calling the focus() method in JavaScript."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "object要素の内部にフォールバック用のコンテンツ(代替テキストなど)を記述した場合、指定されたリソースのダウンロードが試行され、処理に失敗した後でのみフォールバックが表示される。",
+      "en": "When fallback content is written inside an object element, it is only displayed after the browser attempts to download the specified resource and fails to process it."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "リソースが正常に表示できる場合は、内部のフォールバックコンテンツはDOM上に存在してもレンダリングされません。",
+      "en": "If the resource is successfully displayed, the internal fallback content is not rendered, even though it exists in the DOM."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "a要素に rel=\"noreferrer\" を指定すると、遷移先にHTTPリファラーが送信されないだけでなく、暗黙的に rel=\"noopener\" と同じ効果も適用される。",
+      "en": "Specifying rel=\"noreferrer\" on an a element not only prevents the HTTP Referer from being sent but also implicitly applies the same effect as rel=\"noopener\"."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "noreferrerを指定すると新しく開かれたウィンドウの window.opener も確実に null に設定されます。",
+      "en": "Using noreferrer guarantees that window.opener in the newly opened window is set to null."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "form要素の enctype=\"text/plain\" は、送信データが純粋なテキストになるためセキュリティ上の懸念がなく、実稼働環境でのフォーム送信に最も推奨されるフォーマットである。",
+      "en": "The enctype=\"text/plain\" attribute on a form element is the most recommended format for production environments because it sends pure text and poses no security concerns."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "text/plain は人間が読むためのデバッグ用途として追加されましたが、機械的パースが困難で予測不可能な動作を生むため、本番環境での使用は推奨されません。",
+      "en": "It was introduced for human-readable debugging but is not recommended for production because it lacks a reliable machine-parsing mechanism."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "JavaScriptの DOMParser を用いてHTML文字列をドキュメントとしてパースした場合、そこに含まれるscript要素はパース完了と同時に自動的に実行される。",
+      "en": "When an HTML string is parsed into a document using JavaScript's DOMParser, any script elements contained within it are automatically executed upon completion of parsing."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "DOMParser で生成されたドキュメント内のスクリプトは、セキュリティ上の理由により実行されないように仕様で定められています。",
+      "en": "The specification mandates that scripts inside documents created by DOMParser are flagged as unexecutable for security reasons."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "HTML5文書内にインラインでSVGを記述する際、svg要素に xmlns=\"http://www.w3.org/2000/svg\" 属性を明記しないと、パーサーがエラーを起こし描画に失敗する。",
+      "en": "When writing inline SVG within an HTML5 document, failing to include the xmlns=\"http://www.w3.org/2000/svg\" attribute on the svg element causes a parser error and rendering failure."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "HTML5パーサーは svg タグを検出すると自動的に適切な名前空間を割り当てるため、xmlns属性は省略可能です。",
+      "en": "The HTML5 parser automatically assigns the correct namespace when it encounters the svg tag, making the xmlns attribute completely optional."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "details要素内の summary 要素に表示されるデフォルトの三角形マーカーは、CSSの ::details-content 疑似要素を使用することでカスタマイズできる。",
+      "en": "The default triangular marker displayed on a summary element inside a details element can be customized using the CSS ::details-content pseudo-element."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "マーカーのスタイル変更には、::marker 疑似要素を使用するか、一部のブラウザでは ::-webkit-details-marker を使用します。",
+      "en": "To style the marker, you use the ::marker pseudo-element, or in some browsers, ::-webkit-details-marker."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "iframe要素に src 属性と srcdoc 属性の両方が指定された場合、ブラウザは srcdoc の内容を優先してレンダリングする。",
+      "en": "If an iframe element has both a src attribute and a srcdoc attribute specified, the browser will prioritize and render the content of srcdoc."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "srcdocがサポートされているブラウザではsrcは無視され、サポートされていない古いブラウザでのみsrcがフォールバックとして使われます。",
+      "en": "Browsers supporting srcdoc will ignore src, using src only as a fallback for older browsers that do not support srcdoc."
+    }
+  }
+]

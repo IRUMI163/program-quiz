@@ -1,0 +1,537 @@
+/* ============================================================
+   Design Tokens (CSS Variables)
+   ============================================================ */
+:root {
+    /* Colors */
+    --primary: #70D6FF;
+    --true: #70D6FF;
+    --false: #FF70A6;
+    --accent: #FFD670;
+
+    /* Surfaces */
+    --bg: #F8FAFC;
+    --surface: rgba(255, 255, 255, 0.6);
+    --surface-strong: rgba(255, 255, 255, 0.8);
+
+    /* Text */
+    --text: #334155;
+    --text-sub: #94A3B8;
+
+    /* Borders & Effects */
+    --border: rgba(255, 255, 255, 0.8);
+    --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    --radius: 1.5rem;
+    --blur-amount: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0f172a;
+        --surface: rgba(15, 23, 42, 0.6);
+        --surface-strong: rgba(15, 23, 42, 0.8);
+        --text: #f1f5f9;
+        --text-sub: #cbd5e1;
+        --border: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* ============================================================
+   Base & Reset
+   ============================================================ */
+/* Global Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none !important;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans JP', sans-serif;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* ============================================================
+   Background Animation
+   ============================================================ */
+.background-overlay {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.background-overlay::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200vmax;
+    height: 200vmax;
+    background: conic-gradient(from 0deg, var(--primary), #FFD670, var(--false), var(--primary));
+    transform: translate(-50%, -50%);
+    animation: rotateBG 20s linear infinite;
+    opacity: 0.15;
+    will-change: transform;
+}
+
+.background-overlay::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+@keyframes rotateBG {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* ============================================================
+   View Transitions
+   ============================================================ */
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: 0.4s;
+}
+
+/* ============================================================
+   Layout
+   ============================================================ */
+.app-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 100px 20px 20px;
+    z-index: 10;
+    position: relative;
+    pointer-events: auto;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* ============================================================
+   Header & Icon Buttons
+   ============================================================ */
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    z-index: 100;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+    backdrop-filter: blur(var(--blur-amount));
+    will-change: transform, backdrop-filter;
+    transform: translateZ(0);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.logo-text {
+    font-weight: 900;
+    color: var(--primary);
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.btn-icon {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    transition: transform 0.2s;
+}
+
+@media (hover: hover) {
+    .btn-icon:hover {
+        transform: scale(1.1);
+        background: var(--surface-strong);
+    }
+}
+
+.svg-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--text);
+    transition: fill 0.3s;
+}
+
+/* ============================================================
+   Glass Card & Controls
+   ============================================================ */
+.glass-effect {
+    box-sizing: border-box;
+    background: var(--surface);
+    backdrop-filter: blur(var(--blur-amount));
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    padding: 2rem;
+    will-change: transform, backdrop-filter;
+    transform: translateZ(0);
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 1.2rem 0;
+    text-align: center;
+}
+
+.accent-text {
+    background: linear-gradient(135deg, var(--primary), var(--false));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.quiz-card {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    position: relative;
+    z-index: 20;
+    box-sizing: border-box;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    transition: 0.2s;
+    background: var(--surface);
+    color: var(--text);
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    touch-action: manipulation;
+    pointer-events: auto;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #70D6FF, #56c1eb);
+    color: #1e293b;
+    border: none;
+}
+
+.btn-true {
+    background: rgba(112, 214, 255, 0.35);
+}
+
+.btn-false {
+    background: rgba(255, 112, 166, 0.35);
+}
+
+.select-box {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface-strong);
+    color: var(--text);
+    margin-bottom: 10px;
+    font-size: 1rem;
+    user-select: auto;
+    -webkit-user-select: auto;
+}
+
+/* ============================================================
+   Timer
+   ============================================================ */
+.timer-wrapper {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.timer-circle {
+    fill: none;
+    stroke: var(--primary);
+    stroke-width: 6;
+    stroke-dasharray: 283;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    transition: stroke-dashoffset 0.1s linear;
+}
+
+.timer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+/* ============================================================
+   Flash Overlay (Answer Feedback)
+   ============================================================ */
+.flash-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.flash-overlay.success {
+    background: rgba(112, 214, 255, 0.3);
+    opacity: 1;
+}
+
+.flash-overlay.error {
+    background: rgba(255, 112, 166, 0.3);
+    opacity: 1;
+}
+
+/* ============================================================
+   Dialog (Modal)
+   ============================================================ */
+dialog {
+    border: none;
+    background: transparent;
+    padding: 0;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+dialog[open] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    width: 90%;
+    max-width: 350px;
+    box-sizing: border-box;
+}
+
+.modal-content.large {
+    max-width: 450px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================================================
+   Utilities
+   ============================================================ */
+.flex         { display: flex; }
+.flex-between { display: flex; justify-content: space-between; align-items: center; }
+.flex-col     { display: flex; flex-direction: column; }
+.flex-center  { display: flex; justify-content: center; align-items: center; }
+
+.gap-8  { gap: 8px; }
+.gap-16 { gap: 1rem; }
+.w-full { width: 100%; }
+
+.m-0    { margin: 0; }
+.mt-0   { margin-top: 0; }
+.mt-16  { margin-top: 1rem; }
+.mb-8   { margin-bottom: 0.5rem; }
+.mb-16  { margin-bottom: 1rem; }
+
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-sm     { font-size: 0.8rem; }
+.text-xs     { font-size: 0.75rem; }
+.text-lg     { font-size: 1.5rem; }
+.text-md     { font-size: 1rem; }
+
+.font-bold  { font-weight: bold; }
+.font-black { font-weight: 900; }
+
+.color-primary { color: var(--primary); }
+.color-sub     { color: var(--text-sub); }
+
+.border-top { border-top: 1px solid var(--border); }
+.scroll-y   { 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+}
+
+/* Custom Scrollbar for better UI */
+.scroll-y::-webkit-scrollbar {
+    width: 6px;
+}
+.scroll-y::-webkit-scrollbar-track {
+    background: transparent;
+}
+.scroll-y::-webkit-scrollbar-thumb {
+    background: rgba(112, 214, 255, 0.2);
+    border-radius: 3px;
+}
+.scroll-y::-webkit-scrollbar-thumb:hover {
+    background: rgba(112, 214, 255, 0.4);
+}
+
+/* ============================================================
+   Special Components
+   ============================================================ */
+.ranking-board {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.ranking-list {
+    list-style: none;
+    padding: 10px;
+    margin: 1rem 0;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.ranking-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.your-rank-box {
+    padding: 10px;
+    background: rgba(112, 214, 255, 0.1);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.btn-ghost {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.review-list {
+    max-height: 120px;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.progress-container {
+    width: 100%;
+    height: 6px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), #FF70A6);
+    transition: width 0.3s ease;
+}
+
+.combo-text {
+    color: #FFD670;
+    font-size: 1rem;
+    animation: pulseCombo 0.5s infinite alternate;
+}
+
+@keyframes pulseCombo {
+    from { transform: scale(1); }
+    to   { transform: scale(1.1); }
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-sub);
+    z-index: 5;
+    pointer-events: auto; /* クリック可能にする */
+}
+
+.footer-link {
+    color: var(--primary);
+    font-weight: 900;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+@media (hover: hover) {
+    .footer-link:hover {
+        opacity: 0.7;
+        text-decoration: underline;
+    }
+}
+
+@media (max-height: 600px) {
+    .site-footer {
+        position: static;
+        padding: 20px;
+    }
+}

@@ -121,9 +121,12 @@ class RankingList extends HTMLElement {
                         <li class="ranking-item">
                             <span class="flex gap-8">
                                 <span style="width:25px;" class="font-black text-center">${rankLabel}</span>
-                                <span>${escapeHTML(r.player_name)}</span>
+                                <div style="display:flex; flex-direction:column;">
+                                    <span>${escapeHTML(r.player_name)}</span>
+                                    <small style="font-size:0.65rem; opacity:0.6;">${r.category ? r.category.toUpperCase() : ''} / Lv.${r.difficulty || '-'}</small>
+                                </div>
                             </span>
-                            <span>${r.score} pts</span>
+                            <span class="font-black" style="color:var(--primary, #70D6FF);">${r.score} <small style="font-size:0.6rem; opacity:0.8;">pts</small></span>
                         </li>
                     `;
                 }).join('')}

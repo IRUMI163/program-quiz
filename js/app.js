@@ -170,8 +170,11 @@ class QuizController {
             this.view.els.rankingModal.close();
         });
 
-        this.view.els.rankingDiffSelect.addEventListener('change', (e) => {
-            this.loadStandaloneRanking(e.target.value);
+        this.view.els.rankingDiffSelect.addEventListener('change', () => {
+            this.loadStandaloneRanking();
+        });
+        this.view.els.rankingCatSelect.addEventListener('change', () => {
+            this.loadStandaloneRanking();
         });
 
         document.getElementById('ranking-form').addEventListener('submit', (e) => {
@@ -451,7 +454,7 @@ class QuizController {
 
     async loadRanking() {
         try {
-            const data = await RankingService.loadRanking(this.model.diff);
+            const data = await RankingService.loadRanking(this.model.diff, this.model.category);
             this.view.renderRanking('rankingList', data, this.lang);
             this.view.els.rankingBoard.classList.remove('hidden');
         } catch (e) {
@@ -460,14 +463,18 @@ class QuizController {
     }
 
     async openStandaloneRanking() {
-        const diff = this.view.els.rankingDiffSelect.value;
+        // Set defaults to 'Overall' when opening
+        this.view.els.rankingDiffSelect.value = 'all';
+        this.view.els.rankingCatSelect.value = 'all';
         this.view.els.rankingModal.showModal();
-        this.loadStandaloneRanking(diff);
+        this.loadStandaloneRanking();
     }
 
-    async loadStandaloneRanking(diff) {
+    async loadStandaloneRanking() {
+        const diff = this.view.els.rankingDiffSelect.value;
+        const cat = this.view.els.rankingCatSelect.value;
         const savedRank = localStorage.getItem(`rank_diff_${diff}`);
-        if (savedRank) {
+        if (savedRank && cat === 'all') { // Simplified: only show saved rank for 'all' categories of that diff
             this.view.els.standaloneYourRank.classList.remove('hidden');
             this.view.els.myRankVal.textContent = savedRank;
         } else {
@@ -475,7 +482,7 @@ class QuizController {
         }
 
         try {
-            const data = await RankingService.loadRanking(diff);
+            const data = await RankingService.loadRanking(diff, cat);
             this.view.renderRanking('standaloneRankingList', data, this.lang);
         } catch (e) {
             this.view.renderRanking('standaloneRankingList', [], this.lang);

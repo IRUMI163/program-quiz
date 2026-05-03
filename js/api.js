@@ -7,8 +7,8 @@ export class RankingService {
         });
     }
 
-    static async loadRanking(diff) {
-        const res = await fetch(`./api/ranking.php?diff=${diff}`);
+    static async loadRanking(diff, category = 'all') {
+        const res = await fetch(`./api/ranking.php?diff=${diff}&category=${category}`);
         if (!res.ok) throw new Error('Failed to load ranking');
         return await res.json();
     }

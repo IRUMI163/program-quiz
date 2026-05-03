@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=prod11">
+    <link rel="stylesheet" href="css/style.css?v=v21">
 
     <!-- OGP (SNSシェア時のカード表示用) -->
     <meta property="og:type" content="website">
@@ -28,14 +28,14 @@
     <meta name="twitter:title" content="PROGRAM QUIZ">
     <meta name="twitter:description" content="Glassmorphism Programming Quiz">
     <meta name="twitter:image" content="https://your-quiz-app.com/og-image.png">
-    <script src="js/confetti.js?v=prod11"></script>
-    <script src="js/components.js?v=prod11" type="module"></script>
-    <script src="js/app.js?v=prod11" type="module" defer></script>
+    <script src="js/confetti.js?v=v21"></script>
+    <script src="js/components.js?v=v21" type="module"></script>
+    <script src="js/app.js?v=v21" type="module" defer></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 // クエリパラメータを付けてブラウザキャッシュをバイパス
-                navigator.serviceWorker.register('./sw.js?v=prod11', { updateViaCache: 'none' })
+                navigator.serviceWorker.register('./sw.js?v=v21', { updateViaCache: 'none' })
                     .then(reg => {
                         reg.update();
                     })
@@ -178,15 +178,34 @@
         <div class="glass-effect modal-content large">
             <h2 class="mt-0" data-i18n="ranking-title">World Ranking</h2>
             
-            <div class="flex-between mb-16 gap-16">
-                <div class="w-full text-left">
+            <div class="flex-between mb-16 gap-16" style="flex-wrap: wrap;">
+                <div class="w-full text-left" style="flex:1; min-width:120px;">
                     <label class="text-sm color-sub" data-i18n="diff-label">Difficulty</label>
                     <select id="ranking-diff-select" class="select-box m-0">
+                        <option value="all" data-i18n="overall-label">Overall</option>
                         <option value="1" data-i18n="lv1">Lv.1 Beginner</option>
                         <option value="2" data-i18n="lv2">Lv.2 Easy</option>
                         <option value="3" data-i18n="lv3">Lv.3 Normal</option>
                         <option value="4" data-i18n="lv4">Lv.4 Hard</option>
                         <option value="5" data-i18n="lv5">Lv.5 Maniac</option>
+                    </select>
+                </div>
+                <div class="w-full text-left" style="flex:1; min-width:120px;">
+                    <label class="text-sm color-sub" data-i18n="category-label">Category</label>
+                    <select id="ranking-cat-select" class="select-box m-0">
+                        <option value="all" data-i18n="overall-label">Overall</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="css">CSS</option>
+                        <option value="html">HTML</option>
+                        <option value="python">Python</option>
+                        <option value="typescript">TypeScript</option>
+                        <option value="react">React</option>
+                        <option value="git">Git</option>
+                        <option value="linux">Linux</option>
+                        <option value="network">Network</option>
+                        <option value="sql">SQL</option>
+                        <option value="security">Security</option>
+                        <option value="algorithm">Algorithm</option>
                     </select>
                 </div>
             </div>

@@ -73,9 +73,9 @@ try {
 
         // --- サーバーサイドでのスコア再計算 ---
         $results = $d['results'];
-        if (!is_array($results)) {
+        if (!is_array($results) || count($results) > 10) {
             http_response_code(400);
-            echo json_encode(['error' => 'Invalid Results']);
+            echo json_encode(['error' => 'Invalid Results Count']);
             exit;
         }
 
@@ -126,16 +126,19 @@ try {
             exit;
         }
 
-        $stmt = $pdo->prepare("INSERT INTO quiz_rankings (player_name, score, difficulty) VALUES (:name, :score, :diff)");
+        $stmt = $pdo->prepare("INSERT INTO quiz_rankings (player_name, score, difficulty, category) VALUES (:name, :score, :diff, :category)");
         $stmt->bindValue(':name', $name, PDO::PARAM_STR);
         $stmt->bindValue(':score', $score, PDO::PARAM_INT);
         $stmt->bindValue(':diff', $diff, PDO::PARAM_INT);
+        $stmt->bindValue(':category', $category, PDO::PARAM_STR);
         $stmt->execute();
         
         $my_id = $pdo->lastInsertId();
         
-        $stmt = $pdo->prepare("SELECT COUNT(*) + 1 as rank FROM quiz_rankings WHERE difficulty = :diff AND (score > :score OR (score = :score AND id < :my_id))");
+        // --- 順位計算 (同一カテゴリ・同一難易度内) ---
+        $stmt = $pdo->prepare("SELECT COUNT(*) + 1 as rank FROM quiz_rankings WHERE difficulty = :diff AND category = :cat AND (score > :score OR (score = :score AND id < :my_id))");
         $stmt->bindValue(':diff', $diff, PDO::PARAM_INT);
+        $stmt->bindValue(':cat', $category, PDO::PARAM_STR);
         $stmt->bindValue(':score', $score, PDO::PARAM_INT);
         $stmt->bindValue(':my_id', $my_id, PDO::PARAM_INT);
         $stmt->execute();
@@ -148,16 +151,44 @@ try {
     } else {
         // action=start の場合は開始時刻をセッションに記録
         if (isset($_GET['action']) && $_GET['action'] === 'start') {
+            session_regenerate_id(true); // セッション固定攻撃対策
             $_SESSION['quiz_start_at'] = time();
             echo json_encode(['ok' => true, 'started_at' => $_SESSION['quiz_start_at']]);
             exit;
         }
 
-        $diff = isset($_GET['diff']) ? filter_var($_GET['diff'], FILTER_VALIDATE_INT) : 1;
-        if ($diff === false) $diff = 1;
+        $diff = isset($_GET['diff']) ? $_GET['diff'] : 'all';
+        $category = isset($_GET['category']) ? $_GET['category'] : 'all';
 
-        $stmt = $pdo->prepare("SELECT player_name, score FROM quiz_rankings WHERE difficulty = :diff ORDER BY score DESC, id ASC LIMIT 30");
-        $stmt->bindValue(':diff', $diff, PDO::PARAM_INT);
+        $where = [];
+        $params = [];
+
+        if ($diff !== 'all') {
+            $val = filter_var($diff, FILTER_VALIDATE_INT);
+            if ($val !== false) {
+                $where[] = "difficulty = :diff";
+                $params[':diff'] = $val;
+            }
+        }
+
+        if ($category !== 'all') {
+            $allowed = ['javascript', 'css', 'html', 'python', 'typescript', 'react', 'git', 'linux', 'network', 'sql', 'security', 'algorithm'];
+            if (in_array($category, $allowed, true)) {
+                $where[] = "category = :cat";
+                $params[':cat'] = $category;
+            }
+        }
+
+        $sql = "SELECT player_name, score, difficulty, category FROM quiz_rankings";
+        if (!empty($where)) {
+            $sql .= " WHERE " . implode(" AND ", $where);
+        }
+        $sql .= " ORDER BY score DESC, id ASC LIMIT 50";
+
+        $stmt = $pdo->prepare($sql);
+        foreach ($params as $key => $val) {
+            $stmt->bindValue($key, $val, is_int($val) ? PDO::PARAM_INT : PDO::PARAM_STR);
+        }
         $stmt->execute();
         echo json_encode($stmt->fetchAll());
     }

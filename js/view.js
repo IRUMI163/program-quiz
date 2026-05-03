@@ -26,6 +26,7 @@ export class QuizView {
             diffSelect: document.getElementById('difficulty-select'),
             langSelect: document.getElementById('lang-select'),
             rankingDiffSelect: document.getElementById('ranking-diff-select'),
+            rankingCatSelect: document.getElementById('ranking-cat-select'),
             quickModeCheck: document.getElementById('quick-mode-check'),
             muteIconPath: document.querySelector('#icon-mute path'),
             standaloneRankingList: document.getElementById('standalone-ranking-list'),

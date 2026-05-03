@@ -32,7 +32,9 @@ export const TRANSLATIONS = {
         'correct-label': '正解数',
         'correct-msg': '正解',
         'wrong-msg': '不正解',
-        'question-num': '第 {0} 問'
+        'question-num': '第 {0} 問',
+        'overall-label': '総合',
+        'category-label': 'ジャンル'
     },
     'en': {
         'start-btn': 'GAME START',
@@ -63,6 +65,8 @@ export const TRANSLATIONS = {
         'correct-label': 'Correct',
         'correct-msg': 'Correct',
         'wrong-msg': 'Incorrect',
-        'question-num': 'Question {0}'
+        'question-num': 'Question {0}',
+        'overall-label': 'Overall',
+        'category-label': 'Category'
     }
 };

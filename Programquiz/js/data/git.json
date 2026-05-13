@@ -1,0 +1,1201 @@
+[{
+    "difficulty": 1,
+    "text": {
+      "ja": "Gitは分散型バージョン管理システムである。",
+      "en": "Git is a distributed version control system."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "Gitはリポジトリの完全なコピーを各開発者のローカル環境に持つ分散型のシステムです。",
+      "en": "Git is a distributed system where each developer has a full copy of the repository on their local machine."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "GitとGitHubは同じ開発元によって作られた全く同じツールである。",
+      "en": "Git and GitHub are the exact same tool created by the same developer."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Gitはバージョン管理システムであり、GitHubはGitを利用してリポジトリをオンラインで共有するホスティングサービスです。",
+      "en": "Git is a version control system, whereas GitHub is a hosting service that uses Git to share repositories online."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "git init コマンドは新しいGitリポジトリを作成するために使用される。",
+      "en": "The git init command is used to create a new Git repository."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ディレクトリ内で git init を実行すると、その場所が新しいGitリポジトリとして初期化されます。",
+      "en": "Running git init inside a directory initializes it as a new Git repository."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "git commit を実行すると、変更がリモートリポジトリに直接アップロードされる。",
+      "en": "Running git commit uploads your changes directly to a remote repository."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "コミットはローカルリポジトリにのみ保存されます。リモートに送るには git push コマンドが必要です。",
+      "en": "Commits are only saved to the local repository. The git push command is required to send them to a remote repository."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "git clone コマンドは既存のリポジトリのコピーをローカルに作成する。",
+      "en": "The git clone command creates a local copy of an existing repository."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "リモートリポジトリのURLを指定して実行することで、すべての履歴を含んだコピーを取得できます。",
+      "en": "By specifying the URL of a remote repository, you can obtain a complete copy including all history."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "ブランチを作成するには git add コマンドを使用する。",
+      "en": "The git add command is used to create a branch."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ブランチの作成には git branch コマンドを使用し、git add は変更をステージングエリアに追加するために使います。",
+      "en": "The git branch command is used to create a branch, while git add adds changes to the staging area."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "git status コマンドを使用すると、リポジトリの現在の状態を確認できる。",
+      "en": "The git status command allows you to check the current state of the repository."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "変更されたファイルやステージングされているファイルなどの状況を一覧表示します。",
+      "en": "It displays information such as modified files and files currently in the staging area."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "一度コミットしたファイルは二度と変更できない。",
+      "en": "Once a file is committed, it can never be changed again."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "コミット後もファイルを自由に編集し、変更を新たにコミットして履歴を積み重ねることができます。",
+      "en": "You can freely edit files after a commit and stack history by committing the new changes."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "リモートリポジトリに変更を送信するには git push コマンドを使用する。",
+      "en": "The git push command is used to send changes to a remote repository."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ローカルで行ったコミットをリモートサーバーに反映させるための基本的なコマンドです。",
+      "en": "It is the fundamental command for reflecting locally made commits onto a remote server."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": ".gitignore ファイルに記述したファイルは、自動的にリモートリポジトリにアップロードされる。",
+      "en": "Files listed in the .gitignore file are automatically uploaded to the remote repository."
+    },
+    "answer": false,
+    "exp": {
+      "ja": ".gitignore に記述されたファイルはGitの追跡対象から外れるため、コミットやアップロードはされません。",
+      "en": "Files listed in .gitignore are excluded from Git tracking, meaning they are neither committed nor uploaded."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "git pull コマンドはリモートリポジトリの変更を取得し、現在のブランチに統合する。",
+      "en": "The git pull command fetches changes from a remote repository and integrates them into the current branch."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "最新のコードを取り込んで自分の作業ディレクトリに反映させる際によく使用されます。",
+      "en": "It is commonly used to bring the latest code down and reflect it in your working directory."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "Gitで管理されているすべてのファイルは、変更後自動的にステージングエリアに追加される。",
+      "en": "All files managed by Git are automatically added to the staging area after being modified."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "変更されたファイルは自動的には追加されず、手動で git add コマンドを実行する必要があります。",
+      "en": "Modified files are not added automatically; you must manually execute the git add command."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "コミットには変更内容を説明するためのコミットメッセージを含める必要がある。",
+      "en": "Commits require a commit message to describe the changes made."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "メッセージを残すことで、後から履歴を見たときにどのような変更が行われたかを理解しやすくなります。",
+      "en": "Leaving a message makes it easier to understand what changes were made when viewing the history later."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "ローカルリポジトリで作業するためには常にインターネット接続が必要である。",
+      "en": "An active internet connection is always required to work in a local repository."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Gitはローカルに完全な履歴を持つため、コミットや履歴の閲覧はオフラインでも可能です。",
+      "en": "Because Git holds the complete history locally, committing and viewing history can be done offline."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "git log コマンドを使用すると、過去のコミット履歴を閲覧できる。",
+      "en": "The git log command allows you to view the past commit history."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "誰がいつどのような変更を行ったかを時系列で確認することができます。",
+      "en": "It allows you to verify chronologically who made what changes and when."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "master または main ブランチは一度作成すると削除することができない。",
+      "en": "The master or main branch cannot be deleted once it is created."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "デフォルトのブランチであっても、他のブランチに切り替えれば削除や名前変更が可能です。",
+      "en": "Even default branches can be deleted or renamed as long as you switch to another branch first."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "git add コマンドは、変更されたファイルをステージングエリアに追加する。",
+      "en": "The git add command adds modified files to the staging area."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "コミットに含めたいファイルを準備するための重要なステップです。",
+      "en": "It is a crucial step to prepare the files you want to include in your next commit."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "git merge コマンドは現在のブランチを削除するために使用される。",
+      "en": "The git merge command is used to delete the current branch."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "git merge は別のブランチの変更を現在のブランチに統合するためのコマンドです。",
+      "en": "git merge is a command used to integrate changes from another branch into the current branch."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "作業ディレクトリの変更を一時的に退避させるには git stash コマンドを使用する。",
+      "en": "The git stash command is used to temporarily shelve changes in the working directory."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "コミットせずに別のブランチに切り替えたい場合などに便利です。",
+      "en": "It is useful when you need to switch branches without committing your current work."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "Gitは画像ファイルや動画ファイルの変更内容をテキストファイルと同じように行単位で比較できる。",
+      "en": "Git can compare modifications in image or video files line by line just like text files."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "画像や動画などのバイナリファイルは行単位の比較ができず、ファイル全体が置き換わったと認識されます。",
+      "en": "Binary files like images and videos cannot be compared line by line; Git simply recognizes the entire file as replaced."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "git checkout -b または git switch -c を使用すると、新しいブランチを作成してそこに切り替えることができる。",
+      "en": "Using git checkout -b or git switch -c allows you to create a new branch and switch to it."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ブランチの作成と切り替えを1つのコマンドで同時に行うためのショートカットです。",
+      "en": "It is a shortcut to create a branch and switch to it simultaneously in one command."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "git fetch コマンドはリモートリポジトリからデータを取得し、現在のブランチに自動的にマージする。",
+      "en": "The git fetch command retrieves data from a remote repository and automatically merges it into the current branch."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "git fetch は情報を取得するだけであり、マージまで自動で行うのは git pull コマンドです。",
+      "en": "git fetch only retrieves information; git pull is the command that fetches and automatically merges."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "git commit --amend コマンドは、直前のコミットの内容やメッセージを修正するために使用される。",
+      "en": "The git commit --amend command is used to modify the contents or message of the most recent commit."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ファイルの追加忘れやメッセージのタイプミスを修正する際によく使われます。",
+      "en": "It is commonly used to fix typos in the commit message or include forgotten files."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "コンフリクトが発生した場合、Gitが自動的にどちらの変更を残すか決定して解決する。",
+      "en": "When a conflict occurs, Git automatically decides which changes to keep and resolves it."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "コンフリクトが発生した場合は、開発者が手動でファイルを編集して解決する必要があります。",
+      "en": "When a conflict occurs, the developer must manually edit the files to resolve it."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "git rebase コマンドを使用すると、コミット履歴を直線的に書き換えることができる。",
+      "en": "The git rebase command can be used to rewrite the commit history linearly."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "マージコミットを作らずに履歴を綺麗に保ちたい場合に利用されます。",
+      "en": "It is used when you want to keep a clean, linear history without creating merge commits."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "git reset --hard を実行すると、コミット履歴は元に戻るが作業ディレクトリの変更はそのまま残る。",
+      "en": "Running git reset --hard reverts the commit history but leaves the working directory changes intact."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "--hard オプションを指定すると、履歴とともに作業ディレクトリの変更も完全に破棄されます。",
+      "en": "With the --hard option, both the commit history and the working directory changes are completely discarded."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "git diff コマンドは、作業ディレクトリとステージングエリア間の変更分を表示する。",
+      "en": "The git diff command displays the differences between the working directory and the staging area."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "まだ git add されていない変更内容を差分として確認できます。",
+      "en": "It allows you to see the differences for changes that have not yet been added with git add."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "git push -f を使用すると、他の人のコミットを上書きしてしまう危険性はない。",
+      "en": "Using git push -f carries no risk of overwriting other people's commits."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "強制プッシュ(-f)はリモートの履歴を上書きするため、他人の作業を消滅させる高い危険性があります。",
+      "en": "Force pushing (-f) overwrites the remote history, carrying a high risk of destroying other people's work."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "リモートリポジトリを複数登録して、それぞれに push や pull を行うことができる。",
+      "en": "You can register multiple remote repositories and perform push or pull operations for each of them."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "originの他にupstreamなどを登録し、異なるリモートとやり取りすることが可能です。",
+      "en": "You can register others like upstream alongside origin and interact with different remotes."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "git clone で取得したリポジトリには、元のリポジトリのコミット履歴は含まれていない。",
+      "en": "A repository obtained via git clone does not contain the commit history of the original repository."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "クローンすると、元のリポジトリのすべてのコミット履歴がローカルにコピーされます。",
+      "en": "Cloning copies the entire commit history of the original repository to your local machine."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "ブランチを削除するには git branch -d コマンドを使用する。",
+      "en": "The git branch -d command is used to delete a branch."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "マージ済みの不要なブランチを安全に削除するための標準的なコマンドです。",
+      "en": "It is the standard command for safely deleting unneeded branches that have already been merged."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "ステージングエリアからファイルを取り除くには git remove コマンドを使用する。",
+      "en": "The git remove command is used to remove a file from the staging area."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Gitに git remove というコマンドは存在せず、正しくは git restore --staged や git reset を使用します。",
+      "en": "There is no git remove command in Git; you should use git restore --staged or git reset instead."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "HEAD は現在チェックアウトされているブランチやコミットを指し示すポインタである。",
+      "en": "HEAD is a pointer that indicates the currently checked out branch or commit."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "あなたが現在作業している位置をGitが把握するための重要な仕組みです。",
+      "en": "It is a crucial mechanism that helps Git know exactly where you are currently working."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": ".git 隠しディレクトリを削除しても、コミット履歴などのリポジトリ情報は保持される。",
+      "en": "Deleting the hidden .git directory still preserves repository information such as the commit history."
+    },
+    "answer": false,
+    "exp": {
+      "ja": ".git ディレクトリにはすべての履歴や設定が保存されているため、削除するとただのフォルダに戻ってしまいます。",
+      "en": "The .git directory stores all history and settings; deleting it turns the project back into a regular folder."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "git cherry-pick コマンドを使用すると、他のブランチの特定のコミットだけを現在のブランチに取り込むことができる。",
+      "en": "The git cherry-pick command allows you to apply specific commits from another branch into your current branch."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "バグ修正のコミットだけを別のリリースブランチに適用したい場合などに役立ちます。",
+      "en": "It is useful when you want to apply a specific bug fix commit to another release branch."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "タグはブランチと同様にコミットを追加すると自動的に移動する。",
+      "en": "Tags move automatically when new commits are added, just like branches do."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "タグは特定のコミットを指し示す固定のラベルであり、新しいコミットが追加されても移動しません。",
+      "en": "Tags are fixed labels pointing to specific commits and do not move when new commits are added."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "git rm コマンドを使用すると、ファイルの削除をGitに記録し、作業ディレクトリからも削除できる。",
+      "en": "The git rm command records the deletion of a file in Git and removes it from the working directory."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "追跡対象のファイルを完全に削除し、その変更をステージングする処理を一度に行います。",
+      "en": "It completely removes a tracked file and stages the deletion in one step."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "コミットハッシュは通常、連番の数字（1, 2, 3...）で表される。",
+      "en": "Commit hashes are typically represented by sequential numbers (1, 2, 3...)."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "コミットハッシュは内容に基づいて生成される40文字の16進数（SHA-1）で表現されます。",
+      "en": "Commit hashes are represented by a 40-character hexadecimal string (SHA-1) generated based on the content."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "git log --oneline を使用すると、コミット履歴を1行ずつ簡潔に表示できる。",
+      "en": "Using git log --oneline displays the commit history concisely, one line per commit."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "短いハッシュ値とコミットメッセージのみが表示され、履歴の全体像を把握しやすくなります。",
+      "en": "It displays only the short hash and commit message, making it easier to grasp the overall history."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "コミットをマージする際、Fast-forward マージは必ず新しいマージコミットを作成する。",
+      "en": "A Fast-forward merge always creates a new merge commit when merging commits."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Fast-forward マージはポインタを前に進めるだけであり、新しいマージコミットは作成されません。",
+      "en": "A Fast-forward merge simply moves the pointer forward and does not create a new merge commit."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "git reflog コマンドを使用すると、HEADの動きの履歴を確認でき、誤って削除したコミットを復元する手がかりになる。",
+      "en": "The git reflog command shows a history of HEAD movements, providing clues to recover accidentally deleted commits."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "リベースの失敗やブランチの誤削除から復旧するための強力な機能です。",
+      "en": "It is a powerful feature for recovering from failed rebases or accidentally deleted branches."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "git revert コマンドは指定したコミットの履歴そのものを完全に抹消するために使用される。",
+      "en": "The git revert command is used to completely erase the history of a specified commit."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "履歴を消すのではなく、指定したコミットの変更を打ち消す「新しいコミット」を作成します。",
+      "en": "It does not erase history; instead, it creates a 'new commit' that undoes the changes of the specified commit."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "git push origin :branch_name のようにコロンの前に何も指定しないと、リモートのブランチを削除できる。",
+      "en": "Pushing with nothing before the colon, like git push origin :branch_name, deletes the remote branch."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "空の参照をリモートブランチにプッシュすることで削除を意味する、昔ながらの構文です。",
+      "en": "It is a legacy syntax that means deletion by pushing an empty reference to the remote branch."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": ".gitignore で無視設定を追加する前にすでにコミットされているファイルは、自動的に追跡対象から外れる。",
+      "en": "Files already committed before adding ignore rules to .gitignore are automatically untracked."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "すでに追跡されているファイルは、手動で git rm --cached を実行して追跡を解除する必要があります。",
+      "en": "Files that are already tracked must be manually untracked by running git rm --cached."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "git stash apply はスタッシュされた変更を作業ディレクトリに復元するが、スタッシュのリストからは削除しない。",
+      "en": "git stash apply restores stashed changes to the working directory but does not remove them from the stash list."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "リストからも同時に削除したい場合は git stash pop を使用します。",
+      "en": "If you want to remove it from the list at the same time, use git stash pop."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "git merge --squash を使用すると、マージ元のブランチのすべてのコミット履歴がそのまま現在のブランチに引き継がれる。",
+      "en": "Using git merge --squash transfers all commit history of the source branch directly into the current branch as is."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "--squash オプションは、元の複数のコミットを1つの変更としてまとめ、履歴を引き継がずに適用します。",
+      "en": "The --squash option combines multiple original commits into a single change without transferring their history."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ベアリポジトリはワーキングツリーを持たないリポジトリであり、通常は中央サーバーなどで使用される。",
+      "en": "A bare repository is a repository without a working tree and is typically used on central servers."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "直接ファイルを編集することはできず、他の開発者からのpushを受け取るための専用リポジトリです。",
+      "en": "You cannot edit files directly in it; it is a dedicated repository for receiving pushes from other developers."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "git reset --soft を実行すると、直前のコミットが取り消され、変更内容もステージングエリアから消去される。",
+      "en": "Running git reset --soft undoes the last commit and also clears the changes from the staging area."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "--soft オプションはコミット履歴のみを戻し、変更内容はステージングエリアに保持されたままになります。",
+      "en": "The --soft option only undoes the commit history, keeping the changes preserved in the staging area."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "detached HEAD 状態では、新しいコミットを作成しても既存のどのブランチにも属さない状態になる。",
+      "en": "In a detached HEAD state, newly created commits do not belong to any existing branch."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "そのまま別のブランチに切り替えると、作成したコミットは迷子になり最終的に削除されます。",
+      "en": "If you switch branches directly, those commits become orphaned and are eventually deleted."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "git fetch はネットワーク接続がなくてもローカルキャッシュを使用して実行できる。",
+      "en": "git fetch can be executed using local caches even without a network connection."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "リモートリポジトリにアクセスして最新の変更を取得するコマンドであるため、ネットワーク接続が必須です。",
+      "en": "Since it accesses the remote repository to retrieve the latest changes, an active network connection is essential."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "フックを使用すると、コミットやプッシュなどの特定のGit操作の前後でカスタムスクリプトを自動実行できる。",
+      "en": "Hooks allow you to automatically run custom scripts before or after specific Git operations like commits or pushes."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "コミット前のコードフォーマットのチェックや、プッシュ前の自動テストなどに活用されます。",
+      "en": "They are utilized for pre-commit code formatting checks or automated testing before pushing."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ブランチ名の変更は、そのブランチにチェックアウトしている状態では実行できない。",
+      "en": "Renaming a branch cannot be performed while you are checked out on that branch."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "チェックアウトしている状態でも git branch -m 新しい名前 でリネームが可能です。",
+      "en": "You can still rename the current branch by running git branch -m new_name while checked out on it."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "git commit -a コマンドは新規作成された未追跡ファイルはステージングエリアに追加しない。",
+      "en": "The git commit -a command does not add newly created untracked files to the staging area."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "-a オプションは既存の追跡対象ファイルの変更のみを自動追加するため、未追跡ファイルには別途 add が必要です。",
+      "en": "The -a option only automatically adds modifications to already tracked files, so untracked files require a separate add."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "git config --global で設定した内容は、各リポジトリの .git/config ファイルに直接書き込まれる。",
+      "en": "Settings configured with git config --global are written directly to the .git/config file of each repository."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "--global の設定はユーザーのホームディレクトリにある ~/.gitconfig ファイルなどに保存されます。",
+      "en": "Global settings are saved in a user-level file like ~/.gitconfig in the home directory."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "サブモジュール機能を使用すると、あるGitリポジトリの内部に別のGitリポジトリを組み込んで管理できる。",
+      "en": "The submodule feature allows you to embed and manage another Git repository inside a Git repository."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "外部ライブラリや共通プロジェクトを依存関係として管理する際に非常に有用な機能です。",
+      "en": "It is a highly useful feature when managing external libraries or shared projects as dependencies."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "git pull は内部的に git fetch と git rebase の組み合わせのみで動作する。",
+      "en": "git pull internally operates exclusively as a combination of git fetch and git rebase."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "デフォルトでは fetch ＋ merge の組み合わせであり、rebaseにするにはオプションや設定が必要です。",
+      "en": "By default, it is a combination of fetch + merge; making it use rebase requires specific options or configurations."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "git blame コマンドを使用すると、ファイルの各行を最後に変更したコミットや人物を特定できる。",
+      "en": "The git blame command helps identify the commit and person who last modified each line of a file."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "バグの原因となった変更を誰がいつ行ったのかを調査する際に役立ちます。",
+      "en": "It is helpful for investigating who made the change that caused a bug and when it happened."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "コミットに付与した軽量タグには、タグ作成者の名前や作成日時の情報が含まれる。",
+      "en": "A lightweight tag attached to a commit contains information about the tag creator's name and the creation date."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "軽量タグは単なるコミットへのポインタであり、そのようなメタデータを持つのはアノテートタグです。",
+      "en": "A lightweight tag is just a pointer to a commit; annotated tags are the ones that store such metadata."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "git rebase -i を使用すると、過去の複数のコミットをまとめたり、順序を入れ替えたりできる。",
+      "en": "Using git rebase -i allows you to squash multiple past commits or change their order."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "対話的リベースと呼ばれる機能で、リモートにプッシュする前に履歴を綺麗に整理できます。",
+      "en": "Known as interactive rebase, it allows you to clean up your history before pushing to a remote."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ローカルブランチとリモートトラッキングブランチは常に同じコミットを指している。",
+      "en": "Local branches and remote-tracking branches always point to the exact same commit."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "リモートトラッキングブランチは最後にfetchした時点の情報を保持しており、同期するまではズレが生じます。",
+      "en": "Remote-tracking branches hold information from the last fetch and will differ until synchronized."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Gitの内部データモデルにおいて、すべてのファイルの内容はblobオブジェクトとして保存される。",
+      "en": "In Git's internal data model, all file contents are stored as blob objects."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ファイル名などのメタデータは含まず、純粋なデータの中身だけがblobに格納されます。",
+      "en": "Blobs store only the pure data contents, completely separate from metadata like file names."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "ツリーオブジェクトには、ファイル名やパーミッションの情報は含まれず、ファイルの内容のみが保持される。",
+      "en": "Tree objects hold only file contents and do not contain information about file names or permissions."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ツリーオブジェクトはディレクトリ構造を表現し、ファイル名、パーミッション、blobへのポインタを含みます。",
+      "en": "Tree objects represent directory structures and contain file names, permissions, and pointers to blobs."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "コミットオブジェクトは、親コミットへのポインタとルートのツリーオブジェクトへのポインタを持っている。",
+      "en": "A commit object has pointers to its parent commits and a pointer to the root tree object."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "これにより、プロジェクト全体の特定のスナップショットと歴史的な文脈を維持しています。",
+      "en": "This allows it to maintain a specific snapshot of the entire project along with its historical context."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "git gc コマンドを実行すると、参照されていないすべてのオブジェクトが即座に、無条件で物理的に削除される。",
+      "en": "Running the git gc command physically deletes all unreferenced objects immediately and unconditionally."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "標準設定では、直近2週間の猶予期間が設けられており、即座にすべてが削除されるわけではありません。",
+      "en": "By default, there is a grace period of two weeks, so not everything is deleted immediately."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Gitはオブジェクトを保存する際、SHA-1ハッシュの先頭2文字をディレクトリ名とし、残り38文字をファイル名として利用する。",
+      "en": "When storing objects, Git uses the first 2 characters of the SHA-1 hash as the directory name and the remaining 38 characters as the file name."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "1つのディレクトリにファイルが集中しすぎることによるOSのパフォーマンス低下を防ぐための工夫です。",
+      "en": "This is an optimization to prevent OS performance degradation caused by having too many files in a single directory."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "fast-forwardマージが可能な状態であっても、git merge コマンドはデフォルトで必ずマージコミットを作成する。",
+      "en": "The git merge command always creates a merge commit by default, even when a fast-forward merge is possible."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "デフォルトでは、fast-forwardが可能な場合はマージコミットを作成せずにポインタだけを進めます。",
+      "en": "By default, if a fast-forward is possible, Git merely advances the pointer without creating a merge commit."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "git rerere機能を有効にすると、過去に解決したコンフリクトの解決方法を記憶し、同じコンフリクトが起きた際に自動適用できる。",
+      "en": "Enabling the git rerere feature remembers how past conflicts were resolved and automatically applies the resolution to identical conflicts."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "長期にわたるフィーチャーブランチを何度もリベースする際などに非常に便利な機能です。",
+      "en": "It is a highly convenient feature when repeatedly rebasing long-lived feature branches."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "パックファイルはリポジトリのサイズを増大させるため、主にネットワーク転送時のみ一時的に作成される。",
+      "en": "Packfiles increase the repository size, so they are mainly created temporarily only during network transfers."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "パックファイルは類似ファイルの差分圧縮を利用してリポジトリサイズを劇的に縮小するためにローカルにも保存されます。",
+      "en": "Packfiles dramatically reduce repository size through delta compression and are permanently stored locally."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "参照（refs）は実質的には特定のコミットのSHA-1ハッシュ値が書かれた単なるテキストファイルである。",
+      "en": "References (refs) are essentially just text files containing the SHA-1 hash of a specific commit."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ブランチやタグの正体は、.git/refs ディレクトリ内に存在するこの短いテキストファイルです。",
+      "en": "The true identity of branches and tags are these short text files residing in the .git/refs directory."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "git reset --mixed HEAD~ を実行すると、ステージングエリアの状態は保持され、作業ディレクトリのみが前の状態に戻る。",
+      "en": "Running git reset --mixed HEAD~ preserves the staging area state and only reverts the working directory to the previous state."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "--mixed（デフォルト）はステージングエリアをクリアし履歴を戻しますが、作業ディレクトリの変更は保持します。",
+      "en": "The --mixed option (default) clears the staging area and reverts history, but preserves changes in the working directory."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "マージコミットは2つ以上の親コミットを持つことができる。",
+      "en": "A merge commit can have two or more parent commits."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "通常は2つの親を持ちますが、octopusマージによって3つ以上の親を持つことも可能です。",
+      "en": "It typically has two parents, but through an octopus merge, it is possible to have three or more."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "git worktree add を使用して作成された追加のワークツリーは、元のリポジトリとは独立した独自の .git ディレクトリを持つ。",
+      "en": "Additional worktrees created using git worktree add have their own independent .git directories separate from the original repository."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "追加のワークツリーは独自の作業ディレクトリを持ちますが、内部的には元の .git ディレクトリのデータベースを共有しています。",
+      "en": "Additional worktrees have separate working directories but internally share the database from the original .git directory."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": ".git/index ファイルは、現在のステージングエリアの状態を記録するバイナリファイルである。",
+      "en": "The .git/index file is a binary file that records the current state of the staging area."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "どのファイルが次にコミットされるかを管理するための、Gitのコアとなるキャッシュデータです。",
+      "en": "It is the core cache data of Git that manages which files will be included in the next commit."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "git cherry-pick は、マージコミットを対象にする場合、追加のオプションなしでそのまま実行できる。",
+      "en": "git cherry-pick can be executed on merge commits directly without any additional options."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "マージコミットは複数の親を持つため、-m オプションでベースとする親の番号を明示する必要があります。",
+      "en": "Because merge commits have multiple parents, you must explicitly specify the base parent number using the -m option."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "git clean -fd コマンドを実行すると、未追跡のファイルだけでなく未追跡のディレクトリも削除される。",
+      "en": "Running the git clean -fd command deletes untracked directories as well as untracked files."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "-f (force) と -d (directory) を組み合わせることで、リポジトリ内を綺麗な状態にリセットできます。",
+      "en": "Combining -f (force) and -d (directory) allows you to reset the repository to a clean state."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "追跡対象のファイルを変更し、それをgit update-index --assume-unchangedで指定すると、リモートの変更をpullした際に必ずローカルの変更が優先される。",
+      "en": "Modifying a tracked file and marking it with git update-index --assume-unchanged guarantees that local changes are preferred when pulling remote changes."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "これはローカルの変更チェックをスキップするだけで、pull時に競合するとエラーになり変更が破棄される危険があります。",
+      "en": "It only skips local modification checks; if it conflicts during a pull, it throws an error and risks discarding local changes."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Gitオブジェクトはzlib圧縮を使用して保存されている。",
+      "en": "Git objects are stored using zlib compression."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ヘッダー情報とデータ本体を結合した後、zlibで圧縮してストレージ容量を最適化しています。",
+      "en": "The header information and actual data are combined and then compressed using zlib to optimize storage capacity."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "git bisect コマンドは、特定のバグを修正するための自動パッチ生成ツールである。",
+      "en": "The git bisect command is an automated patch generation tool for fixing specific bugs."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "git bisect は二分探索を用いて、バグが混入した特定のコミットを効率的に探し出すためのツールです。",
+      "en": "git bisect is a tool that uses binary search to efficiently find the exact commit that introduced a bug."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "git fsck コマンドは、Gitデータベース内のオブジェクトの整合性や、リンク切れがないかを検証するために使用される。",
+      "en": "The git fsck command is used to verify the integrity of objects in the Git database and check for broken links."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "リポジトリが壊れていないかを確認する、ファイルシステムチェックのようなコマンドです。",
+      "en": "It acts like a file system check to verify that your repository is not corrupted."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "コミットメッセージの修正において、すでにリモートにプッシュされたコミットを git commit --amend して再度 push すると、リモートのコミットハッシュは変化しない。",
+      "en": "When modifying a commit message, amending a commit that has already been pushed and pushing it again will not change the remote commit hash."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "メッセージを変更すると新しいハッシュ値を持つ別のコミットが生成されるため、強制プッシュが必要になります。",
+      "en": "Changing the message generates an entirely new commit with a different hash, requiring a force push."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Gitのダングリングコミットは、どのブランチやタグからも到達できないコミットを指す。",
+      "en": "A dangling commit in Git refers to a commit that cannot be reached from any branch or tag."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "履歴を書き換えた際などに発生し、一定期間後にガベージコレクションによって削除されます。",
+      "en": "They occur when history is rewritten and are eventually removed by garbage collection after a certain period."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Gitのblobオブジェクトの内部データ構造には、ファイルの拡張子情報が含まれている。",
+      "en": "The internal data structure of a Git blob object contains the file's extension information."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "拡張子やファイル名などのメタデータはtreeオブジェクトで管理され、blobには純粋なバイト列のみが保存されます。",
+      "en": "Metadata like extensions and filenames are managed by tree objects; blobs store only the pure byte stream."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Gitのパックファイルインデックスは、対応する.packファイル内のオブジェクトのオフセット位置を迅速に検索するために使用される。",
+      "en": "A Git packfile index is used to quickly look up the offset positions of objects within its corresponding .pack file."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "巨大なパックファイルを展開せずに目的のオブジェクトを高速に読み出すために不可欠なファイルです。",
+      "en": "It is an essential file for rapidly reading target objects without unpacking the entire massive packfile."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "git replace コマンドでオブジェクトの参照を置き換えても、元のオブジェクト自体のSHA-1ハッシュや内容がディスク上で書き換わるわけではない。",
+      "en": "When replacing an object reference with the git replace command, the SHA-1 hash and content of the original object on the disk are not actually rewritten."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "元のデータはそのまま維持され、Gitが参照を解決する際に透過的に別のオブジェクトへすり替えるだけです。",
+      "en": "The original data remains intact; Git simply swaps it transparently to another object when resolving references."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Gitは改行コードの自動変換を行う際、ファイルがバイナリであるかテキストであるかを、ファイルの先頭数千バイトの統計情報から推測する。",
+      "en": "When performing automatic line ending conversion, Git guesses whether a file is binary or text based on statistical information from the first few thousand bytes."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "先頭8000バイト以内にNUL文字(0x00)が含まれているかどうかなどのヒューリスティックな手法を使用します。",
+      "en": "It uses heuristic methods, such as checking for the presence of a NUL byte (0x00) within the first 8000 bytes."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": ".gitattributes ファイルでマージドライバを独自に定義した場合、その設定はリポジトリをcloneした別のユーザー環境でも即座に有効になる。",
+      "en": "If a custom merge driver is defined in the .gitattributes file, that setting instantly becomes active in another user's environment upon cloning the repository."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ドライバの定義はローカルの .git/config にもコマンド設定を記述する必要があるため、cloneだけでは機能しません。",
+      "en": "Driver definitions also require command configuration in the local .git/config, so cloning alone does not activate them."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "サーバー側のフックである pre-receive フックが非ゼロのステータスで終了すると、クライアントからの push はすべて拒否される。",
+      "en": "If the server-side pre-receive hook exits with a non-zero status, the push from the client is entirely rejected."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "コミットメッセージの書式制約や、権限チェックなどをサーバーサイドで強制するための強力な仕組みです。",
+      "en": "It is a powerful mechanism for enforcing commit message formats and permission checks on the server side."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Gitの内部では、ディレクトリが空であっても対応する空のtreeオブジェクトを作成し、バージョン管理の対象として保存する。",
+      "en": "Internally, even if a directory is empty, Git creates a corresponding empty tree object and tracks it under version control."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Gitはファイル(blob)を起点にツリーを構成するため、中身のない空ディレクトリは一切追跡されません。",
+      "en": "Because Git constructs trees starting from files (blobs), completely empty directories are never tracked."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "git cat-file -p コマンドを使用すると、Gitオブジェクトの内容をフォーマットして人間が読める形式で表示できる。",
+      "en": "Using the git cat-file -p command allows you to view the contents of Git objects formatted in a human-readable form."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "圧縮されて保存されているコミットやツリーの生データを調査するためのプラミングコマンドです。",
+      "en": "It is a plumbing command used for inspecting the raw compressed data of commits and trees."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "shallow cloneで取得したリポジトリからは、他のリモートリポジトリへ push することはアーキテクチャ上絶対に不可能である。",
+      "en": "Pushing to another remote repository from a repository obtained via a shallow clone is architecturally absolutely impossible."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Git 1.9以降ではアーキテクチャが改善され、適切な条件を満たせばshallow cloneからでもpushが可能です。",
+      "en": "Since Git 1.9, the architecture has improved, making it possible to push from a shallow clone under certain conditions."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "git notes コマンドを使用すると、コミットオブジェクト自体を変更することなく、コミットにテキストのメタデータを追加できる。",
+      "en": "The git notes command lets you add text metadata to a commit without modifying the commit object itself."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ハッシュを変えずにCIのビルド結果やチケット番号などの情報を後から付与したい場合に非常に便利です。",
+      "en": "It is very useful when you want to append info like CI build results or ticket numbers later without altering the hash."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "octopus merge は、同じブランチ内で多数のコミットを1つにまとめるための特殊なマージ手法である。",
+      "en": "An octopus merge is a special merging technique used to squash numerous commits into one within the same branch."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "octopus merge は、3つ以上の独立した異なるブランチを1つのコミットで同時にマージするための手法です。",
+      "en": "An octopus merge is a technique used to simultaneously merge three or more independent branches in a single commit."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Gitはオブジェクトデータベース内で同一の内容のファイルを複数回保存せず、同じblobオブジェクトを再利用する。",
+      "en": "Git does not store files with identical contents multiple times in the object database; it reuses the same blob object."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ハッシュベースの保存形式により、ファイル名や場所が違っても内容が同じならストレージ容量は消費しません。",
+      "en": "Due to hash-based storage, if the content is identical, no extra storage is consumed even if filenames or locations differ."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "git rebase --onto A B C コマンドにおいて、移動先の新しいベースコミットは C で指定される。",
+      "en": "In the git rebase --onto A B C command, the new base commit to move onto is specified by C."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "この構文において新しいベースは A であり、B から C までのコミットを A の上に移植するという意味になります。",
+      "en": "In this syntax, A is the new base, meaning commits from B to C will be transplanted onto A."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "commit-tree コマンドのようなプラミングコマンドを使用すると、意図的に親を持たないルートコミットを既存のリポジトリ内に作成できる。",
+      "en": "Using plumbing commands like commit-tree allows you to intentionally create a root commit without any parents within an existing repository."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "通常は最初の一回しかルートコミットはできませんが、低レベルコマンドを使えば内部仕様を利用して自由に作成できます。",
+      "en": "Normally root commits happen only once, but low-level commands bypass restrictions to create them freely."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "reflog の有効期限が切れて削除されたオブジェクトは、次回のコミット作成時にバックグラウンドで自動的かつ即座に物理削除される。",
+      "en": "Objects removed due to expired reflogs are automatically and immediately physically deleted in the background upon creating the next commit."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "即座には削除されず、明示的または自動で git gc (ガベージコレクション) が実行されたタイミングで物理的に削除されます。",
+      "en": "They are not immediately deleted; physical deletion happens only when git gc is executed, explicitly or automatically."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "署名付きタグを作成する際、Gitはタグオブジェクト自体にGPG署名を含めて保存し、アノテートタグとして作成する。",
+      "en": "When creating a signed tag, Git includes the GPG signature directly inside the tag object and creates it as an annotated tag."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "誰がそのリリースを承認したかという暗号学的な証明をタグの中に永続的に記録することができます。",
+      "en": "It allows cryptographic proof of who approved a release to be permanently recorded inside the tag."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Gitのガベージコレクションは、packfile を解凍してすべてのオブジェクトを個別の loose object に戻す処理を行う。",
+      "en": "Git's garbage collection unpacks the packfile and converts all objects back into individual loose objects."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "逆に、多数の loose object を圧縮された1つの packfile にまとめてパフォーマンスを向上させる処理を行います。",
+      "en": "Conversely, it consolidates many loose objects into a single compressed packfile to improve performance."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "ブランチのアップストリームを設定する情報は、.git/config ファイル内のブランチセクションに保存される。",
+      "en": "Information setting the upstream for a branch is stored within the branch section of the .git/config file."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "どのリモートブランチと同期するかという設定が [branch \"name\"] の下にテキスト形式で記録されています。",
+      "en": "Settings detailing which remote branch to synchronize with are recorded in text format under [branch \"name\"]."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "git archive コマンドを使用してエクスポートされたZIPファイルには、.git ディレクトリとすべての履歴情報がそのまま含まれている。",
+      "en": "A ZIP file exported using the git archive command includes the .git directory and all historical information exactly as is."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "git archive は指定されたコミットのスナップショットのファイル群のみを固め、.git ディレクトリを含めません。",
+      "en": "git archive packages only the working tree snapshot of a specified commit and strictly excludes the .git directory."
+    }
+  }
+]

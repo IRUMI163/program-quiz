@@ -1,0 +1,1201 @@
+[{
+    "difficulty": 1,
+    "text": {
+      "ja": "SQLは、リレーショナルデータベースのデータを操作および管理するために使用される言語である。",
+      "en": "SQL is a language used to manipulate and manage data in relational databases."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "SQLはStructured Query Languageの略であり、リレーショナルデータベースと対話するための標準的な言語です。",
+      "en": "SQL stands for Structured Query Language, which is the standard language for interacting with relational databases."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "SELECT文は、テーブルからデータを削除するために使用される。",
+      "en": "The SELECT statement is used to delete data from a table."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "SELECT文はデータの検索（取得）に使用されます。データの削除にはDELETE文を使用します。",
+      "en": "The SELECT statement is used to retrieve data. The DELETE statement is used for deleting data."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "WHERE句は、特定の条件を満たすレコードのみを絞り込むために使用される。",
+      "en": "The WHERE clause is used to filter records that meet a specific condition."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "検索や更新、削除を行う際に、対象となる行を条件指定するためにWHERE句が必須となります。",
+      "en": "The WHERE clause is essential for specifying conditions to filter rows during selection, updating, or deletion."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "INSERT文は、テーブル内の既存のレコードの値を変更するために使用される。",
+      "en": "The INSERT statement is used to modify the values of existing records in a table."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "INSERT文は新しいレコードを追加するために使用されます。既存のレコードの変更にはUPDATE文を使用します。",
+      "en": "The INSERT statement adds new records. The UPDATE statement is used to modify existing records."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "主キー（Primary Key）の列には、重複する値やNULLを含めることができない。",
+      "en": "A Primary Key column cannot contain duplicate values or NULL."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "主キーはテーブル内の各行を一意に識別するためのものであり、一意性と非NULL性が保証されます。",
+      "en": "A primary key uniquely identifies each row in a table, ensuring uniqueness and prohibiting NULL values."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "ORDER BY句を使用すると、デフォルトでデータは降順（大きい順）に並べ替えられる。",
+      "en": "When using the ORDER BY clause, the data is sorted in descending order by default."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "デフォルトの並べ替え順序は昇順（ASC）です。降順にする場合はDESCキーワードを指定する必要があります。",
+      "en": "The default sort order is ascending (ASC). The DESC keyword must be specified for descending order."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "UPDATE文は、テーブル内の既存のデータを変更するために使用される。",
+      "en": "The UPDATE statement is used to modify existing data in a table."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "UPDATE文とSET句を組み合わせることで、指定した列の値を新しい値に更新できます。",
+      "en": "By combining the UPDATE statement with the SET clause, you can update the values of specified columns to new values."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "SQLにおいて、ワイルドカード文字の % は、厳密に1文字の任意の文字を表現する。",
+      "en": "In SQL, the wildcard character % represents exactly one single arbitrary character."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "% は0文字以上の任意の文字列を表します。厳密に1文字を表すワイルドカードは _（アンダースコア）です。",
+      "en": "% represents zero or more characters. The wildcard for exactly one character is _ (underscore)."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "COUNT関数は、指定した条件に一致する行の数を返す。",
+      "en": "The COUNT function returns the number of rows that match a specified condition."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "集計関数の1つであり、テーブル内のデータの件数を把握する際によく使用されます。",
+      "en": "It is an aggregate function commonly used to determine the total number of records in a dataset."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "データベースのテーブルは、必ず1つの列しか持つことができない。",
+      "en": "A database table can strictly have only one column."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "テーブルは複数の列（カラム）を持つことができ、それぞれ異なるデータ型の情報を格納できます。",
+      "en": "A table can have multiple columns, each capable of storing different types of data."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "DROP TABLE文を実行すると、テーブルの構造とそれに含まれるすべてのデータが完全に削除される。",
+      "en": "Executing the DROP TABLE statement completely deletes the table structure along with all its data."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "DROP TABLEはデータベースからテーブルそのものを削除する強力なコマンドです。",
+      "en": "DROP TABLE is a powerful command that permanently removes the entire table from the database."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "GROUP BY句は、2つ以上のテーブルを結合するために使用される。",
+      "en": "The GROUP BY clause is used to join two or more tables together."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "テーブルの結合にはJOIN句を使用します。GROUP BY句は指定した列の値ごとにデータをグループ化するために使います。",
+      "en": "Tables are joined using the JOIN clause. GROUP BY is used to group rows that have the same values in specified columns."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "DELETE文を使用すると、条件を指定してテーブルから1行または複数の行を削除することができる。",
+      "en": "The DELETE statement allows you to remove one or multiple rows from a table by specifying conditions."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "WHERE句を組み合わせることで、特定の条件に合致する行だけを安全に削除できます。",
+      "en": "By combining it with the WHERE clause, you can safely delete only the rows that match specific conditions."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "SQLにおけるNULLは、空文字列（空文字）または数値の0を意味する。",
+      "en": "In SQL, NULL means an empty string or the numeric value zero."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "NULLは「値が存在しない」または「不明である」ことを示す特別な状態であり、空文字列や0とは明確に異なります。",
+      "en": "NULL represents the absence of a value or an unknown value, which is distinctly different from an empty string or zero."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "外部キー（Foreign Key）は、2つのテーブル間のデータの関連性を定義するために使用される。",
+      "en": "Foreign keys are used to define relationships between data in two tables."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "親テーブルの主キーを参照することで、データの一貫性（参照整合性）を保ちます。",
+      "en": "They maintain data consistency (referential integrity) by referencing the primary key of a parent table."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "ASキーワードは、データベースのスキーマ上で列名を恒久的に変更するために使用される。",
+      "en": "The AS keyword is used to permanently rename a column in the database schema."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "AS句は検索結果の表示上で列に一時的な別名（エイリアス）をつけるためのものであり、スキーマは変更されません。",
+      "en": "The AS keyword creates a temporary alias for a column in the result set; it does not change the actual database schema."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "AND演算子やOR演算子を使用すると、WHERE句で複数の条件を組み合わせることができる。",
+      "en": "The AND and OR operators can be used to combine multiple conditions in a WHERE clause."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "これらを組み合わせることで、より複雑で詳細なデータの絞り込みが可能になります。",
+      "en": "Combining these operators allows for more complex and detailed filtering of data."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "MAX関数は数値型の列にのみ使用でき、日付型や文字列型の列には使用できない。",
+      "en": "The MAX function can only be used on numeric columns and cannot be used on date or string columns."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "MAX関数は数値だけでなく、日付の最新日や、文字列の辞書順での最大値を取得するためにも使用できます。",
+      "en": "The MAX function can also be used on dates (to find the latest date) and strings (to find the highest value alphabetically)."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "インデックス（索引）は、データベーステーブルからのデータ検索速度を向上させるために使用される。",
+      "en": "An index is used to speed up the retrieval of data from a database table."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "本の索引のように目的のデータがどこにあるかを素早く特定できるため、SELECT文のパフォーマンスが向上します。",
+      "en": "Similar to a book's index, it quickly locates data, thereby improving the performance of SELECT statements."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "TRUNCATE文は、WHERE句を使用して削除する行を条件で絞り込むことができる。",
+      "en": "The TRUNCATE statement allows filtering which rows to delete using a WHERE clause."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "TRUNCATE文はテーブルの全データを一括で高速に削除するコマンドであり、WHERE句による条件指定はできません。",
+      "en": "TRUNCATE is a command to quickly delete all data in a table; it does not accept a WHERE clause for filtering."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "INNER JOINは、指定した結合条件に一致する行が両方のテーブルに存在する場合にのみデータを返す。",
+      "en": "INNER JOIN returns data only when the specified join condition matches rows in both tables."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "両テーブルの共通部分のみを抽出するため、一致しないレコードは結果から除外されます。",
+      "en": "It extracts only the intersection of both tables, excluding records that do not have a match."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "LEFT JOINは、右側のテーブルのすべてのレコードと、それに一致する左側のレコードを返す。",
+      "en": "LEFT JOIN returns all records from the right table and the matched records from the left table."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "LEFT JOINは「左側」のテーブルの全レコードを返します。右側の全レコードを返すのはRIGHT JOINです。",
+      "en": "LEFT JOIN returns all records from the 'left' table. RIGHT JOIN returns all records from the right table."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "HAVING句は、GROUP BY句によって作成されたグループに対して条件による絞り込みを行うために使用される。",
+      "en": "The HAVING clause is used to filter groups created by the GROUP BY clause based on a condition."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "WHERE句では集計関数（SUMやCOUNTなど）を使った条件指定ができないため、集計後の絞り込みにはHAVING句を使います。",
+      "en": "Since aggregate functions cannot be used in a WHERE clause, HAVING is used to filter after aggregation."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "DELETE文によるデータの削除処理は、常に自動でコミットされるため、後からロールバック（取り消し）することはできない。",
+      "en": "Data deletion using the DELETE statement is always automatically committed and cannot be rolled back later."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "DELETE文はトランザクション内で実行されている場合、COMMITされる前であればROLLBACKによって取り消すことができます。",
+      "en": "If executed within a transaction, a DELETE statement can be undone using ROLLBACK before a COMMIT is issued."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "トランザクションのACID特性とは、Atomicity（原子性）、Consistency（一貫性）、Isolation（独立性）、Durability（永続性）の頭文字である。",
+      "en": "The ACID properties of a transaction stand for Atomicity, Consistency, Isolation, and Durability."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "これらはリレーショナルデータベースがトランザクションを安全かつ確実に処理するための4つの重要な特性です。",
+      "en": "These are the four key properties that guarantee relational databases process transactions safely and reliably."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "UNION演算子は、結合された結果セットから重複する行をデフォルトで保持する。",
+      "en": "The UNION operator retains duplicate rows from the combined result sets by default."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "UNIONはデフォルトで重複行を排除します。重複行を含めたまま結合したい場合はUNION ALLを使用します。",
+      "en": "UNION removes duplicates by default. If you want to keep duplicate rows, you must use UNION ALL."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "DISTINCTキーワードは、SELECT結果から重複する値を取り除くために使用される。",
+      "en": "The DISTINCT keyword is used to remove duplicate values from the SELECT result set."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "SELECT DISTINCT 列名 と指定することで、対象列の重複を排除した一意なリストを取得できます。",
+      "en": "By specifying SELECT DISTINCT column_name, you can retrieve a unique list without duplicate values for that column."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "SQLクエリの評価順序において、HAVING句はWHERE句よりも先に処理される。",
+      "en": "In the evaluation order of an SQL query, the HAVING clause is processed before the WHERE clause."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "WHERE句による行の絞り込みが行われた後にGROUP BYでグループ化され、その結果に対してHAVING句が処理されます。",
+      "en": "Rows are first filtered by the WHERE clause, then grouped by GROUP BY, and finally filtered by the HAVING clause."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "LIKE演算子は、WHERE句で特定のパターンに一致する文字列を検索するために使用される。",
+      "en": "The LIKE operator is used in a WHERE clause to search for a specified string pattern."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ワイルドカード（% や _）と組み合わせて、前方一致や部分一致の検索を行う際によく使われます。",
+      "en": "It is commonly used with wildcards (% or _) to perform prefix or partial match searches."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "テーブルにインデックスを追加すると、データ検索だけでなくINSERT文などのデータ更新処理のパフォーマンスも常に向上する。",
+      "en": "Adding an index to a table always improves the performance of data updates like INSERT statements, in addition to data retrieval."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "インデックスを追加すると検索速度は上がりますが、更新（INSERT、UPDATE、DELETE）の際はインデックス自体の再構築も必要なため、更新処理の速度は低下します。",
+      "en": "While indexes speed up retrieval, they decrease the performance of updates (INSERT, UPDATE, DELETE) because the index itself must also be updated."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "サブクエリとは、SELECT、INSERT、UPDATEなどの別のSQL文の中にネスト（入れ子）されたクエリのことである。",
+      "en": "A subquery is a query nested inside another SQL statement such as SELECT, INSERT, or UPDATE."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "主となる外側のクエリに、サブクエリの実行結果を条件や値として渡すことができます。",
+      "en": "The execution result of the subquery can be passed as a condition or value to the main outer query."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "COALESCE関数は、引数として渡されたリストのうち、一番最後に出現する非NULLの値を返す。",
+      "en": "The COALESCE function returns the last non-null value from a list of provided arguments."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "COALESCE関数は、引数のリストを左から順に評価し、一番「最初」に出現する非NULLの値を返します。",
+      "en": "The COALESCE function evaluates the list from left to right and returns the 'first' non-null value it encounters."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "データベースの正規化は、データの冗長性を減らし、データの整合性を向上させるためのプロセスである。",
+      "en": "Database normalization is the process of reducing data redundancy and improving data integrity."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "第1正規形から第3正規形などへと段階的にテーブルを分割し、矛盾したデータ更新を防ぎます。",
+      "en": "It involves dividing tables progressively (e.g., from 1NF to 3NF) to prevent inconsistent data updates."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "第1正規形（1NF）では、1つの列にカンマ区切りで複数の値を持たせることが許可されている。",
+      "en": "First Normal Form (1NF) permits a single column to hold multiple values separated by commas."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "第1正規形の要件は、テーブルのすべての列が「スカラー値（単一の分割不可能な値）」を持つことです。複数の値を含めることはできません。",
+      "en": "1NF requires that all columns contain atomic (indivisible) scalar values. Having multiple values in one column violates this."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "IN演算子は、WHERE句で複数のOR条件を記述する代わりの簡潔な表記として使用できる。",
+      "en": "The IN operator can be used as a concise alternative to writing multiple OR conditions in a WHERE clause."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "WHERE 列名 IN (値1, 値2, 値3) のように書くことで、いずれかの値に一致する行をスマートに取得できます。",
+      "en": "Writing WHERE column IN (val1, val2, val3) elegantly retrieves rows matching any of the specified values."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "標準的なビュー（View）は、クエリ結果のデータを物理的にハードディスク上の別領域に保存する機能である。",
+      "en": "A standard View physically stores the resulting data in a separate area on the hard disk."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "標準のビューは実データを持たない「仮想テーブル（保存されたクエリ）」です。データを物理的に持つのはマテリアライズドビューです。",
+      "en": "A standard view is a virtual table (a saved query) that does not hold physical data. Materialized views physically store data."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "DDLはData Definition Languageの略であり、CREATE、ALTER、DROPなどのコマンドが含まれる。",
+      "en": "DDL stands for Data Definition Language and includes commands like CREATE, ALTER, and DROP."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "テーブルやインデックスなど、データベースの構造（スキーマ）を定義・変更・削除するための言語群です。",
+      "en": "It is a set of commands used to define, alter, and drop database structures such as tables and indexes."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "BETWEEN演算子は、指定した範囲の開始値と終了値を結果に含めない（排他的である）。",
+      "en": "The BETWEEN operator excludes the start and end values specified in its range."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "BETWEEN演算子は、開始値と終了値も条件に含まれます（境界値を含む）。",
+      "en": "The BETWEEN operator is inclusive, meaning both the start and end boundary values are included in the result."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "複合キー（Composite Key）とは、2つ以上の列を組み合わせて作成される主キーのことである。",
+      "en": "A composite key is a primary key made up of a combination of two or more columns."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "1つの列だけでは行を一意に特定できない場合に、複数の列を組み合わせて一意性を確保します。",
+      "en": "When a single column cannot uniquely identify a row, multiple columns are combined to ensure uniqueness."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "ROLLBACKコマンドを実行すると、トランザクション開始後に行われたすべてのデータ変更が確定され、永続化される。",
+      "en": "Executing the ROLLBACK command confirms and permanently saves all data modifications made since the transaction started."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ROLLBACKは変更を破棄して元の状態に戻すコマンドです。変更を確定して永続化するにはCOMMITコマンドを使用します。",
+      "en": "ROLLBACK discards changes and reverts to the previous state. The COMMIT command is used to make changes permanent."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "標準SQLにおいて、= 演算子を使用してNULL同士を比較した場合、結果はTRUEではなくUNKNOWNとなる。",
+      "en": "In standard SQL, comparing a NULL value to another NULL value using the = operator evaluates to UNKNOWN, not TRUE."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "NULLは未知の値であるため、未知同士の比較結果も未知(UNKNOWN)となります。NULLの判定にはIS NULLを使用します。",
+      "en": "Since NULL is an unknown value, comparing two unknowns yields UNKNOWN. IS NULL must be used to check for NULL."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "EXISTS演算子は、サブクエリが返す行が厳密に1行のときのみTRUEとなり、複数行返した場合はFALSEとなる。",
+      "en": "The EXISTS operator evaluates to TRUE only if the subquery returns exactly one row, and FALSE if it returns multiple rows."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "EXISTSはサブクエリが「1行でも」結果を返せばTRUEとなります。複数行返されてもTRUEです。",
+      "en": "EXISTS evaluates to TRUE if the subquery returns one OR more rows. It remains TRUE even with multiple rows."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "クラスタ化インデックス（Clustered Index）は、テーブル内のデータ行の物理的な並べ替え順序を決定する。",
+      "en": "A clustered index defines the physical sorting order of the data rows in a table."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "物理的な順序を決定するため、1つのテーブルにつきクラスタ化インデックスは1つしか作成できません。",
+      "en": "Because it dictates the physical order, only one clustered index can be created per table."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "COUNT(列名) を実行すると、その列に含まれるNULL値も1件としてカウントされる。",
+      "en": "Executing COUNT(column_name) includes NULL values in its count."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "COUNT(列名)はNULL値を除外してカウントします。NULLも含めてすべての行数を数える場合はCOUNT(*)を使用します。",
+      "en": "COUNT(column_name) ignores NULL values. To count all rows including those with NULLs, you must use COUNT(*)."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ウィンドウ関数（分析関数）を使用すると、GROUP BYのように行を集約することなく、現在の行に関連する行セットに対して計算を行うことができる。",
+      "en": "Window functions allow you to perform calculations across a set of related rows without aggregating them into a single output row like GROUP BY does."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "OVER句を用いて、元の明細行を維持したまま、累計や順位などの高度な分析を行うことができます。",
+      "en": "Using the OVER clause, you can calculate running totals or rankings while preserving the original detail rows."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "それぞれ10行のレコードを持つ2つのテーブルをINNER JOINした場合、結果は必ず10行になる。",
+      "en": "An inner join between two tables that each have 10 rows will always result in exactly 10 rows."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "結合条件（ON句）による一致状況に依存します。1対多の結合であれば10行以上になることもあり、一致しなければ0行にもなります。",
+      "en": "It depends on the join condition. It could result in more than 10 rows (if one-to-many matches exist) or 0 rows (if no matches exist)."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "TRUNCATE TABLEコマンドは、トランザクションログへの記録が最小限に抑えられるため、一般的にDELETE文よりも高速に実行される。",
+      "en": "The TRUNCATE TABLE command is generally faster than the DELETE statement because it records fewer operations in the transaction log."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "DELETEが行ごとにログを記録するのに対し、TRUNCATEはページの解放のみを記録するため高速です（DDLに近い振る舞いをします）。",
+      "en": "While DELETE logs each row deletion, TRUNCATE simply deallocates data pages and logs fewer operations, making it much faster."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "標準SQLにおいて、文字列リテラルはダブルクォーテーション（\" \"）で囲む仕様になっている。",
+      "en": "In standard SQL, string literals must be enclosed in double quotes (\" \")."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "標準SQLでは、文字列リテラルはシングルクォーテーション（' '）で囲みます。ダブルクォーテーションは列名やテーブル名などの識別子に使用されます。",
+      "en": "Standard SQL requires string literals to be enclosed in single quotes (' '). Double quotes are used for identifiers like table or column names."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "デッドロックとは、2つ以上のトランザクションが互いに相手のロック解除を待ち続け、永遠に処理が進まなくなる状態である。",
+      "en": "A deadlock is a situation where two or more transactions continuously wait for each other to release locks, halting progress indefinitely."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "RDBMSはデッドロックを検知すると、通常はいずれか一方のトランザクションを強制的にロールバックさせて解消を図ります。",
+      "en": "When an RDBMS detects a deadlock, it typically forces one of the transactions to roll back to break the cycle."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "分離レベル READ UNCOMMITTED は、他のトランザクションがまだコミットしていないデータを読み取ることを完全に防ぐ。",
+      "en": "The READ UNCOMMITTED isolation level completely prevents a transaction from reading uncommitted data from other transactions."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "READ UNCOMMITTEDは最も低い分離レベルであり、コミット前のデータを読み取ってしまう現象（ダーティリード）を許可します。",
+      "en": "READ UNCOMMITTED is the lowest isolation level and explicitly allows transactions to read uncommitted data (dirty reads)."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "外部キー制約は、参照先のテーブルの主キーだけでなく、UNIQUE制約が設定された列も参照することができる。",
+      "en": "A foreign key constraint can reference a column with a UNIQUE constraint in another table, not just a primary key."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "外部キーの参照先は一意に特定できる列である必要があり、主キーまたはUNIQUE制約のある列が該当します。",
+      "en": "The referenced column must uniquely identify a row, which means either a primary key or a column with a UNIQUE constraint is valid."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "5行のテーブルと4行のテーブルをCROSS JOIN（交差結合）すると、結果セットは9行になる。",
+      "en": "A CROSS JOIN of a table with 5 rows and a table with 4 rows produces a result set of 9 rows."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "CROSS JOINはすべての行の組み合わせ（デカルト積）を生成するため、5 × 4 = 20行になります。",
+      "en": "A CROSS JOIN produces the Cartesian product of the tables, resulting in 5 × 4 = 20 rows."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "マテリアライズドビュー（実体化ビュー）は、クエリの実行結果を物理的に保存するため、元データが変更された際にはリフレッシュ操作が必要となる。",
+      "en": "Materialized views physically store the results of a query and must be refreshed when the underlying data changes."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "集計などの重いクエリの結果をキャッシュして検索を高速化しますが、データの鮮度を保つための更新処理が必要です。",
+      "en": "They speed up searches by caching the results of heavy queries, but require refresh operations to keep the data updated."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ROW_NUMBER関数は、ORDER BY句で指定された値が同一の場合、それらの行に同じ順位（ランク）を割り当てる。",
+      "en": "The ROW_NUMBER window function assigns the same rank to rows with identical values in the ORDER BY clause."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ROW_NUMBERは値が同じであっても常に一意の連番を割り当てます。同じ値に同じ順位をつけるのはRANK関数またはDENSE_RANK関数です。",
+      "en": "ROW_NUMBER assigns strictly sequential, unique integers. RANK or DENSE_RANK assigns the same rank to identical values."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ストアドプロシージャは入力パラメータを受け取り複数の結果セットを返すことができるが、ユーザー定義関数（UDF）は通常、単一の値またはテーブルを返す。",
+      "en": "Stored procedures can accept input parameters and return multiple result sets, whereas user-defined functions (UDFs) typically return a single value or table."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "プロシージャはトランザクション制御などの複雑な処理に向き、関数はSELECT文の中などで計算結果を得る用途に向いています。",
+      "en": "Procedures are suited for complex logic and transaction control, while functions are designed to compute and return a value directly usable in SELECT queries."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ANY演算子は、サブクエリが返す値の「すべて」が条件を満たした場合にTRUEを返す。",
+      "en": "The ANY operator returns TRUE only if 'all' of the subquery values meet the condition."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ANY演算子は「いずれか1つでも」条件を満たせばTRUEを返します。すべてが満たした場合にTRUEを返すのはALL演算子です。",
+      "en": "The ANY operator returns TRUE if 'at least one' value meets the condition. The ALL operator is used to check if all values meet the condition."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "楽観的ロック（Optimistic Locking）は、他のトランザクションと競合しないという前提で処理を進め、コミットの直前にのみ競合をチェックする手法である。",
+      "en": "Optimistic locking assumes no conflicts will occur and only checks for them right before committing."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "通常、レコードのバージョン番号やタイムスタンプ列を用いて、読み取り時からデータが変更されていないかを検証します。",
+      "en": "It typically uses a version number or timestamp column to verify that the data hasn't changed since it was read."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "非等価結合（Non-Equi Join）では、> や < といった演算子しか使用できず、BETWEEN演算子を使用することはできない。",
+      "en": "In a non-equi join, only operators like > and < can be used, and the BETWEEN operator is not allowed."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "非等価結合は = 以外の演算子を使う結合の総称であり、BETWEEN演算子を使用して範囲で結合することも可能です。",
+      "en": "A non-equi join is any join not using the = operator, and using the BETWEEN operator to join based on a range is perfectly valid."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "SQLの標準的な実行評価順序において、FROM句はWHERE句よりも先に評価される。",
+      "en": "In the standard execution order of an SQL query, the FROM clause is evaluated before the WHERE clause."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "まずFROM句で対象となるテーブルを特定し、その後にWHERE句でレコードの絞り込みが行われます。",
+      "en": "The database first identifies the working dataset in the FROM clause before applying filters in the WHERE clause."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "DMLトリガーは、INSERT文およびDELETE文の実行時にのみ起動でき、UPDATE文に対しては定義できない。",
+      "en": "DML triggers can only be executed on INSERT and DELETE statements, and cannot be defined for UPDATE statements."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "DMLトリガーは、データの変更を伴うすべての処理（INSERT、UPDATE、DELETE）に対して定義することができます。",
+      "en": "DML triggers can be defined for any statement that modifies data: INSERT, UPDATE, and DELETE."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Bツリー（B-Tree）インデックスは、完全一致や範囲検索には適しているが、「%ABC」のような先頭にワイルドカードを置いた部分一致検索には効果がない。",
+      "en": "B-Tree indexes are well-suited for exact matches and range queries, but they are ineffective for partial match searches with a leading wildcard like '%ABC'."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "Bツリーは値の先頭から順にソートされているため、前方一致（'ABC%'）には有効ですが、後方一致や中間一致には使えません。",
+      "en": "Since B-Trees are sorted from left to right, they work for prefix matches ('ABC%') but cannot utilize the index for leading wildcards."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "PostgreSQLにおいて、分離レベル SERIALIZABLE はMVCCを使用せず、厳密なツーフェーズロック（2PL）のみを用いて実装されている。",
+      "en": "In PostgreSQL, the SERIALIZABLE isolation level does not use MVCC and is implemented exclusively using strict two-phase locking (2PL)."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "PostgreSQLは、MVCCをベースに依存関係グラフを利用して直列化可能性の破綻を検知するSSI（Serializable Snapshot Isolation）を採用しています。",
+      "en": "PostgreSQL uses Serializable Snapshot Isolation (SSI), which detects serialization anomalies using a dependency graph built on top of MVCC."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "SQL-92標準の定義上、分離レベル REPEATABLE READ においても「ファントムリード（幻読み）」は発生し得る現象とされている。",
+      "en": "According to the SQL-92 standard, 'phantom reads' can still occur under the REPEATABLE READ isolation level."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "標準仕様上は許容されています（InnoDBなどは独自にネクストキーロックで防ぎます）。ファントムリードを完全に防ぐのはSERIALIZABLEです。",
+      "en": "The standard allows it (though some engines like InnoDB prevent it with next-key locks). Only SERIALIZABLE is strictly required to prevent phantom reads."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "カバリングインデックス（Covering Index）とは、不正アクセスを防ぐためにすべての列を自動的に暗号化するインデックスのことである。",
+      "en": "A covering index is an index that automatically encrypts all columns to prevent unauthorized data access."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "カバリングインデックスとは、クエリで必要とされるすべての列が含まれており、テーブルの実データへのアクセスを省略できるインデックスのことです。",
+      "en": "A covering index contains all the columns required by a query, allowing the database to satisfy the query without touching the actual table data."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "WAL（Write-Ahead Logging）は、データファイルへの変更を適用する前に、その変更内容をログファイルに書き込むことで原子性と永続性を保証する仕組みである。",
+      "en": "Write-Ahead Logging (WAL) ensures atomicity and durability by writing changes to a log file before applying them to the data files."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "クラッシュ時にこのログを用いてリカバリを行うことで、未完了の処理を取り消し、完了した処理を復元します。",
+      "en": "In the event of a crash, this log is used for recovery to undo incomplete transactions and redo committed ones."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "インデックスの「カーディナリティ」とは、インデックスの再構築が必要になるまでにテーブルが保持できる最大行数のことである。",
+      "en": "The 'cardinality' of an index refers to the maximum number of rows a table can hold before the index requires rebuilding."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "カーディナリティは「列に含まれる値の種類の多さ（一意性の高さ）」を指します。性別などの列はカーディナリティが低くなります。",
+      "en": "Cardinality refers to the uniqueness or number of distinct values in a column. A column like 'Gender' has low cardinality."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "テーブルパーティショニングは、巨大なテーブルを物理的に小さな「パーティション」に分割しつつ、論理的には1つのテーブルとしてクエリを実行できる機能である。",
+      "en": "Table partitioning divides a huge table physically into smaller 'partitions' while retaining a single logical view for queries."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "不要なパーティションをスキャンから除外（パーティションプルーニング）できるため、パフォーマンスが劇的に向上します。",
+      "en": "It drastically improves performance by skipping scans of irrelevant partitions (partition pruning)."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "標準SQLにおいて、再帰CTE（共通テーブル式）の処理は、必ず最も深い子ノードから親ノードへ向かってボトムアップで実行される。",
+      "en": "In standard SQL, a recursive Common Table Expression (CTE) is strictly executed bottom-up, starting from the deepest leaf nodes to the parents."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "再帰CTEは、まず「アンカーメンバー（基底クエリ）」を評価し、そこから再帰的に子ノードを展開していくトップダウンのアプローチをとります。",
+      "en": "Recursive CTEs evaluate the 'anchor member' first and then recursively expand out to the child nodes in a top-down manner."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "実行計画（Execution Plan）を確認することで、オプティマイザが選択したインデックススキャンやハッシュ結合などの内部的な処理手順を把握できる。",
+      "en": "By reviewing the Execution Plan, you can understand the internal sequence of operations, such as index scans and hash joins, chosen by the optimizer."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "EXPLAIN句などを利用して計画を可視化することは、パフォーマンスチューニングにおいて最も重要なステップです。",
+      "en": "Visualizing the plan using EXPLAIN is the most critical step in database performance tuning."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "ハッシュ結合（Hash Join）は、2つの巨大なテーブル間で > や < といった非等価条件を評価する際に非常に効率的なアルゴリズムである。",
+      "en": "A Hash Join is a highly efficient algorithm for evaluating non-equi conditions such as > or < between two massive tables."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ハッシュ結合は =（等価結合）の条件でのみ使用可能です。ハッシュ関数は値の大小関係を維持しないため、非等価条件には適用できません。",
+      "en": "Hash joins can only be used for equi-joins (=). Hash functions do not preserve ordering, making them useless for inequality conditions."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "ダーティライト（他のトランザクションによる未コミットの変更を上書きしてしまう現象）は、READ UNCOMMITTEDを含むすべての標準分離レベルで防止されている。",
+      "en": "Dirty writes (overwriting uncommitted changes from another transaction) are prevented in all standard isolation levels, including READ UNCOMMITTED."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ダーティライトを許容するとロールバック時の整合性が完全に破壊されるため、どのデータベースでも排他ロックによって必ず防止されます。",
+      "en": "Allowing dirty writes would destroy consistency upon rollback, so all databases prevent it inherently via exclusive locks."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "列指向データベース（カラムナーDB）は、行データを再構築するオーバーヘッドがあるため、集計関数を多用する分析系クエリ（OLAP）においては行指向データベースより遅い。",
+      "en": "Column-oriented databases are generally slower for analytical queries (OLAP) than row-oriented ones because of the overhead of reconstructing rows."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "列指向DBは特定の列データのみを連続して読み出せるため、大量のデータ集計を行うOLAPクエリにおいて圧倒的に高速です。",
+      "en": "Column-oriented DBs are vastly faster for OLAP because they can sequentially read only the necessary columns for aggregations."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "MySQLのInnoDBストレージエンジンでは、セカンダリインデックス（非クラスタ化インデックス）のリーフノードに直接的な物理ポインタではなく、主キーの値が格納される。",
+      "en": "In MySQL InnoDB, the leaf nodes of a secondary index store the primary key values rather than direct physical pointers to the rows."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "これにより、データの物理的な移動（ページ分割など）が起きてもセカンダリインデックスを更新する手間が省けますが、検索時には主キーによる再検索が発生します。",
+      "en": "This avoids updating secondary indexes during row movement (like page splits), though it requires a secondary lookup using the primary key."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "SQL標準の仕様では、文字列とNULLを結合演算子（||）で結合した場合、結果は元の文字列のままになる。",
+      "en": "According to the SQL standard, concatenating a string with NULL using the concatenation operator (||) results in the original string."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "標準SQLでは、NULL（未知）との結合結果は常にNULLになります（ただしOracleなど一部のRDBMSでは元の文字列を返す挙動をします）。",
+      "en": "The SQL standard dictates that concatenating with NULL yields NULL, though some RDBMS like Oracle deviate and return the original string."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "2フェーズコミット（2PC）は、分散データベース環境において、複数の独立したノード間でトランザクションのコミットを同期・調整するためのアルゴリズムである。",
+      "en": "Two-phase commit (2PC) is a distributed algorithm used to coordinate and synchronize commits across multiple independent nodes in a distributed database."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "準備フェーズ（Prepare）で全ノードの合意を得てから、コミットフェーズ（Commit）を実行することで、分散トランザクションの原子性を保証します。",
+      "en": "It ensures distributed atomicity by first asking all nodes to Prepare, and only issuing a Commit if all nodes agree."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "ビットマップインデックスは、数百万人の一意なユーザーIDを持つ主キー列など、カーディナリティが非常に高い列に対して極めて効率的である。",
+      "en": "A bitmap index is highly efficient for columns with extremely high cardinality, such as a primary key column with millions of unique User IDs."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ビットマップインデックスは「性別」や「ステータス」など、カーディナリティが低い（値の種類が少ない）列に対してのみ有効です。",
+      "en": "Bitmap indexes are only effective for low cardinality columns (few distinct values) such as 'Gender' or 'Status'."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "バッファプール（共有バッファ）はメモリ上に配置され、頻繁にアクセスされるデータページをキャッシュすることで物理ディスクへのI/Oを最小限に抑える。",
+      "en": "The buffer pool resides in memory and caches frequently accessed data pages to minimize physical disk I/O."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "データベースのパフォーマンスチューニングにおいて、このバッファにどれだけ適切にデータを載せられるかがカギとなります。",
+      "en": "In database performance tuning, efficiently keeping data in this buffer is key to preventing slow disk reads."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "MVCC（多版同時実行制御）を採用しているシステムでは、SELECT操作（読み取り）を行う際に共有ロックを取得するため、その行に対するUPDATE操作（書き込み）はブロックされる。",
+      "en": "In an MVCC system, a read operation must acquire a shared lock, which subsequently blocks any write operations on that row."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "MVCCの最大の利点は「読み取りは書き込みをブロックせず、書き込みは読み取りをブロックしない」ことです。ロックの代わりにデータの古いバージョンを参照させます。",
+      "en": "The main advantage of MVCC is that reads do not block writes and writes do not block reads; it serves older versions of the data instead of locking."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "ブルームフィルタ（Bloom Filter）は空間効率の良い確率的データ構造であり、「要素が存在しない」ことは確実に判定できるが、「存在する」という判定には偽陽性（False Positive）が含まれる可能性がある。",
+      "en": "A Bloom filter is a space-efficient probabilistic data structure that can guarantee an element 'does not exist', but may yield false positives when asserting an element 'exists'."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "DBシステムにおいて、ディスク上のデータブロックに目的のキーが存在しないことを瞬時に判定し、不要なI/Oを省くために使われます。",
+      "en": "Databases use it to instantly check if a key is absent in a block, preventing unnecessary disk I/O, though occasional false positives require actual checks."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "クエリオプティマイザは、あらゆる実行可能な計画を網羅的に計算するため、実行時間が絶対的に最短となる「数学的に100%最適な実行計画」を常に保証する。",
+      "en": "Because it exhaustively calculates all possibilities, the query optimizer always guarantees a mathematically 100% optimal execution plan with the absolute lowest execution time."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "複雑なクエリで全組み合わせを計算するのは非現実的なため、オプティマイザはヒューリスティクスとコスト見積もりに基づき「十分に良さそうな計画」を選択します。",
+      "en": "Exhaustively evaluating all plans for complex queries is unrealistic. Optimizers use heuristics and cost estimates to choose a 'good enough' plan."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "SQL標準において、行値構成子（Row Constructor）を用いた比較 (1, 2) < (1, 3) は有効な構文であり、辞書式順序に基づいてTRUEと評価される。",
+      "en": "In standard SQL, comparing row constructors such as (1, 2) < (1, 3) is a valid syntax and evaluates to TRUE based on lexicographical order."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "左端の要素から順に比較が行われます。複合キーでのページネーション（カーソルベースページネーション）を実装する際に非常に有用な構文です。",
+      "en": "Elements are compared from left to right. This syntax is extremely useful for implementing keyset (cursor-based) pagination with composite keys."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "PostgreSQLにおいて、CONCURRENTLYキーワードを指定してインデックスを作成すると、インデックス構築が完了するまで対象テーブルに対する並行した読み書き（SELECTやUPDATE）がすべてブロックされる。",
+      "en": "In PostgreSQL, creating an index with the CONCURRENTLY keyword blocks all concurrent reads and writes (SELECT/UPDATE) on the table until the build completes."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "CONCURRENTLYはまさにその逆で、書き込みをロックせずにオンラインでインデックスを作成するためのオプションです。ただし作成にはより時間がかかります。",
+      "en": "CONCURRENTLY does exactly the opposite: it allows online index creation without locking writes, though the build process takes longer."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "SQL標準において、OVER句の中にORDER BYが含まれているがフレーム句（ROWS/RANGE）が明示されていない場合、デフォルトのフレームは「先頭行から現在の行まで（UNBOUNDED PRECEDING AND CURRENT ROW）」となる。",
+      "en": "According to the SQL standard, if an ORDER BY is present in the OVER() clause but no frame clause is specified, the default frame is ROWS/RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "この仕様により、ORDER BYを指定するだけで、意図せずとも自動的に「累計」や「移動平均」の計算対象範囲として処理されます。",
+      "en": "Because of this default, simply adding an ORDER BY implicitly turns the calculation into a running total up to the current row."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "MySQLのInnoDBにおいて、ギャップロック（Gap Lock）は主に分離レベル READ COMMITTED においてファントムリードを防ぐ目的で排他的に使用される。",
+      "en": "In MySQL InnoDB, gap locks are used exclusively in the READ COMMITTED isolation level to prevent phantom reads."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ギャップロックは READ COMMITTED では無効化され、REPEATABLE READ 分離レベルにおいてファントムリードを防ぐために使用されます。",
+      "en": "Gap locks are disabled in READ COMMITTED. They are actively used in the REPEATABLE READ isolation level to prevent phantom reads."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "SQLの3値論理（Three-Valued Logic）において、「TRUE OR NULL」はTRUEと評価されるが、「FALSE OR NULL」はUNKNOWNと評価される。",
+      "en": "In SQL's three-valued logic, 'TRUE OR NULL' evaluates to TRUE, but 'FALSE OR NULL' evaluates to UNKNOWN."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "OR条件では一方がTRUEなら全体がTRUEになりますが、FALSEの場合はもう一方（NULL=未知）次第で結果が変わるため、最終結果も未知(UNKNOWN)となります。",
+      "en": "In an OR operation, one TRUE is enough to make it TRUE. If one is FALSE, the result depends on the unknown value (NULL), making the result UNKNOWN."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Oracle Databaseでは、標準SQLに準拠し、空文字列（''）とNULLを完全に別個の異なる値として厳格に区別して比較処理を行う。",
+      "en": "Oracle Database strictly adheres to standard SQL by treating an empty string ('') and NULL as completely distinct and different values in comparisons."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "歴史的な理由から、Oracle Databaseでは空文字列（''）は自動的にNULLとして扱われます。これは標準SQLの挙動とは異なります。",
+      "en": "For historical reasons, Oracle automatically treats empty strings ('') as NULL, which deviates from the SQL standard."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "データベースのリカバリアルゴリズムであるARIESは、論理的なUndoと物理的なRedoを組み合わせた「生理的ロギング（Physiological Logging）」の手法を採用している。",
+      "en": "The ARIES recovery algorithm utilizes 'physiological logging', combining logical undo with physical redo."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ページ単位への物理的な適用（Redo）による確実な復元と、行単位の論理的な取り消し（Undo）による柔軟性を両立させた強力なモデルです。",
+      "en": "It combines the robustness of physical redo (page-level) with the concurrency benefits of logical undo (record-level)."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "SQL標準において、UNIQUE制約は非NULL値の一意性を要求するが、テーブル内で許可されるNULL値は最大1つまでに厳しく制限されている。",
+      "en": "According to the SQL standard, a UNIQUE constraint enforces uniqueness of non-null values but strictly limits the presence of NULL to a maximum of one."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "SQL標準ではNULLは「互いに等しいとはみなされない（UNKNOWN）」ため、UNIQUE制約列には複数のNULLを挿入できます（SQL Serverなど一部例外あり）。",
+      "en": "Because standard SQL treats each NULL as unknown (and thus not equal to another NULL), a UNIQUE column can hold multiple NULL values."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "データベース内部における「ラッチ（Latch）」は、トランザクションの分離性を制御するロックとは異なり、共有メモリ構造を保護するための軽量な同期メカニズムである。",
+      "en": "A 'latch' in database internals is a lightweight synchronization mechanism used to protect shared memory structures, distinct from a database lock used for transaction isolation."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ロックがテーブルや行を論理的に保護するのに対し、ラッチはバッファプールなどの物理的なメモリ状態の一貫性をマイクロ秒単位で保護します。",
+      "en": "While locks protect logical entities like rows or tables over a transaction's lifespan, latches protect physical memory structures for microseconds."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "SQLiteでは静的型付けが厳格に適用されるため、INTEGERと宣言された列には文字列データを挿入することは一切できない。",
+      "en": "Because SQLite strictly enforces static typing, it is absolutely impossible to insert string data into a column declared as INTEGER."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "SQLiteは「動的型付け（Type Affinity）」を採用しており、データ型は列ではなく値そのものに結びつくため、INTEGER列に文字列を保存することも可能です。",
+      "en": "SQLite uses dynamic typing (Type Affinity), meaning types are associated with the values, not the columns. Thus, storing strings in an INTEGER column is allowed."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "PostgreSQLのMVCC実装では、OracleやInnoDBのような独立したロールバックセグメント（Undo領域）を持たず、古いバージョンの行データをメインのテーブル領域（ヒープ）に直接保存する。",
+      "en": "PostgreSQL's MVCC implementation stores old row versions directly within the main table heap, rather than using a separate rollback segment like Oracle or InnoDB."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "この設計により追記処理は高速ですが、不要になった古い行データ（デッドタプル）を回収するためのVACUUM処理が定期的に必要となります。",
+      "en": "While this append-only design speeds up writes, it necessitates a periodic VACUUM process to reclaim space occupied by obsolete rows (dead tuples)."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "SQL:1999標準仕様では、同一テーブルの同一イベントに対して複数のトリガーが定義された場合、それらの実行順序は非決定的（ランダム）であると規定している。",
+      "en": "The SQL:1999 standard specifies that trigger execution order is non-deterministic when multiple triggers are defined for the same event on the same table."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "SQL:1999以降の標準では、作成された時刻（タイムスタンプ）の順に実行されるよう規定されています。",
+      "en": "The standard dictates that triggers on the same event and table execute in the order of their creation timestamp."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "データベースにおける「ハロウィーン問題（Halloween Problem）」は、UPDATE操作によって行の物理位置やインデックスキーが変更され、同一クエリ内で同じ行が複数回更新されてしまう現象を指す。",
+      "en": "The 'Halloween Problem' in databases occurs when an UPDATE modifies a row's physical location or indexed key, causing the same row to be visited and updated multiple times in a single query."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "給与を10%上げるクエリが、インデックス順のスキャン中に変更後の行に再遭遇し、無限に給与を上げ続けるといったバグに由来します。RDBMSは実行計画を工夫してこれを防ぎます。",
+      "en": "It originates from a bug where a query updating salaries by 10% kept revisiting updated rows via index scan. RDBMS engines prevent this via careful execution planning."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "インデックスコンディションプッシュダウン（ICP）とは、データベースエンジンがORDER BY句のソート処理をストレージエンジン側に委譲する最適化技術である。",
+      "en": "Index Condition Pushdown (ICP) is an optimization technique where the database engine pushes the sorting phase of an ORDER BY clause down to the storage engine."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ICPは、WHERE句の条件評価（フィルタリング）の一部をストレージエンジンに委譲（プッシュダウン）することで、DBエンジンに返す無駄な行を減らす最適化技術です。",
+      "en": "ICP pushes WHERE clause conditions (filtering) down to the storage engine to reduce the number of rows transferred back to the server engine."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "SQL Serverにおいて、PAGEIOLATCH_SHという待機事象は、タスクがディスクからバッファプールへデータページを読み込むためのI/O完了を待っている状態を示している。",
+      "en": "In SQL Server, the PAGEIOLATCH_SH wait type indicates that a task is waiting for a data page to be read from disk into the buffer pool."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "この待機が頻発する場合、メモリ（RAM）の不足や、インデックス不足による過剰なディスクスキャンが発生している可能性が高いです。",
+      "en": "Frequent occurrences of this wait type often indicate memory pressure or heavy disk scans due to missing indexes."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Oracleのマテリアライズド・ビュー・ログは、ビューのスキーマ構造に対するDDL変更の履歴を記録するために使用される。",
+      "en": "A materialized view log in Oracle is used to record the history of DDL changes made to a view's schema structure."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "マテリアライズド・ビュー・ログはDDLではなく、基となるテーブルのデータ変更（DML操作）を記録し、「高速リフレッシュ（差分更新）」を実現するためのものです。",
+      "en": "It records DML modifications on the base tables, not DDL changes, to enable 'Fast Refresh' (incremental updates) of the materialized view."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "SQL標準の MATCH PARTIAL 規則では、複合外部キーの一部がNULLである場合、非NULL部分が親テーブルの主キーと一致しなくとも行の挿入が許可される。",
+      "en": "According to the SQL standard's MATCH PARTIAL rule, a row with some NULL components in a composite foreign key can be inserted even if the non-null components do not match any primary key."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "MATCH PARTIALでは「非NULL部分が一致する主キーが『存在する可能性がある（NULL部分を埋めれば）』」限り挿入を許可します（MATCH FULLより緩い制約です）。",
+      "en": "MATCH PARTIAL allows insertion as long as there is 'potentially' a matching primary key if the NULLs were populated. It's looser than MATCH FULL."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "PaxosやRaftなどのコンセンサスアルゴリズムを用いた分散データベースにおいて、リーダーノードがローカルログに書き込みを完了した時点で、以降の読み取り操作は遅延なく確定データを参照できる。",
+      "en": "In a distributed database using Paxos or Raft, once the leader writes a change to its local log, subsequent read operations are guaranteed to access the committed data without delay."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ローカルログへの書き込みだけでは不十分です。リーダーはクラスタ内の「過半数（Quorum）」のノードにレプリケーションされ合意を得て初めてコミット済みとみなします。",
+      "en": "A local write is insufficient. The leader must replicate the log to a majority (Quorum) of nodes and achieve consensus before the data is considered committed and readable."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "MySQLのInnoDBにおけるダブルライトバッファ（Doublewrite Buffer）は、クラッシュによるページの部分的書き込み（パーシャルページライト）によるデータ破損を防ぐための仕組みである。",
+      "en": "In MySQL InnoDB, the Doublewrite Buffer is a mechanism designed to prevent data corruption caused by partial page writes during a crash."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "最終的なデータファイルに書き込む前に、変更されたページを連続した安全な領域（バッファ）に一度書き込むことで、書き込み途中の電源断から復旧できるようにします。",
+      "en": "It writes pages to a sequential area first before writing them to the actual data files, ensuring recovery is possible if power fails mid-write."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "SQLにおけるCUBE演算子は、複数のテーブル間から可能なすべての行の組み合わせを生成する、デカルト積（Cartesian Product）と同じ機能を提供する。",
+      "en": "The CUBE operator in SQL generates all possible combinations of rows from multiple tables, providing the same functionality as a Cartesian product."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "CUBE演算子はGROUP BY句で使用され、指定された複数の次元（列）の「すべての集計パターンの小計」を生成する機能であり、テーブル結合（デカルト積）とは異なります。",
+      "en": "The CUBE operator is used with GROUP BY to generate subtotals for all possible combinations of grouping dimensions, not to cross-join tables."
+    }
+  }
+]

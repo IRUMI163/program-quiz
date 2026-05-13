@@ -1,0 +1,1201 @@
+[{
+    "difficulty": 1,
+    "text": {
+      "ja": "JavaScriptは、ウェブページに動的な動きを追加するためによく使われるプログラミング言語である。",
+      "en": "JavaScript is a programming language commonly used to add dynamic behavior to web pages."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ブラウザ上で動作し、ユーザーとのインタラクションや画面の書き換えを実現する中核的な技術です。",
+      "en": "It is a core technology running in the browser that enables user interaction and dynamic UI updates."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "JavaScriptはJavaの簡略版として開発された言語である。",
+      "en": "JavaScript was developed as a simplified version of Java."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "名前は似ていますが、JavaScriptとJavaは全く異なる言語であり、設計思想も異なります。",
+      "en": "Despite the similar names, JavaScript and Java are completely different languages with different design philosophies."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "変数を宣言するためのキーワードとして、let と const がある。",
+      "en": "let and const are keywords used to declare variables."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ES6で追加され、現在では変数の宣言において主流な方法となっています。",
+      "en": "Introduced in ES6, they are now the primary ways to declare variables in JavaScript."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "constキーワードで宣言された変数は、後から別の値を再代入することができる。",
+      "en": "Variables declared with the const keyword can be reassigned to a different value later."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "constは定数を宣言するためのものであり、再代入するとエラーになります。",
+      "en": "const is used to declare constants, and reassigning them will throw an error."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "シングルクォーテーション(')とダブルクォーテーション(\")のどちらを使っても文字列を定義できる。",
+      "en": "You can define a string using either single quotes (') or double quotes (\")."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "どちらを使用しても動作は同じであり、プロジェクトごとのコーディング規約によって使い分けられます。",
+      "en": "Both work exactly the same way, and the choice usually depends on project coding standards."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "JavaScriptの行末のセミコロン(;)は、いかなる場合でも省略することができない。",
+      "en": "Semicolons (;) at the end of lines in JavaScript can never be omitted under any circumstances."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "JavaScriptには自動セミコロン挿入(ASI)という仕組みがあり、省略しても多くの場合動作します。",
+      "en": "JavaScript has Automatic Semicolon Insertion (ASI), meaning they can often be omitted without breaking the code."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "console.log()は、ブラウザの開発者ツールなどに値を出力するために使用される。",
+      "en": "console.log() is used to output values to the browser's developer tools."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "デバッグの際、変数の値やプログラムの実行状況を確認するために頻繁に使われます。",
+      "en": "It is frequently used for debugging to check variable values and program execution flow."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "配列の最初の要素にアクセスするには、インデックスとして 1 を指定する。",
+      "en": "To access the first element of an array, you specify 1 as the index."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "JavaScriptの配列はゼロベースインデックスを採用しているため、最初の要素には 0 を指定します。",
+      "en": "JavaScript arrays are zero-indexed, so you must use 0 to access the first element."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "boolean型の値は、true または false の2つのみである。",
+      "en": "The boolean data type has only two possible values: true or false."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "論理値を表すデータ型であり、条件分岐などの真偽判定に使用されます。",
+      "en": "It represents a logical entity and is used for true/false evaluations in conditional statements."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "== 演算子と === 演算子は、JavaScriptにおいて全く同じ動作をする。",
+      "en": "The == operator and the === operator work exactly the same way in JavaScript."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "== は型の暗黙的変換を行ってから比較しますが、=== は型と値の両方が一致するかを厳密に比較します。",
+      "en": "== performs implicit type coercion before comparing, whereas === strictly compares both value and type."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "if文を使用すると、指定した条件が真(true)のときだけ特定の処理を実行できる。",
+      "en": "The if statement allows you to execute specific code only when a given condition is true."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "プログラムの制御フローを操作する最も基本的な条件分岐の構文です。",
+      "en": "It is the most basic control flow statement used for conditional branching."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "JavaScriptでは、大文字と小文字は区別されない。",
+      "en": "JavaScript does not distinguish between uppercase and lowercase letters."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "JavaScriptは完全に大文字・小文字を区別します。例えば value と Value は別の変数として扱われます。",
+      "en": "JavaScript is fully case-sensitive. For example, 'value' and 'Value' are treated as completely different variables."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "関数は、複数回呼び出して再利用することができるコードのまとまりである。",
+      "en": "A function is a block of code that can be called multiple times for reuse."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "処理をモジュール化し、同じコードを何度も書く手間を省くことができます。",
+      "en": "It modularizes logic and prevents the need to write the same code over and over."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "while文は、指定した回数だけ確実にループを実行するために使われる。",
+      "en": "The while statement is used to execute a loop an exact, predetermined number of times."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "回数が決まっている場合はfor文が適しています。while文は条件が真である限りループを続ける場合に使われます。",
+      "en": "A for loop is better for a fixed number of iterations. A while loop runs as long as a condition remains true."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "コメントを記述する際、// は1行コメントとして解釈される。",
+      "en": "When writing comments, // is interpreted as a single-line comment."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "// の後ろに書かれたテキストは、その行の終わりまでプログラムとして実行されません。",
+      "en": "Any text following // is ignored by the JavaScript engine until the end of that line."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "true と false の頭文字は、JavaScriptでは必ず大文字で True や False と書かなければならない。",
+      "en": "The words true and false must always be written with an uppercase first letter (True or False) in JavaScript."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "JavaScriptの予約語である true と false は、すべて小文字で記述する必要があります。",
+      "en": "The reserved keywords true and false must be written entirely in lowercase."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "+ 演算子を使って、2つの文字列を繋げることができる。",
+      "en": "You can concatenate two strings using the + operator."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "数値の足し算だけでなく、文字列同士を結合する役割も持っています。",
+      "en": "In addition to adding numbers, it acts as a concatenation operator for strings."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "nullとundefinedは、全く同じ意味を持つデータ型である。",
+      "en": "null and undefined are data types that mean exactly the same thing."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "undefinedは変数が未定義であることを示し、nullは意図的に値が無いことを示すため意味が異なります。",
+      "en": "They are different: undefined means a variable has not been assigned a value, while null is an intentional absence of any value."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "オブジェクトは、プロパティ(キー)と値のペアを複数格納できるデータ構造である。",
+      "en": "An object is a data structure that can store multiple property (key) and value pairs."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "関連するデータや機能を一つのまとまりとして管理するために使われます。",
+      "en": "It is used to group related data and functionality into a single structural unit."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "JavaScriptのすべての変数は、宣言時にそのデータ型(数値や文字列など)を明示的に指定しなければならない。",
+      "en": "All variables in JavaScript must have their data type (like number or string) explicitly declared at creation."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "JavaScriptは動的型付け言語であり、変数宣言時に型を指定する必要はありません。",
+      "en": "JavaScript is a dynamically typed language, so you do not need to specify data types when declaring variables."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "document.getElementById()を使うと、指定したid属性を持つHTML要素を取得できる。",
+      "en": "document.getElementById() allows you to retrieve an HTML element with a specific id attribute."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "DOM操作の基本となるメソッドで、特定の要素を操作するために使われます。",
+      "en": "It is a fundamental DOM manipulation method used to target a specific element on the page."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "アロー関数 (=>) は、常に this の値としてグローバルオブジェクトを参照する。",
+      "en": "Arrow functions (=>) always refer to the global object as their 'this' value."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "アロー関数は独自の this を持たず、宣言された時点の周囲のスコープ（レキシカルスコープ）の this を引き継ぎます。",
+      "en": "Arrow functions do not have their own 'this'. They inherit 'this' from the surrounding lexical scope where they are defined."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "配列の push() メソッドは、配列の末尾に新しい要素を追加するために使用される。",
+      "en": "The push() method of an array is used to add a new element to the end of the array."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "要素を追加した後、新しい配列の長さを返します。先頭に追加する場合は unshift() を使います。",
+      "en": "It adds an item to the end and returns the new length. To add to the beginning, unshift() is used."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "Array.prototype.map() メソッドは、元の配列の要素を直接変更（破壊）する。",
+      "en": "The Array.prototype.map() method directly modifies (mutates) the original array."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "map() は元の配列を変更せず、各要素に処理を適用した新しい配列を返す非破壊的なメソッドです。",
+      "en": "map() is non-mutating; it returns a brand new array containing the transformed elements without changing the original array."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "setTimeout() 関数を使用すると、指定したミリ秒数が経過した後に一度だけ関数を実行できる。",
+      "en": "The setTimeout() function executes a function exactly once after a specified number of milliseconds has elapsed."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "遅延処理や非同期処理のシミュレーションなどに頻繁に使用されます。",
+      "en": "It is frequently used for delaying execution or simulating asynchronous tasks."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "letで宣言された変数は、宣言する前の行で参照してもエラーにならずundefinedが返る。",
+      "en": "A variable declared with let can be referenced before its declaration line without an error, returning undefined."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "let や const で宣言した変数を宣言前に参照すると、ReferenceErrorが発生します。",
+      "en": "Referencing a let or const variable before its declaration results in a ReferenceError due to the Temporal Dead Zone."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "JSON.parse() は、JSON形式の文字列をJavaScriptのオブジェクトに変換するメソッドである。",
+      "en": "JSON.parse() is a method that converts a JSON-formatted string into a JavaScript object."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "サーバーから受け取ったテキストデータを、JavaScript上で扱えるデータ構造に戻す際に使用します。",
+      "en": "It is used to convert text data received from a server back into a usable JavaScript data structure."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "イベントリスナーを追加するには、addEvent() というメソッドを使用する。",
+      "en": "To add an event listener, you use a method called addEvent()."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "標準的なメソッド名は addEventListener() です。",
+      "en": "The standard method is actually named addEventListener()."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "Promiseは、非同期処理の最終的な完了もしくは失敗を表すオブジェクトである。",
+      "en": "A Promise is an object representing the eventual completion or failure of an asynchronous operation."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "コールバック地獄を防ぎ、非同期処理をより直線的で読みやすく記述するために導入されました。",
+      "en": "It was introduced to avoid callback hell and make asynchronous code more linear and readable."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "forEachループの中で break 構文を使用すると、ループを途中で終了することができる。",
+      "en": "Using the break statement inside a forEach loop allows you to terminate the loop early."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "forEach のコールバック関数内では break は使えません。途中で抜ける必要がある場合は for...of や some() などを使います。",
+      "en": "You cannot use break inside a forEach callback. If early termination is needed, a for...of loop or methods like some() should be used."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "テンプレートリテラル(バッククォートを使用)の中では、${} を使って変数や式を埋め込むことができる。",
+      "en": "Within template literals (using backticks), you can embed variables or expressions using ${}."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "+ 演算子を使うよりも、文字列内に動的な値をシンプルかつ読みやすく結合できます。",
+      "en": "It provides a cleaner and more readable way to interpolate dynamic values into strings compared to the + operator."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "localStorageに保存されたデータは、ブラウザのタブやウィンドウを閉じると自動的に削除される。",
+      "en": "Data stored in localStorage is automatically deleted when the browser tab or window is closed."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "localStorageのデータは永続的であり、ブラウザを閉じても残ります。タブを閉じると消えるのは sessionStorage です。",
+      "en": "localStorage data is persistent and survives browser restarts. Data that is deleted when the tab closes is stored in sessionStorage."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "typeof 演算子を使用すると、変数のデータ型を文字列として取得できる。",
+      "en": "Using the typeof operator allows you to retrieve the data type of a variable as a string."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "例えば typeof 42 は文字列の number を返します。",
+      "en": "For example, evaluating typeof 42 returns the string 'number'."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "JavaScriptの配列は、すべて同じデータ型の要素しか格納することができない。",
+      "en": "JavaScript arrays can only store elements of the exact same data type."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "JavaScriptの配列には、数値、文字列、オブジェクトなど、異なるデータ型を混在させて格納することができます。",
+      "en": "JavaScript arrays can hold a mix of different data types, such as numbers, strings, and objects simultaneously."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "querySelector() は、CSSセレクタに一致する最初の要素を返すメソッドである。",
+      "en": "querySelector() is a method that returns the first element that matches a specified CSS selector."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "クラス名やID、属性など、CSSと同じ柔軟な指定方法で要素を1つ取得できます。",
+      "en": "It allows retrieving a single element using the same flexible syntax as CSS selectors, such as classes or IDs."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "addEventListenerで登録したイベントは、要素が削除されない限り絶対に解除できない。",
+      "en": "Events registered with addEventListener can never be removed unless the element itself is deleted."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "removeEventListener() メソッドを使用することで、登録したイベントリスナーを解除することができます。",
+      "en": "Registered event listeners can be explicitly removed using the removeEventListener() method."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "Number() 関数を使うと、文字列などの他のデータ型を数値に変換することができる。",
+      "en": "The Number() function can be used to convert other data types, such as strings, into numbers."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "フォームから取得したテキストなどを計算に使うために数値化する際によく利用されます。",
+      "en": "It is often used to convert text inputs from forms into numerical values for calculations."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "HTML要素の class リストを操作するには、element.class ではなく element.classNameList を使う。",
+      "en": "To manipulate the class list of an HTML element, you use element.classNameList instead of element.class."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "要素のクラスリストを操作するには、element.classList オブジェクトの add や remove メソッドを使用します。",
+      "en": "To manipulate an element's classes, you should use the element.classList object along with methods like add or remove."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "fetch API は、ネットワーク越しにリソースを取得するために使用される非同期関数である。",
+      "en": "The fetch API is an asynchronous function used to fetch resources across a network."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "古い XMLHttpRequest に代わり、現在では外部サーバーとの通信（APIリクエスト）の標準的な手段となっています。",
+      "en": "It has largely replaced the older XMLHttpRequest as the modern standard for making network API requests."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "strictモード (\"use strict\") を有効にすると、const キーワードが使えなくなる。",
+      "en": "Enabling strict mode (\"use strict\") disables the use of the const keyword."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "strictモードはより安全なコードを書くためのエラーチェック機能であり、const キーワードの使用を制限するものではありません。",
+      "en": "Strict mode enforces safer coding practices by throwing more errors, but it absolutely does not disable modern keywords like const."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "クロージャは、関数が宣言されたときのレキシカルスコープを記憶しており、関数がそのスコープの外で実行されても元の変数にアクセスできる。",
+      "en": "A closure remembers the lexical scope in which it was declared, allowing the function to access those variables even when executed outside that scope."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "この仕組みにより、カプセル化やプライベート変数の模倣といった高度な実装が可能になります。",
+      "en": "This mechanism enables advanced implementations like encapsulation and mimicking private variables."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "JavaScriptのイベントバブリングは、イベントが親要素から子要素へ向かって伝播する仕組みのことである。",
+      "en": "Event bubbling in JavaScript is the mechanism where an event propagates from the parent element down to the child elements."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "バブリングは「子要素から親要素へ」向かって伝播します。親から子へ向かうのはキャプチャリングフェーズです。",
+      "en": "Bubbling propagates from the child element up to the parent. The phase going from parent to child is the capturing phase."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "this の値は、アロー関数を除き、関数がどのように呼び出されたかによって実行時に決定される。",
+      "en": "The value of 'this', except in arrow functions, is determined at runtime based on how the function is called."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "メソッドとして呼ばれたか、コンストラクタとして呼ばれたかなどで this の中身は動的に変化します。",
+      "en": "The context of 'this' changes dynamically depending on whether it's called as a method, a constructor, or a standalone function."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "var キーワードで宣言された変数は、ブロックスコープを持つ。",
+      "en": "Variables declared with the var keyword have block scope."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "var は関数スコープを持ちます。if文やfor文の中括弧{}で囲まれたブロックスコープを持つのは let と const です。",
+      "en": "var is function-scoped. Variables that have block scope (confined by {}) are declared with let and const."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "typeof null を評価した結果は、文字列の object である。",
+      "en": "Evaluating typeof null returns the string 'object'."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "これはJavaScriptの初期からの歴史的なバグとして有名ですが、後方互換性のために修正されずに現在も残っています。",
+      "en": "This is a famous historical bug from the early days of JavaScript, but it remains unfixed to maintain backward compatibility."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "Array.prototype.filter() メソッドが条件に一致する要素を見つけられなかった場合、null を返す。",
+      "en": "If the Array.prototype.filter() method finds no elements matching the condition, it returns null."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "filter() は条件に一致する要素がない場合、null ではなく空の配列 [] を返します。",
+      "en": "If no elements match the condition, filter() returns an empty array[], not null."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "Promise.all() は、渡されたすべてのPromiseが完了(resolve)したときにresolveされるPromiseを返す。",
+      "en": "Promise.all() returns a Promise that resolves when all of the passed Promises have resolved."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "複数のAPIリクエストなどを並行して行い、すべて揃ったタイミングで次の処理を行う際によく使われます。一つでもrejectされると全体もrejectされます。",
+      "en": "It's used to run multiple asynchronous tasks in parallel and wait for all to finish. If any promise rejects, the entire Promise.all rejects."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "async関数の中でawaitを使用すると、メインのJavaScript実行スレッド全体がその処理が終わるまで完全に停止（ブロック）する。",
+      "en": "Using await inside an async function completely halts (blocks) the entire main JavaScript execution thread until the operation finishes."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "awaitはあくまでそのasync関数内の実行を一時停止するだけであり、メインスレッド自体はブロックされず他のイベントを処理できます。",
+      "en": "await only pauses the execution within that specific async function; it does not block the main thread, allowing other events to be processed."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "NaN は、自分自身と比較(NaN === NaN)すると false になる唯一のJavaScriptの値である。",
+      "en": "NaN is the only value in JavaScript that is not equal to itself (NaN === NaN evaluates to false)."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "この特性があるため、ある値がNaNかどうかを判定するには Number.isNaN() メソッドを使う必要があります。",
+      "en": "Because of this unique property, you must use the Number.isNaN() method to safely check if a value is NaN."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "bind() メソッドを使用すると、一度設定した this のバインディングを後から別のオブジェクトに再変更することができる。",
+      "en": "Using the bind() method, you can later re-change a 'this' binding that was previously set."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "bind() によって固定された this は永続的であり、再度 bind() を呼び出しても上書きすることはできません。",
+      "en": "A 'this' context fixed by bind() is permanent and cannot be overridden or changed by calling bind() again."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "イベントループにおけるマイクロタスクキュー（Promiseのコールバックなど）は、マクロタスクキュー（setTimeoutなど）よりも優先して処理される。",
+      "en": "In the event loop, the microtask queue (e.g., Promise callbacks) is processed with higher priority than the macrotask queue (e.g., setTimeout)."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "現在のタスクが完了すると、次のマクロタスクを実行する前に、すべてのマイクロタスクが空になるまで処理されます。",
+      "en": "After the current task finishes, the event loop drains the entire microtask queue before picking up the next macrotask."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "分割代入(Destructuring assignment)でデフォルト値を設定することはできない。",
+      "en": "It is impossible to set default values when using destructuring assignment."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "分割代入でも let { a = 10 } = obj; のように=演算子を使うことで、undefinedだった際のデフォルト値を設定できます。",
+      "en": "You can set default values in destructuring using the = operator, like let { a = 10 } = obj;, which applies if the value is undefined."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "class構文は内部的にはプロトタイプベースの継承の糖衣構文（シンタックスシュガー）である。",
+      "en": "The class syntax is internally just syntactic sugar over prototype-based inheritance."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "Javaのようなクラスベースの言語のように見えますが、背後では昔ながらのプロトタイプチェーンを用いて動作しています。",
+      "en": "Although it looks like class-based languages (like Java), under the hood it relies entirely on traditional prototype chains."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "Mapオブジェクトのキーには、オブジェクトを使用することができない。",
+      "en": "Objects cannot be used as keys in a Map object."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "通常のObjectのキーは文字列かSymbolのみですが、Mapオブジェクトのキーにはオブジェクトを含むあらゆる値を使用できます。",
+      "en": "Unlike standard Objects which only allow strings or Symbols as keys, Maps allow any value, including objects, to be used as keys."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "== 演算子で 0 と false を比較すると true と評価される。",
+      "en": "Comparing 0 and false with the == operator evaluates to true."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "== は暗黙の型変換を行うため、数値の 0 は false と等しいと見なされます。",
+      "en": "Because == performs implicit type coercion, the number 0 is coerced and considered equal to false."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "setTimeout(fn, 0) と記述すると、関数 fn は1ミリ秒の遅延もなく即座に同期的に実行される。",
+      "en": "Writing setTimeout(fn, 0) means the function fn is executed immediately and synchronously without a single millisecond of delay."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "0ミリ秒を指定しても、関数は即座には実行されずマクロタスクキューに送られ、現在の同期処理が全て完了した後に非同期で実行されます。",
+      "en": "Even with 0 milliseconds, the function is sent to the macrotask queue and is executed asynchronously only after the current synchronous code finishes."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "Object.keys() は、オブジェクト自身の列挙可能な文字列プロパティのキーを配列として返す。",
+      "en": "Object.keys() returns an array of a given object's own enumerable string-keyed property names."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "プロトタイプチェーン上のプロパティや、Symbolキーは含まれません。",
+      "en": "It does not include properties from the prototype chain or keys that are Symbols."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "JavaScriptの数値は、すべて64ビット整数の形式でメモリ上に保存される。",
+      "en": "All numbers in JavaScript are stored in memory strictly as 64-bit integers."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "JavaScriptのNumber型は、IEEE 754標準の「倍精度64ビット浮動小数点数」として保存されます（BigIntを除く）。整数専用の型ではありません。",
+      "en": "JavaScript Numbers are stored as double-precision 64-bit floating-point format (IEEE 754), not integers (except for BigInt)."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "モジュールスクリプト (type=\"module\") は、デフォルトで遅延評価 (defer) される。",
+      "en": "Module scripts (type=\"module\") are deferred by default."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "通常のスクリプトとは異なり、HTMLのパースをブロックせず、ドキュメントの解析が完了した後に実行されます。",
+      "en": "Unlike regular scripts, they do not block HTML parsing and are executed after the document has been fully parsed."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "Array.prototype.reduce() は、初期値を省略した場合、配列の1番目の要素と2番目の要素を飛ばして3番目からループを開始する。",
+      "en": "If the initial value is omitted in Array.prototype.reduce(), the loop skips the first and second elements and starts from the third."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "初期値を省略した場合、1番目の要素が初期値として扱われ、ループは2番目の要素から開始されます。",
+      "en": "If omitted, the first element is used as the initial accumulator value, and the loop begins from the second element."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "プロトタイプチェーンの終端のオブジェクトの __proto__ (または [[Prototype]]) は null である。",
+      "en": "The __proto__ (or [[Prototype]]) of the object at the end of the prototype chain is null."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "通常、Object.prototype のプロトタイプは null であり、ここでチェーンの探索が終了します。",
+      "en": "Usually, the prototype of Object.prototype is null, which marks the end of the lookup chain."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "ガベージコレクションアルゴリズムにおいて、現代のJavaScriptエンジンは主に参照カウント方式を採用している。",
+      "en": "In garbage collection algorithms, modern JavaScript engines primarily use the reference-counting mechanism."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "参照カウント方式は循環参照によるメモリリークの欠点があるため、現代のエンジンは主に「マーク・アンド・スウィープ方式」を採用しています。",
+      "en": "Because reference counting suffers from circular reference leaks, modern engines primarily use the 'mark-and-sweep' algorithm."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "実行コンテキストが作成される際、変数環境やレキシカル環境とともに、this バインディングが決定される。",
+      "en": "When an execution context is created, the 'this' binding is determined along with the Variable Environment and Lexical Environment."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "関数が呼び出され新しい実行コンテキストがスタックに積まれる際、その関数内での this が何を示すかが評価・確定されます。",
+      "en": "When a function is called and a new context is pushed to the stack, the engine evaluates and binds the value of 'this' for that execution."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Object.freeze() で凍結されたオブジェクトは、ネストされた内部のオブジェクトのプロパティも完全に変更できなくなる。",
+      "en": "An object frozen with Object.freeze() prevents any modifications, including those to nested inner object properties."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Object.freeze() は「浅い（シャロー）」凍結しか行わないため、ネストされたオブジェクトのプロパティは依然として変更可能です。",
+      "en": "Object.freeze() only performs a 'shallow' freeze, meaning properties of nested objects can still be modified."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "WeakMapのキーとして使用できるのは、オブジェクトと一部の非登録シンボル(Symbol)のみである。",
+      "en": "Only objects and certain non-registered Symbols can be used as keys in a WeakMap."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "WeakMapはキーへの弱い参照を保持するため、ガベージコレクションの対象になり得るオブジェクト型（およびES2023からのSymbol）しかキーにできません。",
+      "en": "Because WeakMap holds weak references to its keys to allow garbage collection, only objects (and Symbols as of ES2023) are permitted as keys."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "JavaScriptの配列は、メモリ上で常に連続した領域を確保する真のC言語的な配列として実装されている。",
+      "en": "JavaScript arrays are implemented as true C-like arrays that always guarantee contiguous memory allocation."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "一般的なJSの配列は内部的にはハッシュマップ（オブジェクト）に近い構造をとっており、常に連続したメモリ空間を確保するわけではありません（TypedArrayを除く）。",
+      "en": "Standard JS arrays act more like hash maps (objects) internally and do not guarantee contiguous memory allocation (unlike TypedArrays)."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "プリミティブな文字列に対してメソッド(例: str.toUpperCase())を呼び出すと、一時的にラッパーオブジェクトが生成され、処理後に破棄される。",
+      "en": "When calling a method on a primitive string (e.g., str.toUpperCase()), a temporary wrapper object is created and then discarded after the operation."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "この仕組みは「オートボクシング」と呼ばれ、プリミティブ値でもオブジェクトのよう振る舞える理由となっています。",
+      "en": "This mechanism, known as 'autoboxing', is why primitives can behave like objects and access prototype methods."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "let や const で宣言された変数は、ホイスティング（巻き上げ）が一切行われないため、Temporal Dead Zone (TDZ) が存在する。",
+      "en": "Variables declared with let and const are not hoisted at all, which is why the Temporal Dead Zone (TDZ) exists."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "let と const もホイスティング自体は行われています。しかし、初期化される前にアクセスしようとするとTDZによりエラーとなる仕様です。",
+      "en": "let and const ARE hoisted to the top of the block. However, accessing them before initialization triggers a ReferenceError due to the TDZ."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Symbol.iterator メソッドを実装したオブジェクトは、for...of ループで反復処理することができる。",
+      "en": "Objects that implement the Symbol.iterator method can be iterated over using a for...of loop."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "配列やMapなどがfor...ofで回せるのは、内部的にこのイテレータプロトコルが実装されているからです。",
+      "en": "Arrays and Maps can be iterated with for...of precisely because they implement this Iterable protocol internally."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "generator関数 (function*) の内部で return 文を実行すると、その戻り値はイテレータの次回の yield の結果として扱われる。",
+      "en": "When a return statement is executed inside a generator function (function*), its return value is treated as the result of the next yield."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "returnを実行するとジェネレータは終了し、{ value: 戻り値, done: true } というオブジェクトが返されます。yieldとは異なります。",
+      "en": "Executing return terminates the generator and outputs { value: return_value, done: true }, which behaves differently from yield."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Proxyオブジェクトを使用すると、プロパティの読み取りや割り当て、関数呼び出しなどの基本的な操作をインターセプトしてカスタム動作を定義できる。",
+      "en": "A Proxy object allows you to intercept and define custom behavior for fundamental operations like property lookup, assignment, and function invocation."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "Vue.jsなどのモダンなフレームワークのリアクティブシステムは、このProxy機構を基盤に構築されています。",
+      "en": "Modern reactive systems, such as those in Vue.js, are heavily built on top of this Proxy mechanism."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "V8などのJavaScriptエンジンは、同じ構造のオブジェクトに対して新しい隠しクラス(Hidden Class)を毎回作成する。",
+      "en": "JavaScript engines like V8 create a brand new Hidden Class every time for objects that share the exact same structure."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "パフォーマンス向上のため、同じプロパティ構造と追加順序を持つオブジェクトは、同じ隠しクラス（Shape）を共有します。",
+      "en": "To optimize performance, objects with the same property structure and addition order share the same Hidden Class (Shape)."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Web Workersを利用すると、JavaScriptでマルチスレッド処理を実現し、メインスレッドをブロックせずに重い計算を行うことができる。",
+      "en": "Web Workers enable multi-threading in JavaScript, allowing heavy computations to run without blocking the main thread."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "UIの描画を停止させることなく、バックグラウンドの別スレッドでスクリプトを実行するAPIです。",
+      "en": "It is an API that allows scripts to run in background threads, keeping the UI rendering completely responsive."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "requestAnimationFrame のコールバック関数は、ブラウザの描画パイプラインにおけるリペイントの直後に実行される。",
+      "en": "The callback function of requestAnimationFrame is executed immediately AFTER the browser's rendering pipeline has painted the screen."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "requestAnimationFrameは、ブラウザが次回の再描画（リペイント）を行う「直前」に実行されるため、滑らかなアニメーションが可能になります。",
+      "en": "requestAnimationFrame callbacks run right BEFORE the browser performs the next repaint, which is why it ensures smooth animations."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Object.create(null) によって作成されたオブジェクトは、toString() や hasOwnProperty() などのメソッドを持たない。",
+      "en": "An object created using Object.create(null) does not possess methods like toString() or hasOwnProperty()."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "Object.prototype を継承しない純粋な辞書（辞書オブジェクト）として生成されるため、意図しないプロパティの衝突を防げます。",
+      "en": "It is created without inheriting from Object.prototype, making it a pure dictionary safe from prototype pollution."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "async関数が返す値がすでにPromiseであった場合、async関数はそのPromiseをさらに別のPromiseでラップして二重のPromiseとして返す。",
+      "en": "If an async function returns a value that is already a Promise, the async function wraps it in another Promise, returning a double Promise."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "すでにPromiseが返された場合、二重にラップされることはなく、内部のPromiseの状態がそのままasync関数の戻り値に反映されます。",
+      "en": "It does not double-wrap it. The returned Promise adopts the state of the inner Promise seamlessly."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "イベントキャプチャリングフェーズは、イベントターゲット要素に到達する前に発生し、親要素から子要素へ伝播する。",
+      "en": "The event capturing phase occurs before reaching the event target element, propagating from parent elements down to child elements."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "DOMのイベント伝播は「キャプチャリングフェーズ」→「ターゲットフェーズ」→「バブリングフェーズ」の順に進みます。",
+      "en": "DOM event propagation flows in this order: Capturing phase -> Target phase -> Bubbling phase."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "new 演算子を用いて関数を呼び出した際、コンストラクタ関数がプリミティブ値をreturnした場合、そのプリミティブ値がインスタンスとして返される。",
+      "en": "When a function is invoked with the new operator, if the constructor explicitly returns a primitive value, that primitive value is returned as the instance."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "コンストラクタがプリミティブ値を返した場合、それは無視され、新しく生成された this (オブジェクト) が返されます（オブジェクトを返した場合はそれが優先されます）。",
+      "en": "If a constructor returns a primitive, it is ignored and the newly created 'this' object is returned instead (returning an object overrides this)."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Reflect APIのメソッドは、Proxyハンドラのトラップと同じ名前とシグネチャを持っており、デフォルトの言語動作を呼び出すために使用される。",
+      "en": "Reflect API methods have the exact same names and signatures as Proxy handler traps and are used to invoke the default language behavior."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "Proxy内でインターセプトした処理の最後で Reflect を呼び出すことで、本来行われるはずだった操作を安全に実行できます。",
+      "en": "By calling Reflect inside a Proxy trap, you can safely execute the original, un-intercepted operation."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "JavaScriptにおける最大安全整数 (Number.MAX_SAFE_INTEGER) は 2の64乗から1を引いた値である。",
+      "en": "The maximum safe integer in JavaScript (Number.MAX_SAFE_INTEGER) is 2 to the power of 64, minus 1."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "倍精度浮動小数点の仮数部が53ビットであるため、正確に表現できる最大の整数は「2の53乗マイナス1」です。",
+      "en": "Due to the 53-bit mantissa of double-precision floats, the maximum safe integer is strictly 2^53 - 1."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "[] +[] という式を評価すると、空の文字列 \"\" が返される。",
+      "en": "Evaluating the expression [] +[] returns an empty string \"\"."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "+ 演算子により両側の配列が文字列に暗黙的変換(toString)され、空文字列同士の結合となるためです。",
+      "en": "The + operator coerces both arrays into strings via toString(), resulting in the concatenation of two empty strings."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "0.1 + 0.2 === 0.3 は true と評価される。",
+      "en": "0.1 + 0.2 === 0.3 evaluates to true."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "IEEE 754 浮動小数点演算の誤差により、左辺は 0.30000000000000004 となるため、厳密比較は false になります。",
+      "en": "Due to IEEE 754 floating-point precision errors, the left side equals 0.30000000000000004, making the strict comparison false."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "parseInt(0.0000005) の評価結果は、数値の 5 である。",
+      "en": "The evaluation result of parseInt(0.0000005) is the number 5."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "parseIntは引数を文字列に変換します。非常に小さな値は 5e-7 という文字列になるため、先頭の 5 がパースされます。",
+      "en": "parseInt converts its argument to a string. 0.0000005 becomes '5e-7', and parseInt extracts the first valid integer, which is 5."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "[] == ![] を評価すると false になる。",
+      "en": "Evaluating [] == ![] results in false."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "![] は boolean の false になり、[] は数値変換されて 0 になります。0 == false は true と評価されるため、結果は true になります。",
+      "en": "![] evaluates to false.[] coerces to an empty string and then to 0. Since 0 == false is true, the overall expression is true."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "typeof document.all を評価すると undefined が返される（一部のブラウザ環境）。",
+      "en": "Evaluating typeof document.all returns 'undefined' in modern browser environments."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "document.all はオブジェクトとして存在しますが、後方互換性と古いコードを壊さないための特殊な仕様により undefined を返します。",
+      "en": "Although document.all exists as an object, it is a willful violation of the specification for backward compatibility and returns 'undefined'."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "String.prototype.replace() メソッドに文字列の検索対象を渡した場合、一致するすべての部分が置換される。",
+      "en": "When passing a string as the search target to String.prototype.replace(), all matching occurrences are replaced."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "文字列を渡した場合は最初に見つかった一致箇所のみが置換されます。全て置換するには正規表現の g フラグか replaceAll() を使います。",
+      "en": "Passing a string only replaces the very first occurrence. To replace all, you must use a regex with the 'g' flag or replaceAll()."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "NaN を typeof 演算で評価すると、文字列の number が返される。",
+      "en": "Evaluating NaN with the typeof operator returns the string 'number'."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "NaN は Not a Number の略ですが、JavaScriptにおけるデータ型としては「数値(Number)」に分類されます。",
+      "en": "Despite standing for 'Not a Number', NaN is technically classified under the 'Number' data type in JavaScript."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "let a = (1, 5, 3); を実行した後、変数 a には 1 が代入されている。",
+      "en": "After executing let a = (1, 5, 3);, the variable a is assigned the value 1."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "カンマ演算子は左から右へ式を評価し、一番最後の値を返すため、変数 a には 3 が代入されます。",
+      "en": "The comma operator evaluates expressions from left to right and returns the final value, so a is assigned 3."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "with 語句を使用すると、スコープチェーンを動的に拡張できるが、厳格モード(strict mode)では文法エラーとなる。",
+      "en": "The 'with' statement can dynamically extend the scope chain, but it throws a syntax error in strict mode."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "可読性の低下と最適化の妨げになるため、現代のJavaScript開発では with 文の使用は禁止(非推奨)されています。",
+      "en": "Because it obscures readability and severely harms compiler optimizations, the 'with' statement is strictly forbidden in modern JavaScript."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Number.MIN_VALUE は、JavaScriptにおいて表現可能な最小の負の数である。",
+      "en": "Number.MIN_VALUE is the smallest possible negative number that can be represented in JavaScript."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Number.MIN_VALUE は「ゼロに最も近い正の数（約5e-324）」です。表現可能な最小の負の数は -Number.MAX_VALUE です。",
+      "en": "Number.MIN_VALUE is the smallest positive number closest to zero. The smallest negative number is -Number.MAX_VALUE."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "ラベルステートメント(Label statement)を利用すると、ネストされたループの中から外側の特定のループを break や continue させることができる。",
+      "en": "Using a Label statement allows you to break or continue a specific outer loop from within a nested loop."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "多重ループを一気に抜け出したい場合など、ラベルを指定することで制御フローを細かく指定できます。",
+      "en": "It provides fine-grained control flow, such as breaking out of multiple deeply nested loops all at once."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Function.length プロパティは、関数内に記述されたコードの行数を返す。",
+      "en": "The Function.length property returns the number of lines of code written inside the function."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Function.length は、関数が期待する引数の数（デフォルト値を持たない仮引数の数）を返します。",
+      "en": "Function.length returns the number of parameters expected by the function (excluding parameters with default values or rest parameters)."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Array.prototype.sort() を引数なしで呼び出すと、要素は文字列に変換された上でUTF-16コード単位の辞書順でソートされる。",
+      "en": "When Array.prototype.sort() is called without arguments, elements are converted to strings and sorted by their UTF-16 code unit values in dictionary order."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "そのため、[10, 2, 1] をソートすると[1, 10, 2] のような意図しない数値の並びになることがあります。",
+      "en": "Because of this, sorting an array of numbers like [10, 2, 1] can result in the counter-intuitive[1, 10, 2]."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "JavaScriptでは、void 0 と undefined は常に異なる値を返す。",
+      "en": "In JavaScript, void 0 and undefined always return different values."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "void演算子は引数を評価したのち常に undefined を返します。かつて undefined が上書き可能だった時代には安全な undefined の取得手段として使われました。",
+      "en": "The void operator safely evaluates the expression and always returns undefined. They return the exact same value."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "1 < 2 < 3 を評価すると true になり、3 > 2 > 1 を評価すると false になる。",
+      "en": "Evaluating 1 < 2 < 3 results in true, and evaluating 3 > 2 > 1 results in false."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "左から評価されるため、3 > 2 は true になり、続く true > 1 は数値変換され 1 > 1 となり false になります。",
+      "en": "Evaluated left-to-right: 3 > 2 is true. Then true > 1 coerces true to 1, evaluating 1 > 1, which is false."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "arguments オブジェクトは、Array.prototype のすべてのメソッドを継承した純粋な配列である。",
+      "en": "The 'arguments' object is a pure array that inherits all methods from Array.prototype."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "arguments は「配列ライク(Array-like)オブジェクト」であり、length やインデックスは持ちますが、map や forEach などの配列メソッドは持っていません。",
+      "en": "It is an 'Array-like object'. It has a length and indices, but lacks array methods like map or forEach."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Math.max() を引数なしで呼び出すと、-Infinity を返す。",
+      "en": "Calling Math.max() with no arguments returns -Infinity."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "比較の初期値として使われる仕様であり、いかなる数値と比較してもその数値が最大値として採用されるように設計されています。",
+      "en": "This is by design as the initial identity value for comparison, ensuring any provided number will be considered larger."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "typeof undeclaredVariable を評価すると、ReferenceError がスローされる。",
+      "en": "Evaluating typeof undeclaredVariable throws a ReferenceError."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "宣言されていない変数をそのまま参照するとReferenceErrorになりますが、typeof 演算子の対象とした場合は例外として文字列の undefined が安全に返ります。",
+      "en": "While accessing an undeclared variable throws a ReferenceError, using typeof on it is uniquely safe and returns the string 'undefined'."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "[1, 2] + [3, 4] を評価すると、文字列の \"1,23,4\" が返される。",
+      "en": "Evaluating [1, 2] + [3, 4] returns the string \"1,23,4\"."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "両者が toString() により \"1,2\" と \"3,4\" に変換され、それが結合されるためこの文字列になります。",
+      "en": "Both arrays are converted via toString() into '1,2' and '3,4', and then concatenated together."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "eval() 関数は、常にグローバルスコープでコードを評価する。",
+      "en": "The eval() function always evaluates code within the global scope."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "直接 eval() を呼び出した場合は、現在のローカルスコープ内で評価されます（間接呼び出しの場合はグローバルスコープになります）。",
+      "en": "A direct call to eval() executes within the local lexical scope where it is called. Only an indirect call forces the global scope."
+    }
+  }
+]

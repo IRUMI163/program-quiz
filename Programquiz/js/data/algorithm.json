@@ -1,0 +1,1201 @@
+[{
+    "difficulty": 1,
+    "text": {
+      "ja": "配列は、メモリ上の連続した領域にデータを格納するデータ構造である。",
+      "en": "An array is a data structure that stores data in contiguous memory locations."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "インデックスを用いて要素にO(1)でアクセスできます。",
+      "en": "It allows O(1) access to elements using indices."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "スタックは、最後に追加されたデータが最初に取り出されるFIFO(First-In-First-Out)のデータ構造である。",
+      "en": "A stack is a FIFO (First-In-First-Out) data structure where the last added data is retrieved first."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "スタックはLIFO(Last-In-First-Out)です。FIFOはキューの特性です。",
+      "en": "A stack is LIFO (Last-In-First-Out). FIFO is the characteristic of a queue."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "キューは、最初に追加されたデータが最初に取り出されるFIFOのデータ構造である。",
+      "en": "A queue is a FIFO data structure where the first added data is retrieved first."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "レジ待ちの列のように、先に入ったものから順番に処理されます。",
+      "en": "Like a checkout line, the items that enter first are processed first."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "リニアサーチ（線形探索）は、データがソート（整列）されていなければ使用できない。",
+      "en": "Linear search cannot be used unless the data is sorted."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "リニアサーチは先頭から順に調べるため、ソートの有無に関わらず使用可能です。",
+      "en": "Linear search checks elements sequentially from the beginning, so it works regardless of whether the data is sorted."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "バイナリサーチ（二分探索）は、データがソートされている場合にのみ使用できる探索アルゴリズムである。",
+      "en": "Binary search is a search algorithm that can only be used when the data is sorted."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "中央の値と比較して探索範囲を半分に絞るため、事前にソートされている必要があります。",
+      "en": "It requires sorted data because it halves the search range by comparing with the middle value."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "木構造（ツリー）において、子を持たないノードをルート（根）と呼ぶ。",
+      "en": "In a tree data structure, a node with no children is called the root."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "子を持たないノードはリーフ（葉）と呼びます。ルートは木の一番上にある親のないノードです。",
+      "en": "A node with no children is called a leaf. The root is the topmost node with no parent."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "グラフは、ノード（頂点）とそれらを結ぶエッジ（辺）から構成されるデータ構造である。",
+      "en": "A graph is a data structure composed of nodes (vertices) and edges connecting them."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ネットワークや人間関係など、複雑な関係性をモデル化するのに使われます。",
+      "en": "It is used to model complex relationships such as networks and social connections."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "バブルソートは、隣り合う要素を比較し、順序が逆であれば入れ替える操作を繰り返すソートアルゴリズムである。",
+      "en": "Bubble sort is a sorting algorithm that repeatedly compares adjacent elements and swaps them if they are in the wrong order."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "実装は単純ですが、平均および最悪計算量がO(N^2)であり、大規模なデータには不向きです。",
+      "en": "While simple to implement, its average and worst-case time complexity is O(N^2), making it unsuitable for large datasets."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "オーダー記法（ビッグオー記法）は、アルゴリズムの実行時間がプログラムの行数にどう依存するかを表すための記法である。",
+      "en": "Big O notation is used to express how an algorithm's execution time depends on the number of lines of code."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "プログラムの行数ではなく、入力データのサイズに対して実行時間やメモリがどう増加するかを表します。",
+      "en": "It represents how execution time or memory usage grows relative to the input data size, not the lines of code."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "O(1)のアルゴリズムは、入力データのサイズが大きくなっても実行時間が変わらない。",
+      "en": "An O(1) algorithm's execution time remains constant regardless of the input data size."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ハッシュテーブルの検索や配列のインデックスアクセスなどが該当します。",
+      "en": "Examples include hash table lookups and array index accesses."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "連結リスト（リンクリスト）では、任意のインデックスの要素にO(1)の時間でアクセスできる。",
+      "en": "In a linked list, you can access an element at any index in O(1) time."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "連結リストは先頭からポインタを辿る必要があるため、要素へのアクセスにはO(N)の時間がかかります。",
+      "en": "Accessing an element takes O(N) time because a linked list requires traversing pointers from the head."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "クイックソートは、常に他のどのソートアルゴリズムよりも速く処理を完了する。",
+      "en": "Quick sort always completes its processing faster than any other sorting algorithm."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "平均的には非常に速いですが、ピボットの選び方によっては最悪計算量がO(N^2)になることがあります。",
+      "en": "While very fast on average, its worst-case time complexity can be O(N^2) depending on the pivot selection."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "再帰関数とは、関数の中で自分自身を呼び出す関数のことである。",
+      "en": "A recursive function is a function that calls itself within its own body."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "階乗の計算やツリー探索など、問題を小さく分割できる場合に適しています。",
+      "en": "It is suitable for problems that can be broken down into smaller instances, such as factorial calculations and tree traversals."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "無限ループを防ぐため、再帰関数には必ず終了条件（ベースケース）が必要である。",
+      "en": "To prevent infinite loops, a recursive function must have a termination condition (base case)."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "終了条件がないと、メモリ（コールスタック）を使い果たしてクラッシュします。",
+      "en": "Without a base case, it will exhaust the memory (call stack) and crash."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "ハッシュテーブルは、キーから値を検索する操作を通常O(N)の時間で行う。",
+      "en": "A hash table typically performs the operation of retrieving a value by its key in O(N) time."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ハッシュテーブルでの検索は、理想的な状態ではO(1)の時間で行われます。",
+      "en": "In a hash table, retrieving a value by its key is typically done in O(1) time under ideal conditions."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "選択ソート（セレクションソート）は、未ソート部分から最小値を探し、先頭の要素と交換するアルゴリズムである。",
+      "en": "Selection sort is an algorithm that finds the minimum value from the unsorted part and swaps it with the first element."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "未ソート部分から一番小さい（または大きい）要素を「選択」して配置していく手法です。",
+      "en": "It works by repeatedly selecting the smallest (or largest) element from the unsorted portion and placing it at the beginning."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "バイナリツリー（二分木）は、各ノードが最大で3つの子を持つことができる木構造である。",
+      "en": "A binary tree is a tree data structure in which each node can have a maximum of three children."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "バイナリツリー（二分木）はその名の通り、各ノードが最大「2つ」の子しか持てません。",
+      "en": "As the name implies, each node in a binary tree can have a maximum of only two children."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "幅優先探索（BFS）は、グラフを探索する際、現在のノードに近いノードから順に探索するアルゴリズムである。",
+      "en": "Breadth-First Search (BFS) is a graph traversal algorithm that explores nodes closest to the current node first."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "スタート地点から同心円状に広がるように探索し、最短経路を見つけるのによく使われます。",
+      "en": "It explores outward in concentric circles from the starting point and is often used to find the shortest path."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "深さ優先探索（DFS）を実装する際、一般的にキューが用いられる。",
+      "en": "A queue is generally used when implementing Depth-First Search (DFS)."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "DFSの実装にはスタック（または再帰コール）が用いられます。キューはBFSの実装に用いられます。",
+      "en": "A stack (or recursive calls) is used to implement DFS. A queue is used for BFS."
+    }
+  },
+  {
+    "difficulty": 1,
+    "text": {
+      "ja": "アルゴリズムとは、特定の問題を解決するための有限回の手順や計算規則のことである。",
+      "en": "An algorithm is a finite sequence of well-defined instructions or calculation rules for solving a specific problem."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "プログラムを書くための設計図や料理のレシピのような役割を果たします。",
+      "en": "It acts like a blueprint for writing programs or a recipe for cooking."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "動的配列は、要素数が内部の容量を超えた場合、自動的に新しいメモリ領域を確保してデータをコピーする。",
+      "en": "A dynamic array automatically allocates a new memory space and copies data when the number of elements exceeds its internal capacity."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "これにより、固定長の配列とは異なり、サイズを気にせず要素を追加し続けることができます。",
+      "en": "This allows you to keep adding elements without worrying about size limits, unlike fixed-length arrays."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "双方向リスト（ダブルリンクリスト）は、各ノードが次のノードへのポインタのみを持つデータ構造である。",
+      "en": "A doubly linked list is a data structure where each node only has a pointer to the next node."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "双方向リストは「前」と「次」の両方のノードへのポインタを持ちます。次のポインタのみを持つのは単方向リストです。",
+      "en": "A doubly linked list has pointers to both the previous and next nodes. A singly linked list only has a pointer to the next node."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "二分探索木（BST）において、任意のノードの左部分木にあるすべてのノードの値は、そのノードの値よりも小さい。",
+      "en": "In a Binary Search Tree (BST), the values of all nodes in the left subtree of any given node are strictly less than the value of that node."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "この性質により、目的の値を効率的に検索することができます（右部分木の値は大きくなります）。",
+      "en": "This property allows for efficient searching for a target value (values in the right subtree are greater)."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "ハッシュテーブルで異なるキーが同じハッシュ値を持つことを「ハッシュの衝突（コリジョン）」と呼ぶ。",
+      "en": "When different keys hash to the same value in a hash table, it is called a hash collision."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "衝突を解決するために、チェイン法（連結リスト）やオープンアドレス法などが用いられます。",
+      "en": "Chaining (using linked lists) or open addressing are used to resolve these collisions."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "挿入ソート（インサーションソート）の平均計算量はO(N log N)である。",
+      "en": "The average time complexity of insertion sort is O(N log N)."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "挿入ソートの平均計算量はO(N^2)です。O(N log N)になるのはマージソートやクイックソートなどです。",
+      "en": "The average time complexity of insertion sort is O(N^2). O(N log N) applies to algorithms like merge sort and quick sort."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "マージソートは、分割統治法を用いてデータをソートするアルゴリズムである。",
+      "en": "Merge sort is an algorithm that uses the divide-and-conquer strategy to sort data."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "配列を半分に分割し続け、それぞれの要素をソートしながら結合（マージ）していきます。",
+      "en": "It continuously divides the array in half and then merges the sorted elements back together."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "ダイクストラ法は、重み付きグラフにおける単一始点最短経路を求めるためのアルゴリズムである。",
+      "en": "Dijkstra's algorithm is used to find the single-source shortest path in a weighted graph."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "カーナビのルート探索などで活用されますが、負の重みを持つエッジがあるグラフには使えません。",
+      "en": "It is used in applications like GPS routing, but it cannot handle graphs with negative edge weights."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "ヒープ（二分ヒープ）は、常に親ノードが子ノードより大きいか等しい（または小さいか等しい）という性質を満たす完全二分木である。",
+      "en": "A heap (binary heap) is a complete binary tree that always satisfies the property where a parent node is greater than or equal to (or less than or equal to) its child nodes."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "最大値や最小値を高速（O(1)）に取り出すことができるため、優先度付きキューの実装によく使われます。",
+      "en": "Because the max or min value can be extracted quickly in O(1) time, it is widely used to implement priority queues."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "メモ化（Memoization）は、動的計画法において、計算結果を保存しておくことで無駄な再計算を増やす手法である。",
+      "en": "Memoization is a technique in dynamic programming that increases redundant recalculations by saving computation results."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "メモ化は計算結果をキャッシュすることで、無駄な再計算を「減らす（防ぐ）」ための手法です。",
+      "en": "Memoization is used to reduce or prevent redundant recalculations by caching computation results."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "クイックソートの最悪計算量はO(N log N)である。",
+      "en": "The worst-case time complexity of quick sort is O(N log N)."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "最悪計算量はO(N^2)です。最悪O(N log N)を保証するのはマージソートやヒープソートです。",
+      "en": "The worst-case is O(N^2). Merge sort and heap sort guarantee O(N log N) worst-case."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "グラフに閉路（サイクル）が存在するかどうかは、深さ優先探索（DFS）を用いて判定することができる。",
+      "en": "The presence of a cycle in a graph can be detected using Depth-First Search (DFS)."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "探索中にすでに訪問済みのノード（かつ直前の親ではないノード）に到達した場合、閉路が存在すると判定できます。",
+      "en": "If a visited node (that is not the immediate parent) is reached during the traversal, a cycle exists."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "循環キュー（リングバッファ）は、配列の末尾と先頭を論理的に繋げることで、メモリを効率よく再利用するデータ構造である。",
+      "en": "A circular queue (ring buffer) is a data structure that efficiently reuses memory by logically connecting the end of an array to its beginning."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "通常の配列ベースのキューで生じる「要素を取り出した後の空き領域が使えない」という無駄を解消します。",
+      "en": "It solves the problem in standard array-based queues where freed space at the front cannot be reused."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "スタックオーバーフローは、キューにデータが蓄積されすぎた場合に発生するエラーである。",
+      "en": "A stack overflow is an error that occurs when too much data accumulates in a queue."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "スタックオーバーフローは、深すぎる再帰呼び出しなどによりコール「スタック」領域のメモリを使い果たした際に発生します。",
+      "en": "A stack overflow happens when the call stack memory is exhausted, typically due to excessively deep recursive calls."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "木の走査方法の一つである「行きがけ順（プレオーダー）」では、まず左の子、次に右の子、最後に現在のノードを訪問する。",
+      "en": "In a preorder tree traversal, you first visit the left child, then the right child, and finally the current node."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "それは帰りがけ順（ポストオーダー）です。プレオーダーは「現在のノード → 左の子 → 右の子」の順に訪問します。",
+      "en": "That describes a postorder traversal. Preorder visits the current node first, then the left child, and finally the right child."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "優先度付きキュー（プライオリティキュー）は、一般的に内部構造としてヒープを用いて実装される。",
+      "en": "A priority queue is typically implemented using a heap as its internal structure."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ヒープを使うことで、要素の追加と最大/最小値の取り出しをどちらもO(log N)の効率で行うことができます。",
+      "en": "Using a heap allows both insertion and extraction of the max/min element to be done efficiently in O(log N) time."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "トライ木（プレフィックスツリー）は、文字列の探索や共通接頭辞の検索に特化したデータ構造である。",
+      "en": "A trie (prefix tree) is a data structure specialized for string searching and finding common prefixes."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "検索エンジンのオートコンプリート（予測変換）や辞書の検索機能などの実装に適しています。",
+      "en": "It is ideal for implementing features like autocomplete in search engines and dictionary lookups."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "ハッシュテーブルのオープンアドレス法（開番地法）では、衝突が発生した場合、連結リストを用いて同じバケットに要素を追加する。",
+      "en": "In hash table open addressing, when a collision occurs, elements are added to the same bucket using a linked list."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "連結リストを用いるのはチェイン法です。オープンアドレス法では、別の空いているバケットを順番に探して格納します。",
+      "en": "Chaining uses linked lists. Open addressing probes for the next available empty bucket to store the element."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "動的計画法（DP）は、問題を複数の部分問題に分割し、その計算結果を再利用することで最適解を求める手法である。",
+      "en": "Dynamic Programming (DP) is a method for solving optimization problems by breaking them down into simpler subproblems and reusing their results."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "フィボナッチ数列やナップサック問題など、同じ部分問題が何度も現れる場合に劇的な計算量削減をもたらします。",
+      "en": "It drastically reduces computation time when the same subproblems overlap, such as in the Fibonacci sequence or the knapsack problem."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "安定ソート（Stable Sort）とは、実行中のメモリ使用量が常に一定であるソートアルゴリズムのことである。",
+      "en": "A stable sort is a sorting algorithm whose memory usage remains constant during execution."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "安定ソートとは、同じ値を持つ要素の「元の順序」がソート後も保たれる性質のことです。",
+      "en": "A stable sort maintains the original relative order of elements with equal values after sorting."
+    }
+  },
+  {
+    "difficulty": 2,
+    "text": {
+      "ja": "グラフの隣接行列による表現は、ノード数に比べてエッジ数が非常に少ない疎なグラフ（スパースグラフ）の保持にメモリ効率が良い。",
+      "en": "Representing a graph using an adjacency matrix is memory-efficient for sparse graphs, where the number of edges is very small compared to the number of nodes."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "隣接行列はエッジの有無に関わらずO(V^2)のメモリを消費するため、疎なグラフには隣接リストを用いる方が効率的です。",
+      "en": "An adjacency matrix uses O(V^2) memory regardless of edges. An adjacency list is much more efficient for sparse graphs."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "AVL木は、すべてのノードにおいて左右の部分木の高さの差が最大でも1であるように自己バランスを保つ二分探索木である。",
+      "en": "An AVL tree is a self-balancing binary search tree where the difference in heights of the left and right subtrees of any node is at most 1."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "挿入や削除の際に回転操作を行うことでこの条件を維持し、検索のO(log N)を保証します。",
+      "en": "It maintains this property through rotation operations during insertions and deletions, guaranteeing O(log N) search time."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "クイックソートは、常に安定ソート（Stable Sort）である。",
+      "en": "Quick sort is always a stable sort."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "一般的なインプレース実装のクイックソートは不安定ソートです。要素のスワップにより、同じ値の相対的な順序が変わる可能性があります。",
+      "en": "Standard in-place quick sort is unstable. Swapping elements can alter the relative order of equal items."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "トポロジカルソートは、有向非巡回グラフ（DAG）の各ノードを、すべての有向辺が前を向くように一列に並べるアルゴリズムである。",
+      "en": "Topological sorting is an algorithm that orders the nodes of a Directed Acyclic Graph (DAG) linearly such that every directed edge points forward."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "タスクの依存関係や、パッケージのインストール順序の決定などに不可欠なアルゴリズムです。",
+      "en": "It is essential for determining task dependencies or the installation order of software packages."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "赤黒木（Red-Black Tree）の最大の高さは、ノード数をNとしたとき、2 log2(N+1) 以下であることが保証されている。",
+      "en": "The maximum height of a Red-Black Tree with N nodes is guaranteed to be no more than 2 log2(N+1)."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "AVL木よりバランスの制約が緩いため高さは若干増えますが、回転の回数が少なく挿入・削除が高速です。",
+      "en": "Its balancing constraints are looser than AVL trees, allowing slightly greater height but requiring fewer rotations, making insertions and deletions faster."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ベルマン・フォード法は、負の重みを持つエッジが含まれるグラフでは最短経路を正しく計算できない。",
+      "en": "The Bellman-Ford algorithm cannot correctly calculate shortest paths in a graph containing edges with negative weights."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ダイクストラ法と異なり、ベルマン・フォード法は負の重みを持つエッジがあっても正しく計算でき、さらに負の閉路の検出も可能です。",
+      "en": "Unlike Dijkstra's, Bellman-Ford correctly handles negative edge weights and can also detect negative weight cycles."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "最小全域木を求めるクラスカル法は、エッジを重みの昇順にソートし、閉路ができないようにエッジを追加していくアルゴリズムである。",
+      "en": "Kruskal's algorithm for finding a Minimum Spanning Tree sorts edges in ascending order of weight and adds them while ensuring no cycles are formed."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "閉路の判定には一般的にUnion-Find（素集合データ構造）が用いられます。",
+      "en": "A Union-Find (Disjoint Set) data structure is typically used to efficiently check for cycles."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "A*（エースター）探索アルゴリズムは、ヒューリスティック関数を用いることで、ダイクストラ法よりも効率的に最短経路を探索できる場合がある。",
+      "en": "The A* search algorithm can often find the shortest path more efficiently than Dijkstra's algorithm by using a heuristic function."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "目的地までの推定コスト（距離）を加味して探索を優先づけするため、無駄な探索を減らせます。",
+      "en": "It reduces unnecessary exploration by prioritizing paths based on the estimated cost (distance) to the destination."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "フローネットワークの最大流を求めるフォード・ファルカーソン法は、各ステップでランダムなパスを選ぶだけで常に多項式時間で終了する。",
+      "en": "The Ford-Fulkerson method for computing maximum flow in a network always finishes in polynomial time simply by choosing random paths at each step."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "パスの選び方や有理数/無理数の容量設定によっては終了しない、あるいは非常に遅くなります。多項式時間を保証するにはBFSを用いるエドモンズ・カープのアルゴリズムが必要です。",
+      "en": "Depending on path selection and capacities, it may not terminate or be very slow. Edmonds-Karp uses BFS to guarantee polynomial time."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ビットマップ（ビットセット）は、大量の整数の集合を非常に少ないメモリ量で管理し、O(1)で所属判定を行うことができるデータ構造である。",
+      "en": "A bitmap (bitset) is a data structure that manages a large set of integers with very little memory and allows O(1) membership testing."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "各ビットのON/OFFで存在を表すため、フラグ管理や巨大な数値の重複チェックなどに最適です。",
+      "en": "It uses individual bits (ON/OFF) to represent existence, making it ideal for flag management or checking duplicates in massive numbers."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "B木は、すべての葉ノードが同じ深さに存在するように保たれる自己バランス型の木構造である。",
+      "en": "A B-tree is a self-balancing tree structure that maintains all its leaf nodes at the same depth."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ディスクI/Oを最小限に抑える設計がされており、データベースやファイルシステムのインデックスとして広く使用されています。",
+      "en": "It is designed to minimize disk I/O and is widely used as an index structure in databases and file systems."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "B木（B-Tree）は二分木の一種であり、各ノードは最大で2つの子しか持たない。",
+      "en": "A B-Tree is a type of binary tree where each node can have a maximum of only two children."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "B木は「多木」であり、各ノードは数十から数百の多くの子（ブランチ）を持つことができます。",
+      "en": "A B-tree is an n-ary tree where each node can have many children (dozens to hundreds), not just two."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ユニオンファインド（素集合データ構造）において、ランクによる併合を行わず経路圧縮のみを適用した場合、各操作のアモルタイズド計算量はO(アルファ(N))になる。",
+      "en": "In a Disjoint Set Union (Union-Find), if only path compression is applied without union by rank, the amortized time complexity per operation becomes O(alpha(N))."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "O(アルファ(N))（逆アッカーマン関数）を達成するには、経路圧縮とランク（またはサイズ）による併合の「両方」を適用する必要があります。経路圧縮のみの場合はO(log N)になります。",
+      "en": "To achieve O(alpha(N)), both path compression and union by rank (or size) must be used. Path compression alone yields O(log N)."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "マージソートは、一般的に配列をインプレース（追加のO(N)メモリなし）でソートするのに適している。",
+      "en": "Merge sort is generally suitable for sorting arrays in-place (without additional O(N) memory)."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "配列に対する標準的なマージソートは、要素をマージする際にO(N)の追加メモリを必要とします（インプレースマージは計算量が悪化しやすい）。",
+      "en": "Standard merge sort on arrays requires O(N) additional memory during the merging phase (in-place merging is complex and slower)."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ハノイの塔の最小移動回数は、円盤の数をNとしたとき、2^N - 1回である。",
+      "en": "The minimum number of moves to solve the Tower of Hanoi is 2^N - 1, where N is the number of disks."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "再帰アルゴリズムの典型的な例題であり、計算量は指数関数的に増大します。",
+      "en": "It is a classic example of a recursive algorithm, and the number of moves grows exponentially."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "アホ・コロシック法は、1つのテキストから複数のパターン文字列を同時に高速検索するための文字列探索アルゴリズムである。",
+      "en": "The Aho-Corasick algorithm is a string searching algorithm used to quickly search for multiple pattern strings simultaneously within a single text."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "トライ木に失敗ポインタを追加したオートマトンを構築し、O(テキスト長 + パターン長 + マッチ数)で検索を行います。",
+      "en": "It builds an automaton by adding failure pointers to a trie, enabling searches in O(text length + pattern length + matches) time."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "動的計画法におけるナップサック問題（0-1ナップサック）は、多項式時間で厳密解を求めることができる。",
+      "en": "The 0-1 Knapsack problem in dynamic programming can be solved optimally in polynomial time."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "0-1ナップサックのDPアルゴリズムの計算量はO(NW)であり、重みWのビット長に対して指数的であるため、疑似多項式時間（NP困難）です。",
+      "en": "The DP solution is O(NW), which is pseudo-polynomial (exponential relative to the bit-length of W). The problem remains NP-hard."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "フロイド・ワーシャル法は、すべてのノード対の最短経路をO(V^3)の時間計算量で求めるアルゴリズムである。",
+      "en": "The Floyd-Warshall algorithm computes the shortest paths between all pairs of nodes with a time complexity of O(V^3)."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "3重ループの非常にシンプルな実装で全頂点対最短経路を求められ、負の重みを持つエッジがあっても動作します。",
+      "en": "It finds all-pairs shortest paths using a very simple triple-nested loop and works even with negative edge weights."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ヒープソートは、最悪計算量がO(N log N)であり、インプレースで実行可能なソートアルゴリズムである。",
+      "en": "Heap sort has a worst-case time complexity of O(N log N) and is an in-place sorting algorithm."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "クイックソートとは異なり最悪ケースでも性能が低下せず、追加メモリもほとんど不要な安定したアルゴリズムです（ただし不安定ソートです）。",
+      "en": "Unlike quick sort, its performance does not degrade in the worst case, and it requires virtually no extra memory (though it is unstable)."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "スキップリストは、各ノードがランダムな数のポインタを持つことで、平均してO(log N)の時間で検索、挿入、削除ができるデータ構造である。",
+      "en": "A skip list is a data structure where each node has a random number of forward pointers, allowing search, insertion, and deletion in expected O(log N) time."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "平衡二分探索木と同様のパフォーマンスを持ちながら、実装が比較的シンプルであるためRedisなどの内部構造で使われています。",
+      "en": "It offers similar performance to balanced binary search trees but is simpler to implement, making it useful in systems like Redis."
+    }
+  },
+  {
+    "difficulty": 3,
+    "text": {
+      "ja": "ラビン・カープ文字列探索アルゴリズムは、パターンのハッシュ値とテキストの部分文字列のハッシュ値を比較することで探索を行うが、ハッシュ関数の計算には常にO(パターンの長さ)の時間がかかる。",
+      "en": "The Rabin-Karp string search algorithm compares the hash of the pattern with the hash of text substrings, and calculating the hash function always takes O(pattern length) time for every substring."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ローリングハッシュを利用するため、次の部分文字列のハッシュ値は前の値からO(1)で差分計算できます。",
+      "en": "It uses a rolling hash, allowing the hash of the next substring to be computed from the previous one in O(1) time."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "イントロソート（Introsort）は、クイックソートで再帰の深さが一定のしきい値を超えた場合にマージソートに切り替えるハイブリッドソートアルゴリズムである。",
+      "en": "Introsort is a hybrid sorting algorithm that switches from quick sort to merge sort when the recursion depth exceeds a certain threshold."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "マージソートではなく、追加メモリを必要としないヒープソートに切り替えることで、最悪O(N log N)を保証します。",
+      "en": "It switches to heap sort, not merge sort, to guarantee worst-case O(N log N) time without requiring extra memory."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "スプレー木（Splay Tree）は、最近アクセスされたノードを木の根の近くに移動させるスプレー操作を行うことで、アモルタイズドO(log N)の計算量を実現する自己調整二分探索木である。",
+      "en": "A Splay Tree is a self-adjusting binary search tree that achieves an amortized O(log N) time complexity by performing splay operations to move recently accessed nodes near the root."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "キャッシュのような局所性を持つアクセスパターンにおいて非常に高いパフォーマンスを発揮します。",
+      "en": "It exhibits excellent performance for access patterns with temporal locality, acting much like a cache."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "フィボナッチヒープの decrease-key 操作のアモルタイズド計算量はO(1)である。",
+      "en": "The amortized time complexity of the decrease-key operation in a Fibonacci heap is O(1)."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "この特性により、ダイクストラ法などを密なグラフで適用する際の理論的な計算量を大幅に改善します。",
+      "en": "This property significantly improves the theoretical time complexity of algorithms like Dijkstra's on dense graphs."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "タブーサーチ（Tabu Search）は、極所最適解に陥るのを防ぐために、最近訪問した解をタブーリストに記録し、一定期間その解への遷移を禁止するメタヒューリスティクスである。",
+      "en": "Tabu Search is a metaheuristic that prevents getting trapped in local optima by recording recently visited solutions in a tabu list and forbidding transitions to them for a certain period."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "組合せ最適化問題で強力な威力を発揮し、シミュレーテッドアニーリングなどと並んでよく用いられます。",
+      "en": "It is a powerful technique for combinatorial optimization problems, often used alongside simulated annealing."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "基数ソート（Radix Sort）は、要素同士を直接比較することによってソートを行うアルゴリズムである。",
+      "en": "Radix Sort is a sorting algorithm that sorts by directly comparing elements against each other."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "基数ソートは要素を比較しない「非比較ソート」です。各桁の数字ごとにバケツ（キュー）に振り分けることでソートを行います。",
+      "en": "Radix Sort is a non-comparative sorting algorithm. It sorts data by grouping keys by individual digits into buckets."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "素数判定を行うミラー・ラビン素数判定法は、常に確定的な結果を返し、誤判定は一切発生しない。",
+      "en": "The Miller-Rabin primality test always returns deterministic results and never produces false positives."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "確率的素数判定法であり、合成数を素数と誤判定する確率がごくわずかに存在します。試行回数を増やすことで確率を極限まで減らせます。",
+      "en": "It is a probabilistic test, meaning there is a very small chance of falsely identifying a composite number as prime. Increasing iterations reduces this probability."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "KMPアルゴリズムにおける「部分マッチテーブル（LPS配列）」の構築にかかる時間計算量は、パターン文字列の長さをMとしたときO(M^2)である。",
+      "en": "The time complexity for building the Partial Match Table (LPS array) in the KMP algorithm is O(M^2), where M is the length of the pattern string."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "LPS配列は、パターン自身に対するKMP探索のようなアプローチを用いることでO(M)の線形時間で構築できます。",
+      "en": "The LPS array can be built in linear O(M) time using an approach similar to the KMP search on the pattern itself."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Bloom Filter（ブルームフィルタ）は、要素が集合に含まれるかどうかを確率的に判定するデータ構造であり、「偽陰性（False Negative）」が発生する可能性がある。",
+      "en": "A Bloom Filter is a probabilistic data structure for set membership testing that may yield a \"False Negative\"."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ブルームフィルタは「含まれていないのに含まれている」という偽陽性（False Positive）は発生しますが、「含まれているのに含まれていない」という偽陰性は絶対に発生しません。",
+      "en": "A Bloom filter may yield false positives (saying an item is present when it isn't), but it never yields false negatives (saying an item is absent when it is)."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "セグメント木（Segment Tree）における、任意の区間の最小値を取得する操作（RMQ）の時間計算量はO(log N)である。",
+      "en": "In a Segment Tree, the time complexity for retrieving the minimum value in an arbitrary range (Range Minimum Query, RMQ) is O(log N)."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "区間和や区間最小値を、更新を伴いながら高速に処理できる競技プログラミングでも必須のデータ構造です。",
+      "en": "It is a crucial data structure, especially in competitive programming, for fast range queries (sum, min) with updates."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Tarjanの強連結成分分解アルゴリズムは、グラフの深さ優先探索（DFS）を1回行うだけで強連結成分を特定することができる。",
+      "en": "Tarjan's Strongly Connected Components algorithm can identify all strongly connected components using only a single Depth-First Search (DFS) pass over the graph."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "DFS行きがけ順の番号と到達可能な最小の番号（Lowlink）を管理することで、1回のパスで分解を完了します（Kosarajuのアルゴリズムは2回必要です）。",
+      "en": "By maintaining discovery times and the lowest reachable node (Lowlink), it completes the decomposition in one pass (unlike Kosaraju's, which requires two)."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Kd木（K-dimensional tree）は、多次元空間内の点の近傍探索などに用いられるデータ構造であり、次元数が大きくなると検索性能が大幅に低下する「次元の呪い」の影響を受けやすい。",
+      "en": "A k-d tree is a data structure used for nearest neighbor searches in multidimensional space, and it is highly susceptible to the \"curse of dimensionality,\" where search performance drops significantly as dimensions increase."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "次元数が高くなると、空間の大部分を探索しなければならなくなり、結果的に全探索(O(N))に近い計算量になってしまいます。",
+      "en": "In high dimensions, it must explore a large portion of the space, degenerating its performance close to an O(N) brute-force search."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "van Emde Boas木（vEBツリー）は、要素が0からU-1の整数であるとき、検索・挿入・削除などの操作をO(log log U)で行うことができるデータ構造である。",
+      "en": "A van Emde Boas tree (vEB tree) is a data structure that can perform operations like search, insertion, and deletion in O(log log U) time, given keys are integers in the range 0 to U-1."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "宇宙のサイズUに関する再帰的分割を用いることで、非常に高速なプレデセッサ・サクセサ検索を実現します。",
+      "en": "By recursively splitting the universe size U, it achieves extremely fast predecessor and successor queries."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "サフィックスアレイ（接尾辞配列）は、文字列のすべての接尾辞を文字列長の順にソートして格納した配列である。",
+      "en": "A suffix array is an array containing all the suffixes of a string sorted in order of their string lengths."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "サフィックスアレイは、文字列長の順ではなく「辞書順（アルファベット順）」にソートして格納した配列です。",
+      "en": "A suffix array stores all suffixes of a string sorted in lexicographical (alphabetical) order, not by length."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "ダッチナショナルフラッグ問題は、配列を3つの要素のグループにO(N)でインプレースに分類する問題であり、クイックソートのパーティション処理に応用される。",
+      "en": "The Dutch National Flag problem involves sorting an array containing three distinct types of elements in-place in O(N) time, and it is applied to the partitioning process in Quick Sort."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ダイクストラによって提唱され、ピボットより小さい、等しい、大きいの3つに分割する3-wayクイックソートの中核を成します。",
+      "en": "Proposed by Dijkstra, it forms the core of 3-way quick sort, partitioning elements into less than, equal to, and greater than the pivot."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Timsortは、挿入ソートとクイックソートを組み合わせた安定ソートアルゴリズムであり、Pythonなどの標準ソートとして採用されている。",
+      "en": "Timsort is a stable sorting algorithm that combines insertion sort and quick sort, and it is adopted as the standard sort in Python."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Timsortは挿入ソートと「マージソート」を組み合わせたアルゴリズムです。クイックソートではありません。",
+      "en": "Timsort combines insertion sort and merge sort, not quick sort. It is indeed the standard in Python and Java."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "B+木は、すべてのデータレコードが葉ノードにのみ格納され、内部ノードにはキーのみが格納されるデータ構造である。",
+      "en": "In a B+ tree, all data records are stored exclusively in the leaf nodes, while internal nodes store only keys."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "葉ノード同士がリンクされているため、範囲検索（レンジクエリ）がB木よりも効率的であり、RDBMSのインデックスに最適です。",
+      "en": "Because leaf nodes are linked together, range queries are much more efficient than in a standard B-tree, making it ideal for RDBMS indexes."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Hopcroft-Karpアルゴリズムは、二部グラフの最大マッチングを求めるアルゴリズムであり、最悪時間計算量はO(E sqrt(V))である。",
+      "en": "The Hopcroft-Karp algorithm finds the maximum matching in a bipartite graph and has a worst-case time complexity of O(E sqrt(V))."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "BFSとDFSを組み合わせて複数の増加道を一度に見つけることで、フォード・ファルカーソン法に基づく単純な手法よりも高速化されています。",
+      "en": "By combining BFS and DFS to find multiple augmenting paths simultaneously, it is significantly faster than simple Ford-Fulkerson-based approaches."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "最小包含円を求めるアルゴリズムであるWelzl法は、入力される点の順序をランダム化することで、期待される時間計算量をO(N log N)にする。",
+      "en": "Welzl's algorithm for finding the minimum enclosing circle randomized the order of input points to achieve an expected time complexity of O(N log N)."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Welzl法はランダム化によって、期待時間計算量をO(N)という線形時間にするアルゴリズムです。",
+      "en": "Welzl's algorithm uses randomization to achieve an expected linear time complexity of O(N), not O(N log N)."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Trie（トライ木）は、格納する文字列の数Nに対して検索時間がO(N)かかるデータ構造である。",
+      "en": "A Trie requires O(N) search time, where N is the total number of strings stored in the data structure."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Trieの検索時間は格納されている文字列の数Nには依存せず、検索対象の文字列の長さMに依存してO(M)となります。",
+      "en": "Search time in a Trie depends on the length of the string being searched (M), taking O(M) time, and is completely independent of the number of stored strings (N)."
+    }
+  },
+  {
+    "difficulty": 4,
+    "text": {
+      "ja": "Ukkonenのアルゴリズムは、長さNの文字列に対するサフィックツリー（接尾辞木）をO(N)の時間計算量でオンライン構築することができるアルゴリズムである。",
+      "en": "Ukkonen's algorithm can construct a suffix tree for a string of length N on-line in O(N) time complexity."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "接尾辞リンク（Suffix Link）と暗黙の木（Implicit Tree）の概念を巧みに用いることで、線形時間での構築を実現しています。",
+      "en": "It achieves linear time construction by ingeniously using suffix links and implicit trees."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "永続データ構造（Persistent Data Structure）のうち、過去のすべてのバージョンに対してアクセスは可能だが、最新のバージョンにしか更新操作ができないものを完全永続（Fully Persistent）データ構造と呼ぶ。",
+      "en": "Among persistent data structures, one that allows access to all past versions but only allows updates to the latest version is called a Fully Persistent data structure."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "それは部分永続（Partially Persistent）です。完全永続（Fully Persistent）は、過去の任意のバージョンからも分岐して更新（新しいバージョンを作成）できます。",
+      "en": "That describes a Partially Persistent data structure. A Fully Persistent data structure allows branching updates from any past version."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Y-Fast Trieは、X-Fast Trieにバランス二分探索木を組み合わせることで、要素の挿入および削除を期待時間計算量O(log log M)で行うデータ構造である。",
+      "en": "A Y-Fast Trie combines an X-Fast Trie with balanced binary search trees to perform insertions and deletions in expected O(log log M) time."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "X-Fast Trieの弱点であったメモリ消費と更新の遅さを、ハッシュテーブルと木を用いた階層化により見事に解決した構造です。",
+      "en": "It beautifully solves the high memory consumption and slow update times of X-Fast Tries by layering with hash tables and balanced trees."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "リンクカットツリー（Link/Cut Tree）は、動的な森を管理するデータ構造であり、パス上のクエリやエッジの追加・削除をアモルタイズドO(log N)で行うことができる。",
+      "en": "A Link/Cut Tree is a data structure for managing a dynamic forest, allowing path queries and edge additions/deletions in amortized O(log N) time."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "TarjanとSleatorによって考案され、内部的にスプレー木（Splay Tree）の集合を用いてパスを管理します。",
+      "en": "Invented by Tarjan and Sleator, it internally uses a collection of Splay Trees to represent paths in the forest."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Chazelleによって考案された決定論的な最小全域木（MST）アルゴリズムの計算量は、逆アッカーマン関数を含むO(E alpha(E, V))であることが知られている。",
+      "en": "The deterministic Minimum Spanning Tree (MST) algorithm devised by Chazelle is known to have a time complexity of O(E alpha(E, V)), involving the inverse Ackermann function."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "Soft Heapという特殊なデータ構造を発明することで、ほぼ線形時間とも言えるこの驚異的な計算量を達成しました。",
+      "en": "By inventing a specialized data structure called the Soft Heap, Chazelle achieved this astonishingly near-linear time complexity."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "FMインデックスは、Burrows-Wheeler変換（BWT）と接尾辞配列の概念を利用し、元のテキストを圧縮したまま文字列探索を可能にするデータ構造である。",
+      "en": "The FM-index is a data structure that utilizes the Burrows-Wheeler Transform (BWT) and suffix arrays to enable string searching directly on compressed text."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "バイオインフォマティクスにおけるゲノム配列の高速検索ツール（BWAなど）のコア技術として絶大な貢献をしています。",
+      "en": "It has made massive contributions as the core technology for high-speed genomic sequence search tools (like BWA) in bioinformatics."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "整数ソーティングアルゴリズムであるFusion Treeソートは、ワードRAMモデルにおいて、N個の整数をO(N log N)より真に高速なO(N log log N)などでソートすることを可能にする。",
+      "en": "The Fusion Tree sort, an integer sorting algorithm in the word RAM model, allows sorting N integers in O(N log log N) time, which is strictly faster than O(N log N)."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "Fusion Treeソートの計算量はO(N log_W N)（Wはワードサイズ）です。O(N log log N)を達成するのはHanのアルゴリズムなど別の手法です。",
+      "en": "The time complexity of Fusion Tree sort is O(N log_W N), where W is the word size. Achieving O(N log log N) is done by other methods like Han's algorithm."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "線形時間の選択アルゴリズム（Median of Medians）において、要素を5つずつのグループに分割するアプローチは、最悪O(N)を保証するが、3つずつのグループに分割した場合でも最悪O(N)が保証される。",
+      "en": "In the linear-time selection algorithm (Median of Medians), grouping elements by 5 guarantees worst-case O(N) time, and grouping them by 3 also guarantees worst-case O(N) time."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "3つずつのグループでは再帰呼び出しのサイズが十分縮小せず、最悪計算量はO(N log N)に悪化してしまいます。5つ以上である必要があります。",
+      "en": "Grouping by 3 does not shrink the recursive subproblems enough, degrading the worst-case time to O(N log N). A minimum group size of 5 is required."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "ギャップバッファ（Gap Buffer）は、テキストエディタの内部実装に用いられるデータ構造であり、カーソル位置での文字の挿入・削除をO(N)時間で行うことができる。",
+      "en": "A Gap Buffer is a data structure used in text editor implementations that performs character insertion and deletion at the cursor position in O(N) time."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "ギャップバッファの最大の利点は、カーソル位置での文字の挿入・削除をO(N)ではなくO(1)時間で行える点です。",
+      "en": "The main advantage of a Gap Buffer is that it performs insertion and deletion at the cursor position in O(1) time, not O(N)."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "ダイナミックプログラミングにおける「Knuth最適化」は、ある条件を満たすDPの計算量をO(N^3)からO(N^2)へ削減する最適化手法である。",
+      "en": "Knuth Optimization in dynamic programming is a technique that reduces the time complexity of certain DP problems from O(N^3) to O(N^2)."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "コスト関数がMonge性（四角形不等式）と単調性を満たす区間DPにおいて、最適解の探索範囲を劇的に狭めることができます。",
+      "en": "It drastically narrows the search range for the optimal split point in interval DP problems where the cost function satisfies the Monge property (quadrangle inequality) and monotonicity."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Fractional Cascading（フラクショナルキャスケーディング）は、複数のソート済み配列から同じ値を検索する際、各配列を二分探索する時間をO(log N)から定数時間に削減し、全体の検索時間を改善する手法である。",
+      "en": "Fractional Cascading is a technique that improves total search time when querying multiple sorted arrays by reducing the binary search time in each subsequent array from O(log N) to constant time."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "前の配列の情報（ポインタ）を次の配列に巧みに伝搬させることで、幾何アルゴリズム（レンジツリーなど）を大幅に高速化します。",
+      "en": "By cleverly propagating pointers from one array to the next, it significantly speeds up computational geometry algorithms like range trees."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "コラッツ予想を解くためのアルゴリズムはすでに発見されており、任意の正の整数に対して有限回で1に到達することが数学的に証明されている。",
+      "en": "An algorithm to solve the Collatz conjecture has already been discovered, and it has been mathematically proven that any positive integer will reach 1 in a finite number of steps."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "コラッツ予想は依然として数学における未解決問題であり、すべての整数に対して成り立つという証明（決定的なアルゴリズム）はまだ見つかっていません。",
+      "en": "The Collatz conjecture remains an unsolved problem in mathematics. No definitive algorithm or proof exists that it holds for all integers."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "ジョンソンのアルゴリズムは、負の重みを持つエッジを含むグラフにおける全点対最短経路を求めるために、各ノードのポテンシャルを計算しエッジの重みを非負に変換する手法を用いる。",
+      "en": "Johnson's algorithm finds all-pairs shortest paths in a graph with negative edge weights by computing node potentials and reweighting edges to be non-negative."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ベルマン・フォード法でポテンシャルを求め、その後すべての頂点からダイクストラ法を実行することで、フロイド・ワーシャル法より疎なグラフで高速に動作します。",
+      "en": "It uses Bellman-Ford to find potentials, then runs Dijkstra from every node, making it faster than Floyd-Warshall on sparse graphs."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "R木（R-tree）は、空間インデックスの一種であり、挿入されるデータの順序に依存せず、常に完全にバランスの取れたツリー構造が保証される。",
+      "en": "An R-tree is a spatial index structure that guarantees a perfectly balanced tree regardless of the insertion order of the data."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "R木はヒューリスティックに基づく構造であり、データの挿入順序によってノード（MBR）の重なり合いが変化し、完全なバランスや検索効率の最適化は保証されません。",
+      "en": "An R-tree is heuristic-based; the overlap of bounding rectangles depends heavily on insertion order, and perfect balance or optimal search efficiency is not guaranteed."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Stooge Sort（ストゥージソート）は、再帰的に配列の2/3をソートするアルゴリズムであり、その時間計算量はO(N^2.709)である。",
+      "en": "Stooge Sort is an algorithm that recursively sorts 2/3 of an array, and its time complexity is O(N^2.709)."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "アルゴリズム理論のユーモアとして紹介されることが多く、バブルソート(O(N^2))よりもさらに非効率的で遅いソートアルゴリズムです。",
+      "en": "Often introduced as a joke in algorithm theory, it is exceptionally inefficient and slower even than Bubble Sort (O(N^2))."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "最小費用流問題における「Successive Shortest Path」アルゴリズムは、グラフ内に負の閉路が存在する場合でも正しく解を求めることができる。",
+      "en": "The \"Successive Shortest Path\" algorithm for the Minimum Cost Flow problem can correctly find a solution even if negative cost cycles exist in the graph."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "初期状態で負の閉路が存在する場合、SSPアルゴリズムは適用できません。その場合はCycle Cancelingアルゴリズムや、あらかじめポテンシャルを変換する等の対応が必要です。",
+      "en": "If negative cost cycles exist initially, the SSP algorithm cannot be applied directly. It requires techniques like Cycle Canceling or initial potential transformations."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Disjoint Set Union（Union-Find）において、経路圧縮のみを用いた場合、アモルタイズド計算量はO(log N)になる。",
+      "en": "In a Disjoint Set Union (Union-Find), if only path compression is used, the amortized time complexity is O(log N)."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "ランクやサイズによる併合を行わないとツリーが偏る可能性がありますが、経路圧縮の恩恵だけでアモルタイズドO(log N)が保証されます。",
+      "en": "Without union by rank/size, the tree can become skewed, but path compression alone is powerful enough to guarantee amortized O(log N)."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Wavelet Matrix（ウェーブレット行列）は、Wavelet Treeの簡潔データ構造における rank / select 操作の効率を保ちつつ、構築時のノードごとのビット列の境界管理を簡略化したデータ構造である。",
+      "en": "The Wavelet Matrix is a succinct data structure that maintains the efficiency of rank/select operations in a Wavelet Tree while simplifying the management of bit vector boundaries across nodes during construction."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "テキスト検索から2次元点の領域検索まで幅広い応用があり、現代の簡潔データ構造において非常に重要な位置を占めています。",
+      "en": "It has broad applications from text searching to 2D range queries and holds a highly significant position in modern succinct data structures."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "ボゴソート（Bogo Sort）は、配列の要素をランダムにシャッフルし、ソートされているかを確認するアルゴリズムであり、最悪計算量はO(N!)である。",
+      "en": "Bogo Sort is an algorithm that randomly shuffles array elements and checks if they are sorted, with a worst-case time complexity of O(N!)."
+    },
+    "answer": false,
+    "exp": {
+      "ja": "平均計算量がO(N * N!)ですが、運が悪いと永遠に揃わない可能性があるため、最悪計算量は「無限大（Unbounded）」と定義されます。",
+      "en": "While the average case is O(N * N!), if you are infinitely unlucky, it may never sort the array. Therefore, the worst-case is unbounded (infinite)."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "Soft Heap（ソフトヒープ）は、要素のキーの値をあえて意図的に変更（Corrupt）することを許容し、一定の誤差の範囲内でO(1)のアモルタイズド計算量での操作を実現するデータ構造である。",
+      "en": "A Soft Heap is a data structure that intentionally permits the corruption (modification) of element keys to achieve operations with an amortized O(1) time complexity within a certain error bound."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "このキーの改ざんという一見奇妙な性質が、前述の線形時間MSTアルゴリズムや最適化された選択アルゴリズムの突破口となりました。",
+      "en": "This seemingly bizarre property of corrupting keys was the precise breakthrough needed for the aforementioned linear-time MST algorithm and optimal selection algorithms."
+    }
+  },
+  {
+    "difficulty": 5,
+    "text": {
+      "ja": "EdmondsのBlossom Algorithm（花アルゴリズム）は、一般グラフの最大マッチングを求めるアルゴリズムであり、グラフ内の奇数長の閉路（Blossom）を1つの頂点に縮約しながら増加道を探索する。",
+      "en": "Edmonds's Blossom Algorithm is used to find the maximum matching in general graphs, exploring augmenting paths by shrinking odd-length cycles (Blossoms) into a single vertex."
+    },
+    "answer": true,
+    "exp": {
+      "ja": "二部グラフだけでなく、奇閉路を持つ一般のグラフにおいても多項式時間で最大マッチングを計算することを可能にした歴史的アルゴリズムです。",
+      "en": "It is a historic algorithm that made it possible to compute maximum matchings in polynomial time for general graphs with odd cycles, not just bipartite graphs."
+    }
+  }
+]
